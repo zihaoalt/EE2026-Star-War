@@ -23,7 +23,8 @@
 module hp_bar(
     input clk,
     input deduct_HP,
-    input pause,
+    input [1:0] state,
+    input [1:0] level_state,
     input reset,
     output reg [15:0] starship_hp,
     output reg dead_flag
@@ -32,19 +33,29 @@ module hp_bar(
     reg [5:0] HP = 6'd16;
     reg prev_deduct;
     wire hit_pulse = deduct_HP & ~prev_deduct; // one-hit per edge
-
+    reg [3:0] damage;
+     
+    always@(*)begin
+        case(level_state)
+            2'b00: damage = 1; 
+            2'b01: damage = 2; 
+            2'b10: damage = 4; 
+            2'b11: damage = 8; 
+        endcase    
+    end
     always @(posedge clk) begin
         prev_deduct <= deduct_HP;
     end
 
     always @(posedge clk or posedge reset) begin
-        if (reset) begin
+        if (reset || state == 2'b00) begin
             HP <= 6'd16;
             dead_flag <= 0;
-        end else if (!pause) begin
+        end else if (state != 2'b10) begin
             if (hit_pulse && HP > 0)
-                HP <= HP - 1;
-            dead_flag <= (HP <= 1); //when HP is 1 or 0, set flag to 1, otherwise 0
+            HP <= HP - damage;
+        // Use updated HP value
+        dead_flag <= (HP == 1 && hit_pulse) || (HP == 0);
         end
     end
     

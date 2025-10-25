@@ -54,6 +54,6 @@ module play(
     priority_module pri (clk_625m, starship_flag, bullet_flag, enemy_flag, BE_collision, pixel_data);
     xy_coordinate xy (pixel_index, x, y);
     score_display sc (BE_collision, clk_625m, state, anode, seg);
-    hp_bar hp(clk_625m,HP_deduct,0,reset,led,dead_flag);
+    hp_bar hp(clk_625m,HP_deduct,state,level_state,reset,led,dead_flag);
     
 endmodule

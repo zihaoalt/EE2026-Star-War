@@ -45,6 +45,7 @@ module state_crl(
     
     wire [15:0] oled_data_start;
     wire [15:0] oled_data_play;
+    wire [15:0] oled_data_end;
     wire start_finish;
     reg reset = 0;
     reg [1:0] state = 0;
@@ -56,6 +57,7 @@ module state_crl(
     difficulty_choose di (clk_625m, state, SW15, SW14, SW13, SW12, level_state);
     on_press u0 (btn, clk_625m, btn_pulse);
     Start sta (state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
+    End en (frame_begin,sample_pixel,clk_625m,oled_data_end);
     play pl (level_state, bullet_skill, up, down, pixel_index, reset, clk, state, frame_begin, sample_pixel, clk_625m, oled_data_play, anode, seg, led, dead_flag);
     
     always @(posedge clk_625m) begin
@@ -68,14 +70,14 @@ module state_crl(
             end else if (state == pause) begin 
                 state <= gameplay;
             end else if (state == over) begin
-                state <= start;
-            end else if (!start_finish && (state == start)) begin
-                state <= start;
+                 state <= start;
+  //          end else if (!start_finish && (state == start)) begin
+    //            state <= start;
             end
         end else begin
                reset <= 0;
         end
-        if (game_end || dead_flag) begin
+        if ((game_end || dead_flag) && (state != over)) begin
             state <= over;
         end     
     end
@@ -85,7 +87,7 @@ module state_crl(
             2'b00: oled_data <= oled_data_start;
             2'b01: oled_data <= oled_data_play;
             2'b10: oled_data <= 16'hAE12;
-            2'b11: oled_data <= 16'h0000;
+            2'b11: oled_data <= oled_data_end;
         endcase
      end
      

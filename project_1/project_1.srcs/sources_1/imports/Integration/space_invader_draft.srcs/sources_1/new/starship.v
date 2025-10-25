@@ -27,7 +27,7 @@ module starship(
     input reset,
     input up,
     input down,
-    input pause,
+    input [1:0] state,
     output starship_flag,
     output starship_bullet_flag
     );
@@ -73,7 +73,7 @@ end
             centre_y <= 32;
          end
         else begin 
-            if(move_tick && !pause) begin
+            if(move_tick && state != 2'b10) begin
             case(move_dir)
                     UP:   if (centre_y > 5)  centre_y <= centre_y - 1;
                     DOWN: if (centre_y < 59) centre_y <= centre_y + 1;
