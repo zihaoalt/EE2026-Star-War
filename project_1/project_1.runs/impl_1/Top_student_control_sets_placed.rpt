@@ -1,0 +1,150 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Oct 24 16:34:29 2025
+| Host         : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_student_control_sets_placed.rpt
+| Design       : Top_student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    80 |
+| Unused register locations in slices containing registers |   276 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |           11 |
+|     10 |           12 |
+|     12 |           14 |
+|     14 |           16 |
+|    16+ |           25 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             226 |           61 |
+| No           | No                    | Yes                    |              40 |            7 |
+| No           | Yes                   | No                     |             268 |           41 |
+| Yes          | No                    | No                     |             250 |           47 |
+| Yes          | No                    | Yes                    |              26 |            5 |
+| Yes          | Yes                   | No                     |             866 |          198 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                             Enable Signal                             |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++-------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+| ~clk_625_BUFG     |                                                                       |                                                      |                1 |              2 |
+|  oled/frame_begin |                                                                       |                                                      |                1 |              4 |
+|  clk_IBUF_BUFG    |                                                                       |                                                      |                1 |              8 |
+|  clk_625_BUFG     | st/pl/sc/d[3]_i_1_n_0                                                 | st/pl/sc/a[3]_i_1_n_0                                |                1 |              8 |
+|  clk_625_BUFG     | st/pl/sc/a[3]_i_2_n_0                                                 | st/pl/sc/a[3]_i_1_n_0                                |                1 |              8 |
+|  clk_625_BUFG     |                                                                       | st/sta/oled_data_reg[15]                             |                2 |              8 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[6]_i_2__2_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6][0]   |                2 |              8 |
+|  clk_625_BUFG     | st/pl/sc/b[3]_i_1_n_0                                                 | st/pl/sc/a[3]_i_1_n_0                                |                1 |              8 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[6]_i_2__1_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_0[0] |                1 |              8 |
+|  clk_625_BUFG     | st/pl/sc/c                                                            | st/pl/sc/a[3]_i_1_n_0                                |                1 |              8 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[6]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_2[0] |                2 |              8 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[6]_i_2__3_n_0 | st/pl/u2/u_enemy_master/u_reset/SS[0]                |                1 |              8 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[6]_i_2__0_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_1[0] |                2 |              8 |
+|  clk_625_BUFG     |                                                                       | st/sta/oled_data_reg[14]                             |                1 |             10 |
+|  clk_625_BUFG     |                                                                       | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                2 |             10 |
+|  clk_625_BUFG     |                                                                       | st/pl/sc/__5/i__n_0                                  |                2 |             10 |
+|  clk_625_BUFG     |                                                                       | st/pl/sc/seg3[6]_i_1_n_0                             |                1 |             10 |
+|  clk_625_BUFG     |                                                                       | st/pl/sc/seg2[6]_i_1_n_0                             |                1 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                3 |             10 |
+|  clk_625_BUFG     | oled/fb_rise                                                          | st/pl/bu/fire                                        |                2 |             10 |
+|  clk_625_BUFG     |                                                                       | st/pl/sc/seg1[6]_i_1_n_0                             |                1 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[8]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                3 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                2 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                3 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/kill_all_pulse       |                3 |             10 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/random_num_2[5]_i_1_n_0               |                                                      |                3 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/random_num_5[5]_i_1_n_0               |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/E[0]                                  |                                                      |                3 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/random_num_1[5]_i_1_n_0               |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/random_num_3[5]_i_1_n_0               |                                                      |                3 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/accept                                |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/sta/y[5]_i_1_n_0                                                   | oled/frame_begin                                     |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/random_num_4[5]_i_1_n_0               |                                                      |                4 |             12 |
+|  clk_625_BUFG     | st/pl/hp/HP                                                           | st/reset_reg_n_0                                     |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0][0]                    |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_0[0]                  |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_2[0]                  |                                                      |                2 |             12 |
+|  clk_625_BUFG     | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_1[0]                  |                                                      |                4 |             12 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[237]                                               | st/pl/bu/bullet_xy_array[237]_i_1_n_0                |                6 |             12 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[272]                                               | st/pl/bu/p_0_in[279]                                 |                2 |             14 |
+|  clk_625_BUFG     | st/pl/sc/counter[15]_i_1_n_0                                          |                                                      |                2 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[104]                                               | st/pl/bu/bullet_xy_array[104]_i_1_n_0                |                2 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[279]                                               | st/pl/bu/p_0_in[279]                                 |                3 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[111]                                               | st/pl/bu/bullet_xy_array[111]_i_1_n_0                |                3 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[230]                                               | oled/bullet_xy_array_reg[224]_0                      |                4 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[62]                                                | st/pl/bu/bullet_xy_array[62]_i_1_n_0                 |                2 |             14 |
+|  clk_625_BUFG     | oled/E[0]                                                             | oled/frame_begin                                     |                4 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[20]                                                | st/pl/bu/bullet_xy_array[20]_i_1_n_0                 |                3 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[27]                                                | st/pl/bu/bullet_xy_array[27]_i_1_n_0                 |                4 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[146]                                               | st/pl/bu/bullet_xy_array[146]_i_1_n_0                |                2 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[69]                                                | st/pl/bu/bullet_xy_array[69]_i_1_n_0                 |                4 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[153]                                               | st/pl/bu/bullet_xy_array[153]_i_1_n_0                |                3 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[195]                                               | st/pl/bu/bullet_xy_array[195]_i_1_n_0                |                3 |             14 |
+|  clk_625_BUFG     | st/pl/star/centre_y                                                   | st/reset_reg_n_0                                     |                3 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[188]                                               | st/di/bullet_xy_array_reg[188]_0                     |                2 |             14 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[251]                                               | st/pl/bu/bullet_xy_array[251]_i_1_n_0                |                6 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[167]                                               | st/pl/bu/bullet_xy_array[167]_i_1_n_0                |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[181]                                               | st/pl/bu/bullet_xy_array[181]_i_1_n_0                |                6 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[125]                                               | st/pl/bu/bullet_xy_array[125]_i_1_n_0                |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[223]                                               | st/pl/bu/bullet_xy_array[223]_i_1_n_0                |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[41]                                                | st/pl/bu/bullet_xy_array[41]_i_1_n_0                 |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[83]                                                | st/pl/bu/bullet_xy_array[83]_i_1_n_0                 |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[209]                                               | st/pl/bu/bullet_xy_array[209]_i_1_n_0                |               10 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[55]                                                | st/pl/bu/bullet_xy_array[55]_i_1_n_0                 |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[139]                                               | st/pl/bu/bullet_xy_array[139]_i_1_n_0                |                6 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[97]                                                | st/pl/bu/bullet_xy_array[97]_i_1_n_0                 |                7 |             26 |
+|  clk_625_BUFG     | st/pl/bu/p_1_in__0[5]                                                 | st/pl/bu/bullet_xy_array[13]_i_1_n_0                 |                9 |             28 |
+|  clk_625_BUFG     | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/bu/p_0_in[293]                                 |                8 |             28 |
+|  clk_625_BUFG     | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/bu/p_0_in[265]                                 |                9 |             28 |
+|  clk_625_BUFG     |                                                                       | st/pl/sc/counter[15]_i_1_n_0                         |                4 |             30 |
+| ~clk_625_BUFG     |                                                                       | oled/frame_counter[16]_i_1_n_0                       |                5 |             34 |
+|  clk_625_BUFG     | st/pl/sc/start_count_reg_n_0                                          | st/pl/sc/counter_[17]_i_1_n_0                        |                4 |             36 |
+|  clk_625_BUFG     |                                                                       | st/reset_reg_n_0                                     |                7 |             40 |
+| ~clk_625_BUFG     | oled/delay[0]_i_1_n_0                                                 |                                                      |                5 |             40 |
+|  clk_625_BUFG     | st/u0/counter[0]_i_1__0_n_0                                           | st/u0/btn_pulse0                                     |                6 |             46 |
+|  clk_625_BUFG     |                                                                       | st/pl/u2/u_enemy_master/u_reset/tick                 |                6 |             46 |
+|  clk_625_BUFG     | st/sta/counter[0]_i_2_n_0                                             | st/sta/counter                                       |                8 |             62 |
+| ~clk_625_BUFG     | oled/state                                                            |                                                      |               11 |             64 |
+| ~clk_625_BUFG     |                                                                       | oled/spi_word[39]_i_1_n_0                            |               16 |             90 |
+|  clk_625_BUFG     |                                                                       |                                                      |               58 |            212 |
++-------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

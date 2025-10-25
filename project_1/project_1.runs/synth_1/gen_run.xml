@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761294798">
+  <File Type="PA-TCL" Name="Top_student.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_student_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Top_student_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Top_student.vds"/>
+  <File Type="RDS-UTIL" Name="Top_student_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Top_student_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Top_student.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_student_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_student_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v"/>
+        <Attr Name="ImportTime" Val="1760693624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Start.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/Start.v"/>
+        <Attr Name="ImportTime" Val="1760618360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bullet_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Integration1.xpr/Integration1.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v"/>
+        <Attr Name="ImportTime" Val="1760776162"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_625m.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/clk_625m.v"/>
+        <Attr Name="ImportTime" Val="1760596895"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v"/>
+        <Attr Name="ImportTime" Val="1760605396"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/difficulty_choose.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Integration1.xpr/Integration1.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v"/>
+        <Attr Name="ImportTime" Val="1761020615"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v"/>
+        <Attr Name="ImportTime" Val="1760713482"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v"/>
+        <Attr Name="ImportTime" Val="1760607512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/enemy_package.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/enemy_package.v"/>
+        <Attr Name="ImportTime" Val="1760691197"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v"/>
+        <Attr Name="ImportTime" Val="1760608016"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hp_bar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Vivado Projects/project_1.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v"/>
+        <Attr Name="ImportTime" Val="1761053759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/on_press.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/on_press.v"/>
+        <Attr Name="ImportTime" Val="1760712985"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/play.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/play.v"/>
+        <Attr Name="ImportTime" Val="1760713554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v"/>
+        <Attr Name="ImportTime" Val="1760713487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/priority_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/priority_module.v"/>
+        <Attr Name="ImportTime" Val="1760668446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v"/>
+        <Attr Name="ImportTime" Val="1760590860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/score_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Integration1.xpr/Integration1.xpr/project_1/project_1.srcs/sources_1/new/score_display.v"/>
+        <Attr Name="ImportTime" Val="1761039342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/space_invader_draft.srcs/sources_1/new/starship.v"/>
+        <Attr Name="ImportTime" Val="1760693624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v"/>
+        <Attr Name="ImportTime" Val="1760693624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/state_crl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/state_crl.v"/>
+        <Attr Name="ImportTime" Val="1760713855"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v"/>
+        <Attr Name="ImportTime" Val="1760693624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top_student.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/Top_student.v"/>
+        <Attr Name="ImportTime" Val="1760694303"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pulse.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/pulse.v"/>
+        <Attr Name="ImportTime" Val="1760614637"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/over.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/sources_1/new/over.v"/>
+        <Attr Name="ImportTime" Val="1760614677"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/skills.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Integration1.xpr/Integration1.xpr/project_1/project_1.srcs/sources_1/new/skills.v"/>
+        <Attr Name="ImportTime" Val="1761019437"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_250.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Integration1.xpr/Integration1.xpr/project_1/project_1.srcs/sources_1/new/clk_250.v"/>
+        <Attr Name="ImportTime" Val="1761025999"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/project_1/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1761284573"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top_student"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/my_constriant.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Y2S1/EE2026/Lab_and_Project_Materials/Project/Verilog/Y2S1/EE2026/Lab_and_Project_Materials/Project/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc"/>
+        <Attr Name="ImportTime" Val="1760694332"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
