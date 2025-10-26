@@ -50,7 +50,7 @@ module play(
     wire white_flag;
     wire red_flag;
     
-    enemy_package u2 (clk_625m, reset, BE_collision, x, y, frame_begin, enemy_flag, HP_deduct);
+    enemy_package u2 (clk_625m, reset, BE_collision, x, y, level_state, state[1], enemy_flag, HP_deduct);
     starship star (clk_625m, x, y, reset, up, down, 0, starship_flag, starship_bullet_flag); 
     priority_module pri (red_flag, white_flag, clk_625m, starship_flag, bullet_flag, enemy_flag, BE_collision, pixel_data);
     bullet_module bu (clk_625m, x, y, starship_bullet_flag, frame_begin, bullet_skill, BE_collision, level_state, state[1], bullet_flag);
