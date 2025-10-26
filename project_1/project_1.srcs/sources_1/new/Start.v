@@ -98,7 +98,7 @@ module Start(
                     x <= x + 1;
                 end
         end
-        if ((counter == 30000000) && (state == 0)) begin
+        if ((counter == 3000000) && (state == 0)) begin
             finish <= 1;
         end else if (state != 0) begin
             counter <= 0;

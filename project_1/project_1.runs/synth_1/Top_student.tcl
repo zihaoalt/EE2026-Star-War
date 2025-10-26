@@ -23,35 +23,36 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.xpr} [current_project]
+set_property webtalk.parent_dir D:/github/EE2026-Star-War/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path D:/github/EE2026-Star-War/project_1/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.cache/ip} [current_project]
+set_property ip_output_repo d:/github/EE2026-Star-War/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/Start.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/on_press.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/play.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/score_display.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v}
-  {C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v}
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Start.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/bullet_module.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/difficulty_choose.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/enemy_package.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/hp_bar.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/over.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/play.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/priority_module.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/score_display.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/state_crl.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v
+  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Top_student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -61,8 +62,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc}}]
+read_xdc D:/github/EE2026-Star-War/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc
+set_property used_in_implementation false [get_files D:/github/EE2026-Star-War/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

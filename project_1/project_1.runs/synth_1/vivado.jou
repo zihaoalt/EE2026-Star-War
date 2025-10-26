@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Oct 24 16:33:20 2025
-# Process ID: 31564
-# Current directory: C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.runs/synth_1
+# Start of session at: Sun Oct 26 12:49:53 2025
+# Process ID: 24404
+# Current directory: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log Top_student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_student.tcl
-# Log file: C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.runs/synth_1/Top_student.vds
-# Journal file: C:/Users/XuZihao/Downloads/Telegram Desktop/project_1234.xpr/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/Top_student.vds
+# Journal file: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_student.tcl -notrace
