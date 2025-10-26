@@ -1,0 +1,1047 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 26 13:21:25 2025
+# Process ID: 25616
+# Current directory: D:/github/EE2026-Star-War/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12592 D:\github\EE2026-Star-War\project_1\project_1.xpr
+# Log file: D:/github/EE2026-Star-War/project_1/vivado.log
+# Journal file: D:/github/EE2026-Star-War/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github/EE2026-Star-War/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Top_student
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_625m is not allowed [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v:29]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1036.582 ; gain = 105.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_student' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Top_student.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_625m' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_625m' (1#1) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'state_crl' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
+	Parameter start bound to: 2'b00 
+	Parameter gameplay bound to: 2'b01 
+	Parameter pause bound to: 2'b10 
+	Parameter over bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'difficulty_choose' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
+	Parameter easy bound to: 2'b00 
+	Parameter normal bound to: 2'b01 
+	Parameter hard bound to: 2'b10 
+	Parameter expert bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'difficulty_choose' (3#1) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
+INFO: [Synth 8-6157] synthesizing module 'on_press' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v:32]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'on_press' (4#1) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Start' [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Start.v:23]
+	Parameter starwar bound to: 16'b1111111111111111 
+	Parameter difficulty bound to: 16'b1111111111111111 
+	Parameter level bound to: 16'b1111111111111111 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Synth 8-6155] done synthesizing module 'Start' (5#1) [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Start.v:23]
+INFO: [Common 17-344] 'source' was cancelled
+18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-344] 'synth_design' was cancelled
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:21:52 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Sun Oct 26 14:21:52 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:29:07 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Sun Oct 26 14:29:07 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:29:32 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Sun Oct 26 14:29:32 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:43:09 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:45:31 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Sun Oct 26 14:45:31 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:53:16 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 14:55:47 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Sun Oct 26 14:55:47 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+file mkdir D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v w ]
+add_files -fileset sim_1 D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v
+update_compile_order -fileset sim_1
+close_hw
+set_property top test_pause [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pause
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 1 for port x [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:45]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 1 for port y [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.test_pause
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pause_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_pause_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 26 15:03:45 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1659.008 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 2000: Initial state. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 5000: TEST 1 (State 01). x=45, y=13. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 8000: TEST 2 (State 10). x=0, y=0. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 11000: TEST 3 (State 10). x=45, y=13. red_flag should be 1.
+    ...FAIL (Expected red=1, white=0; Got red=0, white=0)
+Time: 15000: TEST 4 (State 10). x=41, y=30. white_flag should be 1.
+    ...FAIL (Expected red=0, white=1; Got red=0, white=0)
+Time: 15000: *** BUG HUNT TEST ***.
+Time: 18000: Bug Hunt (Setup): red_flag is 0
+Time: 21000: Bug Hunt (Check): Checking flags...
+    FAIL: Unexpected flags (red=0, white=0)
+--- Testbench Finished ---
+$finish called at time : 31600 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 157
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1690.781 ; gain = 31.773
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pause
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 1 for port x [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:45]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 1 for port y [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.test_pause
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pause_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 2000: Initial state. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 5000: TEST 1 (State 01). x=45, y=13. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 8000: TEST 2 (State 10). x=0, y=0. Flags should be 0.
+    ...PASS (red=0, white=0)
+Time: 11000: TEST 3 (State 10). x=45, y=13. red_flag should be 1.
+    ...FAIL (Expected red=1, white=0; Got red=0, white=0)
+Time: 15000: TEST 4 (State 10). x=41, y=30. white_flag should be 1.
+    ...FAIL (Expected red=0, white=1; Got red=0, white=0)
+Time: 15000: *** BUG HUNT TEST ***.
+Time: 18000: Bug Hunt (Setup): red_flag is 0
+Time: 21000: Bug Hunt (Check): Checking flags...
+    FAIL: Unexpected flags (red=0, white=0)
+--- Testbench Finished ---
+$finish called at time : 31600 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 157
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_student' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_student_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Oled_Display
+WARNING: [VRFC 10-756] identifier state is used before its declaration [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:105]
+WARNING: [VRFC 10-756] identifier state is used before its declaration [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:107]
+WARNING: [VRFC 10-756] identifier state is used before its declaration [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:109]
+WARNING: [VRFC 10-756] identifier state is used before its declaration [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:110]
+WARNING: [VRFC 10-756] identifier state is used before its declaration [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:111]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Start.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Start
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/bullet_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bullet_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_625m
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk_625m is not allowed [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_625m.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_n_hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/difficulty_choose.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module difficulty_choose
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enemy_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enemy_move
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/enemy_package.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enemy_package
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enemy_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/hp_bar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hp_bar
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/on_press.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module on_press
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/over.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module End
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/play.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module play
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module position_check
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/priority_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_enemy_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/score_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module score_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module starship
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module starship_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/state_crl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_crl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xy_coordinate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Top_student.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_student
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_student_behav xil_defaultlib.Top_student xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port reset [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/Top_student.v:49]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 2 for port state [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/play.v:54]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 1 for port x [D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/play.v:60]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v" Line 36. Module Oled_Display_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_625m
+Compiling module xil_defaultlib.Oled_Display_default
+Compiling module xil_defaultlib.difficulty_choose
+Compiling module xil_defaultlib.on_press
+Compiling module xil_defaultlib.Start
+Compiling module xil_defaultlib.End
+Compiling module xil_defaultlib.clk_div_n_hz
+Compiling module xil_defaultlib.reset_enemy_module_default
+Compiling module xil_defaultlib.enemy_move
+Compiling module xil_defaultlib.position_check
+Compiling module xil_defaultlib.enemy_unit
+Compiling module xil_defaultlib.enemy_master
+Compiling module xil_defaultlib.enemy_package
+Compiling module xil_defaultlib.starship_design
+Compiling module xil_defaultlib.starship
+Compiling module xil_defaultlib.bullet_module
+Compiling module xil_defaultlib.priority_module
+Compiling module xil_defaultlib.xy_coordinate
+Compiling module xil_defaultlib.score_display
+Compiling module xil_defaultlib.hp_bar
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.play
+Compiling module xil_defaultlib.state_crl
+Compiling module xil_defaultlib.Top_student
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_student_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/Top_student_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 26 15:09:59 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1694.266 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_student_behav -key {Behavioral:sim_1:Functional:Top_student} -tclbatch {Top_student.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Top_student.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_student_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1694.266 ; gain = 0.000
+set_property top test_pause [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pause
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 1 for port x [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:23]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 1 for port y [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.test_pause
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pause_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 0: Initializing inputs.
+Time: 1000: Setting state=2'b10, y=13, x=45 (Red Zone).
+Time: 5000: Checking red_flag...
+    ...FAIL: red_flag is 0. (Expected 1)
+    (Current values: red_flag=0, white_flag=0)
+Time: 6000: Setting state=2'b10, y=30, x=41 (White Zone).
+Time: 10000: Checking white_flag...
+    ...FAIL: white_flag is 0. (Expected 1)
+    (Current values: red_flag=0, white_flag=0)
+--- Testbench Finished ---
+$finish called at time : 19800 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pause
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port y [D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.test_pause
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pause_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 0: Initializing inputs.
+Time: 1000: Setting state=2'b10, y=13, x=45 (Red Zone).
+Time: 5000: Checking red_flag...
+    ...FAIL: red_flag is 0. (Expected 1)
+    (Current values: red_flag=0, white_flag=0)
+Time: 6000: Setting state=2'b10, y=30, x=41 (White Zone).
+Time: 10000: Checking white_flag...
+    ...FAIL: white_flag is 0. (Expected 1)
+    (Current values: red_flag=0, white_flag=0)
+--- Testbench Finished ---
+$finish called at time : 19800 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pause
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pulse
+Compiling module xil_defaultlib.test_pause
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pause_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 0: Initializing inputs.
+Time: 1000: Setting state=2'b10, y=13, x=45 (Red Zone).
+Time: 5000: Checking red_flag...
+    ...PASS: red_flag is 1.
+    (Current values: red_flag=1, white_flag=0)
+Time: 6000: Setting state=2'b10, y=30, x=41 (White Zone).
+Time: 10000: Checking white_flag...
+    ...PASS: white_flag is 1.
+    (Current values: red_flag=0, white_flag=1)
+--- Testbench Finished ---
+$finish called at time : 19800 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 15:19:17 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pause' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_pause_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pause_behav xil_defaultlib.test_pause xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pause_behav -key {Behavioral:sim_1:Functional:test_pause} -tclbatch {test_pause.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test_pause.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 0: Initializing inputs.
+Time: 1000: Setting state=2'b10, y=13, x=45 (Red Zone).
+Time: 5000: Checking red_flag...
+    ...PASS: red_flag is 1.
+    (Current values: red_flag=1, white_flag=0)
+Time: 6000: Setting state=2'b10, y=30, x=41 (White Zone).
+Time: 10000: Checking white_flag...
+    ...PASS: white_flag is 1.
+    (Current values: red_flag=0, white_flag=1)
+--- Testbench Finished ---
+$finish called at time : 19800 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pause_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/Top_student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_250.v] -no_script -reset -force -quiet
+remove_files  D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_250.v
+file delete -force D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/clk_250.v
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 89cb2484b92944bea35b70936219e479 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.priority_module
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 26 15:32:50 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/EE2026-Star-War/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Testbench Starting ---
+Time: 3000: Initial state. pixel_data = 0000
+Time: 3000: TEST 1: Activating red_flag.
+    ...PASS: pixel_data is RED (f904)
+Time: 7000: TEST 2: Deactivating red_flag, Activating white_flag.
+    ...PASS: pixel_data is WHITE (ffff)
+Time: 10000: TEST 3: Activating BOTH red_flag and white_flag.
+    ...PASS: pixel_data is RED (f904). Priority is correct.
+--- Testbench Finished ---
+$finish called at time : 23 ns : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test.v" Line 120
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1718.555 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Sun Oct 26 15:33:17 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 26 15:33:39 2025...

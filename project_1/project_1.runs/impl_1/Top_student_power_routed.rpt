@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sun Oct 26 12:51:30 2025
+| Date             : Sun Oct 26 15:47:13 2025
 | Host             : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_student_power_routed.rpt -pb Top_student_power_summary_routed.pb -rpx Top_student_power_routed.rpx
 | Design           : Top_student
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.094        |
+| Total On-Chip Power (W)  | 0.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.023        |
+| Dynamic (W)              | 0.024        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.008 |     3599 |       --- |             --- |
-|   LUT as Logic |     0.008 |     2118 |     20800 |           10.18 |
+| Slice Logic    |     0.009 |     3670 |       --- |             --- |
+|   LUT as Logic |     0.009 |     2176 |     20800 |           10.46 |
 |   CARRY4       |    <0.001 |      174 |      8150 |            2.13 |
-|   Register     |    <0.001 |      852 |     41600 |            2.05 |
+|   Register     |    <0.001 |      855 |     41600 |            2.06 |
 |   BUFG         |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes  |    <0.001 |       29 |     32600 |            0.09 |
-|   Others       |     0.000 |       60 |       --- |             --- |
-| Signals        |     0.008 |     2458 |       --- |             --- |
+|   Others       |     0.000 |       62 |       --- |             --- |
+| Signals        |     0.009 |     2508 |       --- |             --- |
 | I/O            |     0.006 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.094 |          |           |                 |
+| Total          |     0.096 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.016 |      0.010 |
+| Vccint    |       1.000 |     0.027 |       0.018 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,16 +142,17 @@ Table of Contents
 +---------------------------------+-----------+
 | Name                            | Power (W) |
 +---------------------------------+-----------+
-| Top_student                     |     0.023 |
+| Top_student                     |     0.024 |
 |   cl                            |    <0.001 |
-|   oled                          |     0.004 |
+|   oled                          |     0.005 |
 |   st                            |     0.012 |
 |     di                          |    <0.001 |
 |     en                          |    <0.001 |
-|     pl                          |     0.011 |
+|     pl                          |     0.012 |
 |       bu                        |     0.004 |
 |       hp                        |    <0.001 |
 |       pri                       |    <0.001 |
+|       pu                        |    <0.001 |
 |       sc                        |    <0.001 |
 |       star                      |    <0.001 |
 |         C0                      |    <0.001 |
@@ -174,7 +175,7 @@ Table of Contents
 |             enemy_move_inst     |    <0.001 |
 |             position_check_inst |    <0.001 |
 |           u_reset               |     0.001 |
-|       xy                        |     0.004 |
+|       xy                        |     0.005 |
 |     sta                         |    <0.001 |
 |     u0                          |    <0.001 |
 +---------------------------------+-----------+

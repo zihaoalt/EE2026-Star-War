@@ -21,6 +21,8 @@
 
 
 module priority_module(
+    input red_flag,
+    input white_flag,
     input clk_625m,
     input starship_flag,
     input bullet_flag,
@@ -33,20 +35,23 @@ module priority_module(
     parameter starship = 16'h634D;
     parameter bullet = 16'hB841;
     parameter enemy = 16'h3B09;
+    parameter red = 16'hF904;
+    parameter white = 16'hFFFF;
     
-    wire [2:0] info = {starship_flag, bullet_flag, enemy_flag};
     always @(posedge clk_625m) begin
-        case (info)
-            3'b000: pixel_data <= background;
-            3'b001: pixel_data <= enemy;
-            3'b010: pixel_data <= bullet;
-            3'b011: pixel_data <= enemy;
-            3'b100: pixel_data <= starship;
-            3'b101: pixel_data <= starship;
-            3'b110: pixel_data <= starship;
-            3'b111: pixel_data <= starship;
-            default : pixel_data <= background;
-        endcase
+        if (red_flag) begin
+            pixel_data <= red;
+        end else if (white_flag) begin
+            pixel_data <= white;
+        end else if (starship_flag) begin
+            pixel_data <= starship;
+        end else if (enemy_flag) begin
+            pixel_data <= enemy;
+        end else if (bullet_flag) begin
+            pixel_data <= bullet;
+        end else begin
+            pixel_data <= background;
+        end
     end
     assign BE_collision = enemy_flag && bullet_flag;
 endmodule

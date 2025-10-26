@@ -84,7 +84,7 @@ module state_crl(
         case (state)
             2'b00: oled_data <= oled_data_start;
             2'b01: oled_data <= oled_data_play;
-            2'b10: oled_data <= 16'hAE12;
+            2'b10: oled_data <= oled_data_play;
             2'b11: oled_data <= oled_data_end;
         endcase
      end
