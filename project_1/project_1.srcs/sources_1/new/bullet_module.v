@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2025/10/18 16:22:50
-// Design Name: 
-// Module Name: bullet_module
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 
 module bullet_module (
@@ -29,16 +11,28 @@ module bullet_module (
     input starship_skill, // SW1
     input BE_collision,
     input [1:0] level_state,
+    input pause,
     output reg bullet_flag
 );
     localparam max_bullets_normal = 4;
     localparam max_bullets_skill = 7;
 
-    reg fb_d;
+    reg fb_0, fb_1;
+    reg p0, p1;
     always @(posedge clk) begin
-        fb_d <= frame_begin;
+        fb_0 <= frame_begin;
+        fb_1 <= fb_0;
+        p0 <= pause;
+        p1 <= p0;
     end
-    wire fb_rise = frame_begin & ~fb_d;  // only one clk cycle of frame_begin synced in clk domain
+    wire pause_pulse = p0 & ~p1;
+    reg need_to_pause = 1'b0;
+    always @(posedge clk) begin
+        if (pause_pulse) begin
+            need_to_pause <= ~need_to_pause;
+        end
+    end
+    wire fb_rise = fb_0 & ~fb_1;
     integer i,j,k,m;
     reg [4:0] frame_count = 5'd0;
     reg [4:0] frame_count_comparator = 5'd29; // default shooting slowest, change based on difficulty levels
@@ -67,7 +61,7 @@ module bullet_module (
     end
 
     always @(posedge clk) begin
-        if (fb_rise) begin
+        if (fb_rise && !need_to_pause) begin
             if (frame_count == frame_count_comparator) begin
                 frame_count <= 5'd0;
                 fire <= 1'b1; 
@@ -75,8 +69,10 @@ module bullet_module (
                 frame_count <= frame_count + 5'd1;
             end
         end
-
-        if (fire && starship_head_flag) begin 
+        if (need_to_pause) begin
+            fire <= 1'b0;
+        end
+        if (fire && starship_head_flag && !need_to_pause) begin 
             break = 1'b0;
             for (j = 0; j < max_bullets_skill; j = j + 1) begin
                 if (!break && (j < max_bullets)) begin
@@ -98,9 +94,9 @@ module bullet_module (
         end
 
         // Move once per frame (right by 1 px). Clear when leaving screen.
-        if (fb_rise) begin
+        if (fb_rise && !need_to_pause) begin
             for (i = 0; i < max_bullets_skill; i = i + 1) begin
-                if (i < max_bullets)  begin
+               
                     if ((bullet_xy_array[i*42+14+7 +: 7] >= 7'd95) || bullet_xy_array[i*42+14 +: 7] >= 7'd63 || bullet_xy_array[i*42+14 +: 7] <= 7'd0) begin
                         bullet_xy_array[i*42+14 +: 14] <= 14'd0;  // this should check for x and y 
                     end else begin 
@@ -122,22 +118,21 @@ module bullet_module (
                         bullet_xy_array[i*42 +28 +: 7] <= bullet_xy_array[i*42 +28 +: 7] + 7'd1;
                     end
 
-                end
+                
             end
         end
 
         // collision handling: clear bullet if collision detected
-        if (BE_collision) begin
-            for (k = 0; k < max_bullets_skill; k = k + 1) begin
-                if (k < max_bullets) begin
-                    if (|bullet_xy_array[k*42+14 +: 14] && bullet_xy_array[k*42+14 +: 14] == {x, y}) begin
-                        bullet_xy_array[k*42+14 +: 14] <= 14'd0;
-                    end
-                    if (|bullet_xy_array[k*42 +: 14] && bullet_xy_array[k*42 +: 14] == {x, y}) begin
-                        bullet_xy_array[k*42 +: 14] <= 14'd0;
-                    end
-                    if (|bullet_xy_array[k*42 +28 +: 14] && bullet_xy_array[k*42 +28 +: 14] == {x, y}) begin
-                        bullet_xy_array[k*42 +28 +: 14] <= 14'd0;
+        if (BE_collision) begin : clear_on_collision
+            reg [6:0] bx, by;
+            for (k = 0; k < 25; k = k + 1) begin
+                bx = bullet_xy_array[k*14+7 +: 7];
+                by = bullet_xy_array[k*14 +: 7];
+                if (|bullet_xy_array[k*14 +: 14]) begin
+                    if (x < 7'd95 && y < 7'd63) begin
+                            if ( ((x==bx) || (bx!=0 && x==bx-7'd1)) &&
+                                ((y==by) || (by!=0 && y==by-7'd1)) )
+                                bullet_xy_array[k*14 +: 14] <= 14'd0;             
                     end
                 end
             end
@@ -160,19 +155,5 @@ module bullet_module (
                     end
                 end
             end
-//        end else begin
-//            for (m = 0; m < 7; m = m + 1) begin
-//                bx = bullet_xy_array[m*42+14+7 +: 7];
-//                by = bullet_xy_array[m*42+14 +: 7];
-//                if (!bullet_flag && |bullet_xy_array[m*42+14 +: 14]) begin
-//                    if (x < 7'd95 && y < 7'd63) begin
-//                            if ( ((x==bx) || (bx!=0 && x==bx-7'd1)) &&
-//                                ((y==by) || (by!=0 && y==by-7'd1)) )
-//                                bullet_flag = 1'b1;             
-//                    end
-//                end
-//            end
-//        end
-
     end
 endmodule
