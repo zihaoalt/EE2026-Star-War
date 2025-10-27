@@ -26,7 +26,7 @@ module enemy_package (
     input shot_flag,
     input [6:0] x,y,
     input [1:0] level_state,
-    input [1:0] pause,
+    input pause,
     output enemy_flag,
     output HP_deduct
 
