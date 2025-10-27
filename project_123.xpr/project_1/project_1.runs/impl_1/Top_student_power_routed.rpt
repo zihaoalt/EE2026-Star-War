@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Oct 27 22:06:54 2025
-| Host             : Bruce-Wayn running 64-bit major release  (build 9200)
+| Date             : Mon Oct 27 23:03:28 2025
+| Host             : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_student_power_routed.rpt -pb Top_student_power_summary_routed.pb -rpx Top_student_power_routed.rpx
 | Design           : Top_student
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.100        |
+| Total On-Chip Power (W)  | 0.099        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.028        |
+| Dynamic (W)              | 0.027        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.011 |     4351 |       --- |             --- |
-|   LUT as Logic |     0.011 |     2579 |     20800 |           12.40 |
-|   CARRY4       |    <0.001 |      225 |      8150 |            2.76 |
-|   Register     |    <0.001 |      914 |     41600 |            2.20 |
+| Slice Logic    |     0.011 |     4354 |       --- |             --- |
+|   LUT as Logic |     0.011 |     2586 |     20800 |           12.43 |
+|   CARRY4       |    <0.001 |      226 |      8150 |            2.77 |
+|   Register     |    <0.001 |      915 |     41600 |            2.20 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
+|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
 |   Others       |     0.000 |       58 |       --- |             --- |
-| Signals        |     0.010 |     3144 |       --- |             --- |
-| I/O            |     0.007 |       45 |       106 |           42.45 |
+| Signals        |     0.009 |     3146 |       --- |             --- |
+| I/O            |     0.006 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.099 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.031 |       0.022 |      0.010 |
+| Vccint    |       1.000 |     0.031 |       0.021 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,13 +142,13 @@ Table of Contents
 +---------------------------------+-----------+
 | Name                            | Power (W) |
 +---------------------------------+-----------+
-| Top_student                     |     0.028 |
+| Top_student                     |     0.027 |
 |   cl                            |    <0.001 |
 |   oled                          |     0.009 |
 |   st                            |     0.009 |
 |     di                          |    <0.001 |
 |     en                          |    <0.001 |
-|     pl                          |     0.009 |
+|     pl                          |     0.008 |
 |       bu                        |     0.004 |
 |       hp                        |    <0.001 |
 |       pri                       |     0.002 |

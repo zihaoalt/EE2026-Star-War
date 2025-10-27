@@ -38,8 +38,10 @@ module bullet_module (
     reg starship_skill;
     
     always @(posedge clk) begin
-        CD <= (CD == 25'd31249999) ? 25'd0 : CD + 1;
-        starship_skill <= (CD == 25'd31249999) ? ~starship_skill && starship_skill_en : starship_skill && starship_skill_en;
+        if (!need_to_pause && starship_skill_en) begin
+            CD <= (CD == 25'd31249999 || need_to_reset) ? 25'd0 : CD + 1;
+        end
+       starship_skill <= (CD == 25'd31249999) ? ~starship_skill && starship_skill_en : starship_skill && starship_skill_en; 
     end
 
     // bullet corrdinates: [x(7),y(7)] per bullet
@@ -58,7 +60,7 @@ module bullet_module (
             2'b00: frame_count_comparator <= 5'd29;
             2'b01: frame_count_comparator <= 5'd24;
             2'b10: frame_count_comparator <= 5'd19;
-            2'b11: frame_count_comparator <= 5'd14;
+            2'b11: frame_count_comparator <= 5'd16;
             default: frame_count_comparator <= 5'd29;
         endcase
     end
