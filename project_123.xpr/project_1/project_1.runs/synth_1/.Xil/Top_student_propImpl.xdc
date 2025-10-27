@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/XuZihao/Desktop/project_1.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc rfile:../../../project_1.srcs/constrs_1/new/my_constriant.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc rfile:../../../project_1.srcs/constrs_1/new/my_constriant.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W5   IOSTANDARD LVCMOS33 } [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
