@@ -72,8 +72,12 @@ end
             centre_x <= 5;
             centre_y <= 32;
          end
+         else if(state == 2'b10) begin
+            centre_x <= centre_x;
+            centre_y <= centre_y;
+         end
         else begin 
-            if(move_tick && state != 2'b10) begin
+            if(move_tick) begin
             case(move_dir)
                     UP:   if (centre_y > 5)  centre_y <= centre_y - 1;
                     DOWN: if (centre_y < 59) centre_y <= centre_y + 1;
