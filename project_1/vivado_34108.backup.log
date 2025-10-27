@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Oct 27 11:36:50 2025
-# Process ID: 21648
+# Start of session at: Mon Oct 27 11:24:22 2025
+# Process ID: 34108
 # Current directory: D:/github/EE2026-Star-War/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13504 D:\github\EE2026-Star-War\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39560 D:\github\EE2026-Star-War\project_1\project_1.xpr
 # Log file: D:/github/EE2026-Star-War/project_1/vivado.log
 # Journal file: D:/github/EE2026-Star-War/project_1\vivado.jou
 #-----------------------------------------------------------
@@ -18,11 +18,19 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 908.816 ; gain = 152.406
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 909.750 ; gain = 140.301
 update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 11
-[Mon Oct 27 11:37:53 2025] Launched impl_1...
+[Mon Oct 27 11:28:54 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct 27 11:28:54 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+reset_run impl_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Mon Oct 27 11:32:31 2025] Launched impl_1...
 Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
 open_hw
 connect_hw_server
@@ -58,6 +66,6 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
+close_hw
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 27 11:40:37 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 27 11:36:41 2025...

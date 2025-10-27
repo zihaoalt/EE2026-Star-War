@@ -64,7 +64,7 @@ module state_crl(
         if (btn_pulse) begin
             if (start_finish && (state == start)) begin
                 state <= gameplay;
-                reset <= 0;
+                reset <= 1;
             end else if (state == gameplay) begin
                 state <= pause;
                 reset <= 0;
@@ -73,6 +73,8 @@ module state_crl(
             end else if (state == over) begin
                  state <= start;
             end
+        end else begin
+            reset <= 0;
         end
         if ((game_end || dead_flag) && (state != over)) begin
             state <= over;
