@@ -1,0 +1,14 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+--- Testbench Starting ---
+Time: 0: Initializing inputs.
+Time: 1000: Setting state=2'b10, y=13, x=45 (Red Zone).
+Time: 5000: Checking red_flag...
+    ...PASS: red_flag is 1.
+    (Current values: red_flag=1, white_flag=0)
+Time: 6000: Setting state=2'b10, y=30, x=41 (White Zone).
+Time: 10000: Checking white_flag...
+    ...PASS: white_flag is 1.
+    (Current values: red_flag=0, white_flag=1)
+--- Testbench Finished ---
+$finish called at time : 19800 ps : File "D:/github/EE2026-Star-War/project_1/project_1.srcs/sim_1/new/test_pause.v" Line 96
