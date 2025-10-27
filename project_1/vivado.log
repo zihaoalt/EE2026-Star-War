@@ -2,26 +2,41 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Oct 26 15:43:43 2025
-# Process ID: 35612
+# Start of session at: Mon Oct 27 11:00:41 2025
+# Process ID: 48880
 # Current directory: D:/github/EE2026-Star-War/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28544 D:\github\EE2026-Star-War\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22868 D:\github\EE2026-Star-War\project_1\project_1.xpr
 # Log file: D:/github/EE2026-Star-War/project_1/vivado.log
 # Journal file: D:/github/EE2026-Star-War/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/github/EE2026-Star-War/project_1/project_1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/clk_move.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/reset_enemy_module.v'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 885.910 ; gain = 117.066
+update_compile_order -fileset sources_1
+close [ open D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/move_pulse.v w ]
+add_files D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/move_pulse.v
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 11
-[Sun Oct 26 15:44:34 2025] Launched synth_1...
+[Mon Oct 27 11:03:56 2025] Launched synth_1...
 Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
-[Sun Oct 26 15:44:34 2025] Launched impl_1...
+[Mon Oct 27 11:03:56 2025] Launched impl_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
+close [ open D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v w ]
+add_files D:/github/EE2026-Star-War/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Mon Oct 27 11:06:16 2025] Launched synth_1...
+Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct 27 11:06:16 2025] Launched impl_1...
 Run output will be captured here: D:/github/EE2026-Star-War/project_1/project_1.runs/impl_1/runme.log
 open_hw
 connect_hw_server
@@ -57,5 +72,6 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B9A8D8A
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 26 15:48:57 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 27 11:17:48 2025...
