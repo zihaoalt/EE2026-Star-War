@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -52,6 +51,8 @@ read_verilog -library xil_defaultlib {
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v

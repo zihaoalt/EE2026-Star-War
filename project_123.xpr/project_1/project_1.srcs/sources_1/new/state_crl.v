@@ -59,7 +59,7 @@ module state_crl(
     difficulty_choose di (clk_625m, state, SW15, SW14, SW13, SW12, level_state);
     on_press u0 (btn, clk_625m, btn_pulse);
     on_press u1 (btnR, clk_625m, pulseR);
-    Start sta (pulseR, btn_pulse, pixel_index, state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
+    Start sta (oled_data_play, pulseR, btn_pulse, pixel_index, state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
     End en (frame_begin,sample_pixel,clk_625m,oled_data_end);
     play pl (level_state, bullet_skill, up, down, pixel_index, reset, clk, state, frame_begin, sample_pixel, clk_625m, oled_data_play, anode, seg, led, dead_flag);
     

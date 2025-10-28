@@ -21,6 +21,7 @@
 
 
 module Start(
+    input [15:0] oled_data_play,
     input btnR,
     input btnL,
     input [12:0] pixel_index,
@@ -37,13 +38,15 @@ module Start(
     wire [15:0] page1;
     wire [15:0] page2;
     wire [15:0] page3 = 16'h0000;
-    wire [15:0] skill1 = 16'h0000;
-    wire [15:0] skill2 = 16'h0000;
+    wire [15:0] skill1_page;
+    wire [15:0] skill2_page;
     reg [2:0] page = 3'b001;
     
     xy_coordinate xy (pixel_index, x, y);
     begining be (x, y, clk_625m, page1);
     intro in (clk_625m, x, y, page2);
+    skill1 u12 (clk_625m, x, y, oled_data_play, skill1_page);
+    skill2 u134 (clk_625m, x, y, oled_data_play, skill2_page);
     
     always @(posedge clk_625m) begin
       if (state == 2'b00) begin
@@ -75,8 +78,8 @@ module Start(
             3'd1:    pixel_data <= page1;
             3'd2:    pixel_data <= page2;
             3'd3:    pixel_data <= page3;
-            3'd4:    pixel_data <= skill1;
-            3'd5:    pixel_data <= skill2;
+            3'd4:    pixel_data <= skill1_page;
+            3'd5:    pixel_data <= skill2_page;
             default: pixel_data <= 16'h0000; // Default to black
         endcase
     end
