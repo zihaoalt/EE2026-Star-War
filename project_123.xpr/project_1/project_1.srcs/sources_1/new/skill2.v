@@ -29,6 +29,6 @@ module skill2(
     );
     
     always @ (posedge clk) begin
-        pixel_data <= oled_data_play;
+        pixel_data <= oled_data_play; // Add if-else logic. Put this line as the lowest priority
     end
 endmodule
