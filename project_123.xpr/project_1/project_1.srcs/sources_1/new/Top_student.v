@@ -21,6 +21,7 @@
 
 
 module Top_student(
+    input btnR,
     input SW15, SW14, SW13, SW12,
     input bullet_skill,
     input up,
@@ -61,5 +62,5 @@ module Top_student(
         .sample_pixel(sample_pixel)
     );
     
-    state_crl st (SW15, SW14, SW13, SW12, bullet_skill, up, down, pixel_index, clk, btn, clk_625, frame_begin, sample_pixel, reset, oled_data, anode, seg, led);
+    state_crl st (btnR, SW15, SW14, SW13, SW12, bullet_skill, up, down, pixel_index, clk, btn, clk_625, frame_begin, sample_pixel, reset, oled_data, anode, seg, led);
 endmodule

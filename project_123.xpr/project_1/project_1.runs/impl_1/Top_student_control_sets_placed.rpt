@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Oct 27 23:03:12 2025
-| Host         : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
+| Date         : Tue Oct 28 15:38:29 2025
+| Host         : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_student_control_sets_placed.rpt
 | Design       : Top_student
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    82 |
-| Unused register locations in slices containing registers |   242 |
+| Number of unique control sets                            |    80 |
+| Unused register locations in slices containing registers |   236 |
 +----------------------------------------------------------+-------+
 
 
@@ -37,9 +37,9 @@ Table of Contents
 |      4 |            1 |
 |      8 |           11 |
 |     10 |           11 |
-|     12 |           14 |
+|     12 |           13 |
 |     14 |           16 |
-|    16+ |           29 |
+|    16+ |           28 |
 +--------+--------------+
 
 
@@ -49,103 +49,101 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             204 |           48 |
+| No           | No                    | No                     |             250 |           55 |
 | No           | No                    | Yes                    |              40 |            8 |
-| No           | Yes                   | No                     |             232 |           42 |
-| Yes          | No                    | No                     |             250 |           45 |
-| Yes          | No                    | Yes                    |              26 |            5 |
-| Yes          | Yes                   | No                     |            1078 |          258 |
+| No           | Yes                   | No                     |             210 |           33 |
+| Yes          | No                    | No                     |             250 |           40 |
+| Yes          | No                    | Yes                    |              26 |            7 |
+| Yes          | Yes                   | No                     |            1036 |          247 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-----------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
-|  Clock Signal  |                             Enable Signal                             |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
-+----------------+-----------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
-| ~clk_625_BUFG  |                                                                       |                                                           |                2 |              4 |
-|  clk_625_BUFG  | st/pl/sc/c                                                            | st/pl/sc/a[3]_i_1_n_0                                     |                1 |              8 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[6]_i_2__0_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_0[0]      |                2 |              8 |
-|  clk_625_BUFG  | st/pl/sc/b                                                            | st/pl/sc/a[3]_i_1_n_0                                     |                1 |              8 |
-|  clk_625_BUFG  |                                                                       | st/pl/pu/red_flag                                         |                1 |              8 |
-|  clk_625_BUFG  | st/pl/sc/a[3]_i_2_n_0                                                 | st/pl/sc/a[3]_i_1_n_0                                     |                1 |              8 |
-|  clk_625_BUFG  | st/pl/sc/d[3]_i_1_n_0                                                 | st/pl/sc/a[3]_i_1_n_0                                     |                1 |              8 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[6]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6][0]        |                2 |              8 |
-|  clk_IBUF_BUFG |                                                                       |                                                           |                1 |              8 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[6]_i_2__1_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_1[0]      |                3 |              8 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[6]_i_2__2_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_2[0]      |                3 |              8 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[6]_i_2__3_n_0 | st/pl/u2/u_enemy_master/u_reset/SS[0]                     |                2 |              8 |
-|  clk_625_BUFG  |                                                                       | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                5 |             10 |
-|  clk_625_BUFG  |                                                                       | st/pl/sc/seg1[6]_i_1_n_0                                  |                3 |             10 |
-|  clk_625_BUFG  |                                                                       | st/pl/sc/seg2[6]_i_1_n_0                                  |                1 |             10 |
-|  clk_625_BUFG  |                                                                       | st/pl/sc/seg4[6]_i_1_n_0                                  |                1 |             10 |
-|  clk_625_BUFG  |                                                                       | st/pl/sc/seg3[6]_i_1_n_0                                  |                1 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[8]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                2 |             10 |
-|  clk_625_BUFG  | st/pl/bu/frame_count_reg[4]_0                                         | st/pl/bu/fire                                             |                2 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                2 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                2 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                2 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                     |                2 |             10 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/E[0]                                  |                                                           |                3 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_1[0]                  |                                                           |                2 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0][0]                    |                                                           |                3 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_5[5]_i_1_n_0               |                                                           |                4 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_2[0]                  |                                                           |                3 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_0[0]                  |                                                           |                2 |             12 |
-|  clk_625_BUFG  | st/en/y[5]_i_1__0_n_0                                                 | oled/frame_begin                                          |                4 |             12 |
-|  clk_625_BUFG  | st/sta/y[5]_i_1_n_0                                                   | oled/frame_begin                                          |                2 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_3[5]_i_1_n_0               |                                                           |                2 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_2[5]_i_1_n_0               |                                                           |                3 |             12 |
-|  clk_625_BUFG  | st/pl/hp/HP[5]_i_1_n_0                                                | st/reset_reg_n_0                                          |                2 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_4[5]_i_1_n_0               |                                                           |                2 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_1[5]_i_1_n_0               |                                                           |                3 |             12 |
-|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/accept                                |                                                           |                2 |             12 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[111]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[7]  |                4 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[153]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[10] |                6 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[146]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[10] |                2 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[188]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[13] |                4 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[104]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[7]  |                2 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[195]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[13] |                2 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[20]_i_1_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[1]  |                5 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[237]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[16] |                4 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[230]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[16] |                3 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[62]_i_1_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[4]  |                4 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[69]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[4]  |                5 |             14 |
-|  clk_625_BUFG  | st/pl/sc/counter[15]_i_1_n_0                                          |                                                           |                2 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[272]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[19] |                3 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[27]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[1]  |                5 |             14 |
-|  clk_625_BUFG  | st/pl/star/centre_y                                                   | st/reset_reg_n_0                                          |                3 |             14 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[279]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[19] |                4 |             14 |
-|  clk_625_BUFG  |                                                                       | st/en/oled_data_reg[0]                                    |                3 |             22 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[125]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[6]  |               11 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[41]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[0]  |                8 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[41]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[2]  |               11 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[20] |               10 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[83]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[3]  |                6 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[83]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[5]  |                8 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[251]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[15] |                9 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[251]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[17] |                7 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[18] |                9 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[209]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[12] |                8 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[167]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[11] |                7 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[167]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[9]  |                9 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[209]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[14] |                8 |             28 |
-|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[125]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/SR[8]  |                7 |             28 |
-|  clk_625_BUFG  | oled/sample_pixel                                                     | oled/frame_begin                                          |               13 |             30 |
-|  clk_625_BUFG  |                                                                       | st/pl/sc/counter[15]_i_1_n_0                              |                4 |             30 |
-| ~clk_625_BUFG  |                                                                       | oled/frame_counter[16]_i_1_n_0                            |                4 |             32 |
-|  clk_625_BUFG  | st/pl/sc/start_count_reg_n_0                                          | st/pl/sc/counter_[17]_i_1_n_0                             |                5 |             36 |
-|  clk_625_BUFG  |                                                                       | st/reset_reg_n_0                                          |                8 |             40 |
-| ~clk_625_BUFG  | oled/delay[0]_i_1_n_0                                                 |                                                           |                5 |             40 |
-|  clk_625_BUFG  | st/u0/counter[0]_i_1__1_n_0                                           | st/u0/btn_pulse0                                          |                6 |             46 |
-|  clk_625_BUFG  | st/pl/u2/u_move_pulse/cnt_reg[0]_0                                    | st/pl/u2/u_enemy_master/u_reset/cnt                       |                6 |             46 |
-|  clk_625_BUFG  | st/pl/bu/CD0                                                          | st/pl/bu/CD[0]_i_1_n_0                                    |                7 |             50 |
-|  clk_625_BUFG  | st/sta/counter[0]_i_2_n_0                                             | st/sta/counter_reg[0]_0                                   |                8 |             62 |
-|  clk_625_BUFG  | st/pl/u2/u_move_pulse/cnt_reg[0]_0                                    | st/pl/u2/u_move_pulse/cnt[0]_i_1__0_n_0                   |                8 |             64 |
-| ~clk_625_BUFG  | oled/FSM_onehot_state[31]_i_1_n_0                                     |                                                           |                9 |             64 |
-| ~clk_625_BUFG  |                                                                       | oled/spi_word[39]_i_1_n_0                                 |               19 |             90 |
-|  clk_625_BUFG  |                                                                       |                                                           |               45 |            192 |
-+----------------+-----------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
++----------------+-----------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                             Enable Signal                             |                                 Set/Reset Signal                                | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+----------------+
+| ~clk_625_BUFG  |                                                                       |                                                                                 |                2 |              4 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[6]_i_2__1_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_1[0]                            |                2 |              8 |
+|  clk_625_BUFG  | st/pl/sc/a[3]_i_2_n_0                                                 | st/pl/sc/SR[0]                                                                  |                1 |              8 |
+|  clk_625_BUFG  |                                                                       | st/pl/pu/pixel_data_reg[9]                                                      |                1 |              8 |
+|  clk_625_BUFG  | st/pl/sc/b                                                            | st/pl/sc/SR[0]                                                                  |                1 |              8 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[6]_i_2__0_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_0[0]                            |                2 |              8 |
+|  clk_625_BUFG  | st/pl/sc/d[3]_i_1_n_0                                                 | st/pl/sc/SR[0]                                                                  |                2 |              8 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[6]_i_2__2_n_0 | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6]_2[0]                            |                2 |              8 |
+|  clk_IBUF_BUFG |                                                                       |                                                                                 |                1 |              8 |
+|  clk_625_BUFG  | st/pl/sc/c                                                            | st/pl/sc/SR[0]                                                                  |                1 |              8 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[6]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/anchor_x_reg[6][0]                              |                2 |              8 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[6]_i_2__3_n_0 | st/pl/u2/u_enemy_master/u_reset/SS[0]                                           |                2 |              8 |
+|  clk_625_BUFG  |                                                                       | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                4 |             10 |
+|  clk_625_BUFG  |                                                                       | st/pl/sc/seg3[6]_i_1_n_0                                                        |                1 |             10 |
+|  clk_625_BUFG  |                                                                       | st/pl/sc/seg4[6]_i_1_n_0                                                        |                2 |             10 |
+|  clk_625_BUFG  |                                                                       | st/pl/sc/seg1[6]_i_1_n_0                                                        |                1 |             10 |
+|  clk_625_BUFG  |                                                                       | st/pl/sc/seg2[6]_i_1_n_0                                                        |                1 |             10 |
+|  clk_625_BUFG  | st/pl/bu/frame_count_reg[4]_0                                         | st/pl/bu/fire                                                                   |                2 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy2/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                2 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy1/enemy_move_inst/anchor_x[8]_i_2_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                2 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy5/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                1 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy4/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                2 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/enemy3/enemy_move_inst/anchor_x[8]_i_1_n_0    | st/pl/u2/u_enemy_master/u_reset/SS[1]                                           |                2 |             10 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_1[0]                  |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_0[0]                  |                                                                                 |                3 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_2[5]_i_1_n_0               |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_1[5]_i_1_n_0               |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_5[5]_i_1_n_0               |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_3[5]_i_1_n_0               |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/random_num_4[5]_i_1_n_0               |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/accept                                |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/E[0]                                  |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0][0]                    |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/u2/u_enemy_master/u_reset/anchor_y_reg[0]_2[0]                  |                                                                                 |                2 |             12 |
+|  clk_625_BUFG  | st/pl/hp/HP[5]_i_1_n_0                                                | st/reset                                                                        |                2 |             12 |
+|  clk_625_BUFG  | st/en/y[5]_i_1_n_0                                                    | oled/frame_begin                                                                |                2 |             12 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[279]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][19] |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[27]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][1]  |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[272]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][19] |                2 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[69]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][4]  |                5 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[195]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][13] |                5 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[104]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][7]  |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[111]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][7]  |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[146]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][10] |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[153]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][10] |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[188]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][13] |                5 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[62]_i_1_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][4]  |                4 |             14 |
+|  clk_625_BUFG  | st/pl/sc/counter[15]_i_1_n_0                                          |                                                                                 |                3 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[237]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][16] |                4 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[230]_i_1_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][16] |                5 |             14 |
+|  clk_625_BUFG  | st/pl/star/centre_y[6]_i_1_n_0                                        | st/reset                                                                        |                5 |             14 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[20]_i_1_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][1]  |                4 |             14 |
+|  clk_625_BUFG  | oled/E[0]                                                             | oled/frame_begin                                                                |                5 |             16 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[167]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][9]  |                9 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[167]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][11] |               10 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[125]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][6]  |                9 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[125]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][8]  |                9 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[83]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][5]  |                7 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[83]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][3]  |                7 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][20] |                8 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[293]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][18] |                7 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[41]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][2]  |                8 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[41]_i_2_n_0                                  | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][0]  |                8 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[251]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][17] |                8 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[209]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][14] |                7 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[209]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][12] |               10 |             28 |
+|  clk_625_BUFG  | st/pl/bu/bullet_xy_array[251]_i_2_n_0                                 | st/pl/u2/u_enemy_master/enemy5/position_check_inst/bullet_xy_array_reg[280][15] |               11 |             28 |
+|  clk_625_BUFG  |                                                                       | st/pl/sc/counter[15]_i_1_n_0                                                    |                4 |             30 |
+| ~clk_625_BUFG  |                                                                       | oled/frame_counter[16]_i_1_n_0                                                  |                4 |             32 |
+|  clk_625_BUFG  | st/pl/sc/start_count_reg_n_0                                          | st/pl/sc/counter_[17]_i_1_n_0                                                   |                5 |             36 |
+|  clk_625_BUFG  |                                                                       | st/reset                                                                        |                8 |             40 |
+| ~clk_625_BUFG  | oled/delay[0]_i_1_n_0                                                 |                                                                                 |                5 |             40 |
+|  clk_625_BUFG  | st/u0/counter[0]_i_1__0_n_0                                           | st/u0/btn_pulse0                                                                |                6 |             46 |
+|  clk_625_BUFG  | st/pl/u2/u_move_pulse/cnt_reg[0]_0                                    | st/pl/u2/u_enemy_master/u_reset/cnt                                             |                6 |             46 |
+|  clk_625_BUFG  | st/u1/counter[0]_i_1__1_n_0                                           | st/u1/btn_pulse0                                                                |                6 |             46 |
+|  clk_625_BUFG  | st/pl/bu/CD0                                                          | st/pl/bu/CD[0]_i_1_n_0                                                          |                7 |             50 |
+|  clk_625_BUFG  | st/pl/u2/u_move_pulse/cnt_reg[0]_0                                    | st/pl/u2/u_move_pulse/cnt[0]_i_1__0_n_0                                         |                8 |             64 |
+| ~clk_625_BUFG  | oled/FSM_onehot_state[31]_i_1_n_0                                     |                                                                                 |                9 |             64 |
+| ~clk_625_BUFG  |                                                                       | oled/spi_word[39]_i_1_n_0                                                       |               15 |             90 |
+|  clk_625_BUFG  |                                                                       |                                                                                 |               52 |            238 |
++----------------+-----------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+----------------+
 
 

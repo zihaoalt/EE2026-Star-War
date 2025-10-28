@@ -21,6 +21,7 @@
 
 
 module state_crl(
+    input btnR,
     input SW15, SW14, SW13, SW12,
     input bullet_skill,
     input up, 
@@ -53,34 +54,37 @@ module state_crl(
     wire btn_pulse;
     wire [1:0] level_state;
     wire dead_flag;
+    wire pulseR;
     
     difficulty_choose di (clk_625m, state, SW15, SW14, SW13, SW12, level_state);
     on_press u0 (btn, clk_625m, btn_pulse);
-    Start sta (state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
+    on_press u1 (btnR, clk_625m, pulseR);
+    Start sta (pulseR, btn_pulse, pixel_index, state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
     End en (frame_begin,sample_pixel,clk_625m,oled_data_end);
     play pl (level_state, bullet_skill, up, down, pixel_index, reset, clk, state, frame_begin, sample_pixel, clk_625m, oled_data_play, anode, seg, led, dead_flag);
     
     always @(posedge clk_625m) begin
-        if (btn_pulse) begin
-            if (start_finish && (state == start)) begin
-                state <= gameplay;
-                reset <= 1;
-            end else if (state == gameplay) begin
+        if (start_finish && (state == start)) begin
+            state <= gameplay;
+            reset <= 1;
+        end else if ((game_end || dead_flag) && (state != over)) begin
+            state <= over;
+            reset <= 1;
+        end else if (btn_pulse) begin
+            if (state == gameplay) begin
                 state <= pause;
                 reset <= 0;
             end else if (state == pause) begin 
                 state <= gameplay;
+                reset <= 0;
             end else if (state == over) begin
                  state <= start;
+                 reset <= 0;
             end
         end else begin
             reset <= 0;
         end
-        if ((game_end || dead_flag) && (state != over)) begin
-            state <= over;
-            reset <= 1;
-        end     
-    end
+   end
     
     always @ (posedge clk_625m) begin
         case (state)

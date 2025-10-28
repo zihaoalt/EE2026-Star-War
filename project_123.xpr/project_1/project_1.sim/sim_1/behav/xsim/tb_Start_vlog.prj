@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/Start.v" \
+"../../../../project_1.srcs/sources_1/new/begining.v" \
+"../../../../project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v" \
+"../../../../project_1.srcs/sources_1/new/tb_Start.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
