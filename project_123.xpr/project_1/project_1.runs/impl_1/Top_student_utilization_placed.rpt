@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Oct 28 16:39:39 2025
-| Host         : Bruce-Wayn running 64-bit major release  (build 9200)
+| Date         : Tue Oct 28 18:15:06 2025
+| Host         : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_student_utilization_placed.rpt -pb Top_student_utilization_placed.pb
 | Design       : Top_student
 | Device       : 7a35tcpg236-1
@@ -67,20 +67,20 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  864 |     0 |      8150 | 10.60 |
-|   SLICEL                                  |  595 |     0 |           |       |
-|   SLICEM                                  |  269 |     0 |           |       |
+| Slice                                     |  851 |     0 |      8150 | 10.44 |
+|   SLICEL                                  |  592 |     0 |           |       |
+|   SLICEM                                  |  259 |     0 |           |       |
 | LUT as Logic                              | 2801 |     0 |     20800 | 13.47 |
-|   using O5 output only                    |   18 |       |           |       |
-|   using O6 output only                    | 2168 |       |           |       |
-|   using O5 and O6                         |  615 |       |           |       |
+|   using O5 output only                    |    4 |       |           |       |
+|   using O6 output only                    | 2213 |       |           |       |
+|   using O5 and O6                         |  584 |       |           |       |
 | LUT as Memory                             |    0 |     0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
 |   LUT as Shift Register                   |    0 |     0 |           |       |
-| LUT Flip Flop Pairs                       |  617 |     0 |     20800 |  2.97 |
-|   fully used LUT-FF pairs                 |   77 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |  513 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  498 |       |           |       |
+| LUT Flip Flop Pairs                       |  625 |     0 |     20800 |  3.00 |
+|   fully used LUT-FF pairs                 |   89 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |  512 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  500 |       |           |       |
 | Unique Control Sets                       |   80 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -176,14 +176,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 1400 |                 LUT |
+| LUT6     | 1376 |                 LUT |
 | FDRE     |  826 |        Flop & Latch |
-| LUT5     |  540 |                 LUT |
-| LUT4     |  490 |                 LUT |
-| LUT2     |  471 |                 LUT |
-| LUT3     |  396 |                 LUT |
-| CARRY4   |  240 |          CarryLogic |
-| LUT1     |  119 |                 LUT |
+| LUT5     |  561 |                 LUT |
+| LUT4     |  522 |                 LUT |
+| LUT2     |  459 |                 LUT |
+| LUT3     |  372 |                 LUT |
+| CARRY4   |  225 |          CarryLogic |
+| LUT1     |   95 |                 LUT |
 | FDSE     |   68 |        Flop & Latch |
 | OBUF     |   34 |                  IO |
 | FDCE     |   31 |        Flop & Latch |

@@ -9,9 +9,9 @@ module bullet_CD_display(
 
     localparam [24:0] MAX_COUNT = 25'd31249999;
 
-    wire [25:0] remaining = MAX_COUNT - CD;
+    // wire [25:0] remaining = MAX_COUNT - CD;
 
-    wire [5:0]  bar_len = (remaining * 30) / MAX_COUNT;// scale to 30 bits long linearly
+    wire [5:0]  bar_len = (CD * 30) / MAX_COUNT;// scale to 30 bits long linearly
 
     localparam integer CENTER = 95 >> 1; // divide by 2 to get center
     wire [6:0] x_left  = CENTER - (bar_len >> 1);
