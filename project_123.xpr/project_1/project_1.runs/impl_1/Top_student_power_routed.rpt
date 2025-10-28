@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Oct 28 18:56:06 2025
+| Date             : Tue Oct 28 20:30:28 2025
 | Host             : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_student_power_routed.rpt -pb Top_student_power_summary_routed.pb -rpx Top_student_power_routed.rpx
 | Design           : Top_student
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.147        |
+| Total On-Chip Power (W)  | 0.172        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.075        |
+| Dynamic (W)              | 0.100        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.3         |
-| Junction Temperature (C) | 25.7         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.036 |     7361 |       --- |             --- |
-|   LUT as Logic |     0.034 |     4837 |     20800 |           23.25 |
-|   CARRY4       |     0.002 |      635 |      8150 |            7.79 |
-|   Register     |    <0.001 |      929 |     41600 |            2.23 |
+| Slice Logic    |     0.049 |     9754 |       --- |             --- |
+|   LUT as Logic |     0.046 |     6405 |     20800 |           30.79 |
+|   CARRY4       |     0.003 |      912 |      8150 |           11.19 |
+|   Register     |    <0.001 |     1129 |     41600 |            2.71 |
+|   F7/F8 Muxes  |    <0.001 |       19 |     32600 |            0.06 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        9 |     32600 |            0.03 |
-|   Others       |     0.000 |       72 |       --- |             --- |
-| Signals        |     0.032 |     5338 |       --- |             --- |
+|   Others       |     0.000 |      106 |       --- |             --- |
+| Signals        |     0.044 |     6961 |       --- |             --- |
 | I/O            |     0.007 |       46 |       106 |           43.40 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.147 |          |           |                 |
+| Total          |     0.172 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.078 |       0.069 |      0.010 |
+| Vccint    |       1.000 |     0.103 |       0.093 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,51 +139,68 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------------------+-----------+
-| Name                            | Power (W) |
-+---------------------------------+-----------+
-| Top_student                     |     0.075 |
-|   cl                            |    <0.001 |
-|   oled                          |     0.009 |
-|   st                            |     0.057 |
-|     di                          |    <0.001 |
-|     en                          |    <0.001 |
-|     pl                          |     0.009 |
-|       bu                        |     0.003 |
-|       hp                        |    <0.001 |
-|       pri                       |     0.003 |
-|       pu                        |    <0.001 |
-|       sc                        |    <0.001 |
-|       star                      |    <0.001 |
-|         C0                      |    <0.001 |
-|       u2                        |     0.001 |
-|         u_enemy_master          |     0.001 |
-|           enemy1                |    <0.001 |
-|             enemy_move_inst     |    <0.001 |
-|             position_check_inst |    <0.001 |
-|           enemy2                |    <0.001 |
-|             enemy_move_inst     |    <0.001 |
-|             position_check_inst |    <0.001 |
-|           enemy3                |    <0.001 |
-|             enemy_move_inst     |    <0.001 |
-|             position_check_inst |    <0.001 |
-|           enemy4                |    <0.001 |
-|             enemy_move_inst     |    <0.001 |
-|             position_check_inst |    <0.001 |
-|           enemy5                |    <0.001 |
-|             enemy_move_inst     |    <0.001 |
-|             position_check_inst |    <0.001 |
-|           u_reset               |    <0.001 |
-|         u_move_pulse            |    <0.001 |
-|     sta                         |     0.048 |
-|       be                        |    <0.001 |
-|       in                        |    <0.001 |
-|       int1                      |     0.011 |
-|       int2                      |     0.012 |
-|       u12                       |    <0.001 |
-|       xy                        |     0.024 |
-|     u0                          |    <0.001 |
-|     u1                          |    <0.001 |
-+---------------------------------+-----------+
++----------------------------------+-----------+
+| Name                             | Power (W) |
++----------------------------------+-----------+
+| Top_student                      |     0.100 |
+|   cl                             |    <0.001 |
+|   oled                           |     0.014 |
+|   st                             |     0.076 |
+|     di                           |    <0.001 |
+|     en                           |    <0.001 |
+|     pl                           |     0.011 |
+|       bu                         |     0.003 |
+|       hp                         |    <0.001 |
+|       pri                        |     0.003 |
+|       pu                         |    <0.001 |
+|       sc                         |    <0.001 |
+|       star                       |    <0.001 |
+|         C0                       |    <0.001 |
+|       u2                         |     0.003 |
+|         u_enemy_master           |     0.003 |
+|           enemy1                 |    <0.001 |
+|             enemy_move_inst      |    <0.001 |
+|             position_check_inst  |    <0.001 |
+|           enemy2                 |    <0.001 |
+|             enemy_move_inst      |    <0.001 |
+|             position_check_inst  |    <0.001 |
+|           enemy21                |    <0.001 |
+|             enemy_move2_inst     |    <0.001 |
+|             position_check2_inst |    <0.001 |
+|           enemy22                |    <0.001 |
+|             enemy_move2_inst     |    <0.001 |
+|             position_check2_inst |    <0.001 |
+|           enemy23                |    <0.001 |
+|             enemy_move2_inst     |    <0.001 |
+|             position_check2_inst |    <0.001 |
+|           enemy24                |    <0.001 |
+|             enemy_move2_inst     |    <0.001 |
+|             position_check2_inst |    <0.001 |
+|           enemy25                |    <0.001 |
+|             enemy_move2_inst     |    <0.001 |
+|             position_check2_inst |    <0.001 |
+|           enemy3                 |    <0.001 |
+|             enemy_move_inst      |    <0.001 |
+|             position_check_inst  |    <0.001 |
+|           enemy4                 |    <0.001 |
+|             enemy_move_inst      |    <0.001 |
+|             position_check_inst  |    <0.001 |
+|           enemy5                 |    <0.001 |
+|             enemy_move_inst      |    <0.001 |
+|             position_check_inst  |    <0.001 |
+|           u_reset                |    <0.001 |
+|           u_reset2               |    <0.001 |
+|         u_move_pulse             |    <0.001 |
+|     sta                          |     0.065 |
+|       be                         |    <0.001 |
+|       in                         |    <0.001 |
+|       int1                       |     0.011 |
+|       int2                       |     0.013 |
+|       int3                       |     0.013 |
+|       u12                        |    <0.001 |
+|       xy                         |     0.028 |
+|     u0                           |    <0.001 |
+|     u1                           |    <0.001 |
++----------------------------------+-----------+
 
 

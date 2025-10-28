@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2025/10/28 18:40:40
+// Create Date: 2025/10/28 20:14:49
 // Design Name: 
-// Module Name: intro2
+// Module Name: intro3
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,48 +20,56 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module intro2 (
+module intro3 (
     input  wire        clk,
-    input  wire [6:0]  x,  // current pixel x: 0..95
-    input  wire [6:0]  y,  // current pixel y: 0..63
+    input  wire [6:0]  x,  // pixel x: 0..95
+    input  wire [6:0]  y,  // pixel y: 0..63
     output reg  [15:0] pixel_data
 );
 
-    // =====================================
+    // ================================
     // Colors
-    // =====================================
+    // ================================
     parameter WHITE = 16'hFFFF;
     parameter BLACK = 16'h0000;
 
-    // =====================================
+    // ================================
     // Font / layout assumptions
-    // =====================================
-    // 5x7 font, stroke thickness = 1
-    localparam integer FONT_W = 5;  // glyph width in pixels
-    localparam integer FONT_H = 7;  // glyph height in pixels
+    // ================================
+    // Stroke thickness: 1
+    // Logical glyph box: 5x7 pixels
+    localparam integer FONT_W = 5;
+    localparam integer FONT_H = 7;
 
-    // spacing
-    localparam integer CHAR_GAP_X  = 1;                 // 1px gap between characters
-    localparam integer LINE_GAP_Y  = 2;                 // 2px gap between lines
-    localparam integer CHAR_STEP_X = FONT_W + CHAR_GAP_X; // 6 px advance per char
-    localparam integer LINE_STEP_Y = FONT_H + LINE_GAP_Y; // 9 px advance per line
+    // Spacing:
+    // - 1px gap between characters
+    // - 2px gap between lines
+    localparam integer CHAR_GAP_X  = 1;
+    localparam integer LINE_GAP_Y  = 2;
+    localparam integer CHAR_STEP_X = FONT_W + CHAR_GAP_X; // 6 px advance
+    localparam integer LINE_STEP_Y = FONT_H + LINE_GAP_Y; // 9 px advance
 
-    // top-left of line 1 ("INTRODUCTION")
+    // Anchor position (top-left of line 0)
     localparam integer X0 = 4;
     localparam integer Y0 = 8;
 
-    // how many characters in each line
-    localparam integer LINE0_LEN = 12; // "INTRODUCTION"
-    localparam integer LINE1_LEN = 13; // "move up: btnU"
-    localparam integer LINE2_LEN = 15; // "move down: btnD"
-    localparam integer LINE3_LEN = 13; // "end game: sw7"
-    localparam integer LINE4_LEN = 16; // "next page: btnL"
+    // Line definitions:
+    // line1: "INTRODUCTION"
+    // line2: "led display HP"
+    // line3: "segments display"
+    // line4: "killed enemy"
+    // line5: "next page: btnL"
+    localparam integer LINE0_LEN = 12; // INTRODUCTION
+    localparam integer LINE1_LEN = 14; // led display HP
+    localparam integer LINE2_LEN = 15; // segment display
+    localparam integer LINE3_LEN = 12; // killed enemy
+    localparam integer LINE4_LEN = 15; // next page: btnL
 
     localparam integer NUM_LINES = 5;
 
     // =====================================
-    // 1. get_line_char(line_idx, char_idx)
-    // Returns ASCII character for each (line, column)
+    // get_line_char(line_idx, char_idx)
+    // Returns ASCII for each (line, character position)
     // =====================================
     function [7:0] get_line_char;
         input [2:0] line_idx;    // 0..4
@@ -88,64 +96,64 @@ module intro2 (
                     endcase
                 end
 
-                // line 1: "move up: btnU"
+                // line 1: "led display HP"
                 3'd1: begin
                     case (char_idx)
-                        0:  get_line_char = "m";
-                        1:  get_line_char = "o";
-                        2:  get_line_char = "v";
-                        3:  get_line_char = "e";
-                        4:  get_line_char = " ";
-                        5:  get_line_char = "u";
-                        6:  get_line_char = "p";
-                        7:  get_line_char = ":";
-                        8:  get_line_char = " ";
-                        9:  get_line_char = "b";
-                        10: get_line_char = "t";
-                        11: get_line_char = "n";
-                        12: get_line_char = "U";
-                        default: get_line_char = " ";
-                    endcase
-                end
-
-                // line 2: "move down: btnD"
-                3'd2: begin
-                    case (char_idx)
-                        0:  get_line_char = "m";
-                        1:  get_line_char = "o";
-                        2:  get_line_char = "v";
-                        3:  get_line_char = "e";
-                        4:  get_line_char = " ";
-                        5:  get_line_char = "d";
-                        6:  get_line_char = "o";
-                        7:  get_line_char = "w";
-                        8:  get_line_char = "n";
-                        9:  get_line_char = ":";
-                        10: get_line_char = " ";
-                        11: get_line_char = "b";
-                        12: get_line_char = "t";
-                        13: get_line_char = "n";
-                        14: get_line_char = "D";
-                        default: get_line_char = " ";
-                    endcase
-                end
-
-                // line 3: "end game: sw7"
-                3'd3: begin
-                    case (char_idx)
-                        0:  get_line_char = "e";
-                        1:  get_line_char = "n";
+                        0:  get_line_char = "l";
+                        1:  get_line_char = "e";
                         2:  get_line_char = "d";
                         3:  get_line_char = " ";
-                        4:  get_line_char = "g";
-                        5:  get_line_char = "a";
-                        6:  get_line_char = "m";
-                        7:  get_line_char = "e";
-                        8:  get_line_char = ":";
-                        9:  get_line_char = " ";
+                        4:  get_line_char = "d";
+                        5:  get_line_char = "i";
+                        6:  get_line_char = "s";
+                        7:  get_line_char = "p";
+                        8:  get_line_char = "l";
+                        9:  get_line_char = "a";
+                        10: get_line_char = "y";
+                        11: get_line_char = " ";
+                        12: get_line_char = "H";
+                        13: get_line_char = "P";
+                        default: get_line_char = " ";
+                    endcase
+                end
+
+                // line 2: "segment display"
+                3'd2: begin
+                    case (char_idx)
+                        0:  get_line_char = "s";
+                        1:  get_line_char = "e";
+                        2:  get_line_char = "g";
+                        3:  get_line_char = "m";
+                        4:  get_line_char = "e";
+                        5:  get_line_char = "n";
+                        6:  get_line_char = "t";
+                        7:  get_line_char = " ";
+                        8:  get_line_char = "d";
+                        9: get_line_char = "i";
                         10: get_line_char = "s";
-                        11: get_line_char = "w";
-                        12: get_line_char = "7";
+                        11: get_line_char = "p";
+                        12: get_line_char = "l";
+                        13: get_line_char = "a";
+                        14: get_line_char = "y";
+                        default: get_line_char = " ";
+                    endcase
+                end
+
+                // line 3: "killed enemy"
+                3'd3: begin
+                    case (char_idx)
+                        0:  get_line_char = "k";
+                        1:  get_line_char = "i";
+                        2:  get_line_char = "l";
+                        3:  get_line_char = "l";
+                        4:  get_line_char = "e";
+                        5:  get_line_char = "d";
+                        6:  get_line_char = " ";
+                        7:  get_line_char = "e";
+                        8:  get_line_char = "n";
+                        9:  get_line_char = "e";
+                        10: get_line_char = "m";
+                        11: get_line_char = "y";
                         default: get_line_char = " ";
                     endcase
                 end
@@ -168,7 +176,6 @@ module intro2 (
                         12: get_line_char = "t";
                         13: get_line_char = "n";
                         14: get_line_char = "L";
-                        15: get_line_char = " ";
                         default: get_line_char = " ";
                     endcase
                 end
@@ -178,7 +185,7 @@ module intro2 (
         end
     endfunction
 
-    // helper: line length lookup
+    // helper: get how many chars are in a line
     function integer get_line_len;
         input [2:0] line_idx;
         begin
@@ -194,48 +201,45 @@ module intro2 (
     endfunction
 
     // =====================================
-    // 2. font_row_bits(ch,row)
-    // Returns the 5-bit wide row of the glyph for 'ch'.
-    // bit4 = leftmost pixel of glyph column 0
-    // bit0 = rightmost pixel of glyph column 4
+    // font_row_bits(ch,row)
+    // 5-bit wide row for the given character.
+    // bit4 = leftmost pixel column of the glyph,
+    // bit0 = rightmost.
     //
-    // We only implement characters we actually use.
+    // Only glyphs that appear in the 5 lines are included:
+    //
+    // Uppercase: I N T R O D U C H P L
+    // Lowercase: l e d s p a y i g m n t k b x next...
+    //            (covers: l,e,d, ,d,i,s,p,l,a,y, ,H,P,... etc)
+    // Punctuation: space ' ', colon ':'
     // =====================================
     function [4:0] font_row_bits;
-        input [7:0] ch;    // ASCII
-        input [2:0] row;   // 0..6
+        input [7:0] ch;
+        input [2:0] row;
         begin
             case (ch)
 
-                // space ' '
+                // SPACE ' '
                 8'h20: font_row_bits = 5'b00000;
 
                 // ':'
                 8'h3A: case (row)
-                    3'd0:  font_row_bits = 5'b00000;
-                    3'd1:  font_row_bits = 5'b00100;
-                    3'd2:  font_row_bits = 5'b00100;
-                    3'd3:  font_row_bits = 5'b00000;
-                    3'd4:  font_row_bits = 5'b00100;
-                    3'd5:  font_row_bits = 5'b00100;
-                    3'd6:  font_row_bits = 5'b00000;
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b00100;
+                    3'd2: font_row_bits = 5'b00100;
+                    3'd3: font_row_bits = 5'b00000;
+                    3'd4: font_row_bits = 5'b00100;
+                    3'd5: font_row_bits = 5'b00100;
+                    3'd6: font_row_bits = 5'b00000;
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                // '7'
-                8'h37: case (row)
-                    3'd0: font_row_bits = 5'b11111;
-                    3'd1: font_row_bits = 5'b00001;
-                    3'd2: font_row_bits = 5'b00010;
-                    3'd3: font_row_bits = 5'b00100;
-                    3'd4: font_row_bits = 5'b01000;
-                    3'd5: font_row_bits = 5'b01000;
-                    3'd6: font_row_bits = 5'b01000;
-                    default: font_row_bits = 5'b00000;
-                endcase
+                // ======================
+                // UPPERCASE LETTERS
+                // ======================
 
-                // UPPERCASE letters we need: I N T R O D U C L U D L
-                8'h49: case(row) // 'I'
+                // 'I'
+                8'h49: case(row)
                     3'd0: font_row_bits = 5'b11111;
                     3'd1: font_row_bits = 5'b00100;
                     3'd2: font_row_bits = 5'b00100;
@@ -246,7 +250,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h4E: case(row) // 'N'
+                // 'N'
+                8'h4E: case(row)
                     3'd0: font_row_bits = 5'b10001;
                     3'd1: font_row_bits = 5'b11001;
                     3'd2: font_row_bits = 5'b10101;
@@ -257,7 +262,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h54: case(row) // 'T'
+                // 'T'
+                8'h54: case(row)
                     3'd0: font_row_bits = 5'b11111;
                     3'd1: font_row_bits = 5'b00100;
                     3'd2: font_row_bits = 5'b00100;
@@ -268,7 +274,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h52: case(row) // 'R'
+                // 'R'
+                8'h52: case(row)
                     3'd0: font_row_bits = 5'b11110;
                     3'd1: font_row_bits = 5'b10001;
                     3'd2: font_row_bits = 5'b10001;
@@ -279,7 +286,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h4F: case(row) // 'O'
+                // 'O'
+                8'h4F: case(row)
                     3'd0: font_row_bits = 5'b01110;
                     3'd1: font_row_bits = 5'b10001;
                     3'd2: font_row_bits = 5'b10001;
@@ -290,7 +298,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h44: case(row) // 'D'
+                // 'D'
+                8'h44: case(row)
                     3'd0: font_row_bits = 5'b11110;
                     3'd1: font_row_bits = 5'b10001;
                     3'd2: font_row_bits = 5'b10001;
@@ -301,7 +310,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h55: case(row) // 'U'
+                // 'U'
+                8'h55: case(row)
                     3'd0: font_row_bits = 5'b10001;
                     3'd1: font_row_bits = 5'b10001;
                     3'd2: font_row_bits = 5'b10001;
@@ -312,7 +322,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h43: case(row) // 'C'
+                // 'C'
+                8'h43: case(row)
                     3'd0: font_row_bits = 5'b01110;
                     3'd1: font_row_bits = 5'b10001;
                     3'd2: font_row_bits = 5'b10000;
@@ -323,7 +334,32 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h4C: case(row) // 'L'
+                // 'H'
+                8'h48: case(row)
+                    3'd0: font_row_bits = 5'b10001;
+                    3'd1: font_row_bits = 5'b10001;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b11111;
+                    3'd4: font_row_bits = 5'b10001;
+                    3'd5: font_row_bits = 5'b10001;
+                    3'd6: font_row_bits = 5'b10001;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'P'
+                8'h50: case(row)
+                    3'd0: font_row_bits = 5'b11110;
+                    3'd1: font_row_bits = 5'b10001;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b11110;
+                    3'd4: font_row_bits = 5'b10000;
+                    3'd5: font_row_bits = 5'b10000;
+                    3'd6: font_row_bits = 5'b10000;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'L'
+                8'h4C: case(row)
                     3'd0: font_row_bits = 5'b10000;
                     3'd1: font_row_bits = 5'b10000;
                     3'd2: font_row_bits = 5'b10000;
@@ -334,75 +370,24 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h57: case(row) // 'W' (used in "sw7")
-                    3'd0: font_row_bits = 5'b10001;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10101;
-                    3'd3: font_row_bits = 5'b10101;
-                    3'd4: font_row_bits = 5'b10101;
-                    3'd5: font_row_bits = 5'b11011;
-                    3'd6: font_row_bits = 5'b10001;
-                    default: font_row_bits = 5'b00000;
-                endcase
+                // ======================
+                // LOWERCASE LETTERS
+                // ======================
 
-                8'h42: case(row) // 'B' (not displayed directly but here in case you later use "btnB")
-                    3'd0: font_row_bits = 5'b11110;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b11110;
-                    3'd4: font_row_bits = 5'b10001;
-                    3'd5: font_row_bits = 5'b10001;
-                    3'd6: font_row_bits = 5'b11110;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h50: case(row) // 'P' (not strictly used in text, but kept for completeness)
-                    3'd0: font_row_bits = 5'b11110;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b11110;
-                    3'd4: font_row_bits = 5'b10000;
-                    3'd5: font_row_bits = 5'b10000;
-                    3'd6: font_row_bits = 5'b10000;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                // lowercase letters we need:
-                // m o v e u p d w n g a s x t b
-                8'h6D: case(row) // 'm'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b11010;
-                    3'd2: font_row_bits = 5'b10101;
-                    3'd3: font_row_bits = 5'b10101;
-                    3'd4: font_row_bits = 5'b10101;
-                    3'd5: font_row_bits = 5'b10101;
-                    3'd6: font_row_bits = 5'b10101;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h6F: case(row) // 'o'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b01110;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10001;
-                    3'd4: font_row_bits = 5'b10001;
-                    3'd5: font_row_bits = 5'b10001;
-                    3'd6: font_row_bits = 5'b01110;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h76: case(row) // 'v'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b01010;
-                    3'd4: font_row_bits = 5'b01010;
-                    3'd5: font_row_bits = 5'b00100;
+                // 'l'
+                8'h6C: case(row)
+                    3'd0: font_row_bits = 5'b01000;
+                    3'd1: font_row_bits = 5'b01000;
+                    3'd2: font_row_bits = 5'b01000;
+                    3'd3: font_row_bits = 5'b01000;
+                    3'd4: font_row_bits = 5'b01000;
+                    3'd5: font_row_bits = 5'b01000;
                     3'd6: font_row_bits = 5'b00100;
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h65: case(row) // 'e'
+                // 'e'
+                8'h65: case(row)
                     3'd0: font_row_bits = 5'b00000;
                     3'd1: font_row_bits = 5'b01110;
                     3'd2: font_row_bits = 5'b10001;
@@ -413,29 +398,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h75: case(row) // 'u'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10001;
-                    3'd4: font_row_bits = 5'b10001;
-                    3'd5: font_row_bits = 5'b10011;
-                    3'd6: font_row_bits = 5'b01101;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h70: case(row) // 'p'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b11110;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10001;
-                    3'd4: font_row_bits = 5'b11110;
-                    3'd5: font_row_bits = 5'b10000;
-                    3'd6: font_row_bits = 5'b10000;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h64: case(row) // 'd'
+                // 'd'
+                8'h64: case(row)
                     3'd0: font_row_bits = 5'b00001;
                     3'd1: font_row_bits = 5'b00001;
                     3'd2: font_row_bits = 5'b01111;
@@ -446,51 +410,8 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h77: case(row) // 'w'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10101;
-                    3'd4: font_row_bits = 5'b10101;
-                    3'd5: font_row_bits = 5'b11011;
-                    3'd6: font_row_bits = 5'b10001;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h6E: case(row) // 'n'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b11110;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10001;
-                    3'd4: font_row_bits = 5'b10001;
-                    3'd5: font_row_bits = 5'b10001;
-                    3'd6: font_row_bits = 5'b10001;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h67: case(row) // 'g'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b01111;
-                    3'd2: font_row_bits = 5'b10001;
-                    3'd3: font_row_bits = 5'b10001;
-                    3'd4: font_row_bits = 5'b01111;
-                    3'd5: font_row_bits = 5'b00001;
-                    3'd6: font_row_bits = 5'b01110;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h61: case(row) // 'a'
-                    3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b01110;
-                    3'd2: font_row_bits = 5'b00001;
-                    3'd3: font_row_bits = 5'b01111;
-                    3'd4: font_row_bits = 5'b10001;
-                    3'd5: font_row_bits = 5'b10011;
-                    3'd6: font_row_bits = 5'b01101;
-                    default: font_row_bits = 5'b00000;
-                endcase
-
-                8'h73: case(row) // 's'
+                // 's'
+                8'h73: case(row)
                     3'd0: font_row_bits = 5'b00000;
                     3'd1: font_row_bits = 5'b01111;
                     3'd2: font_row_bits = 5'b10000;
@@ -501,18 +422,92 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h78: case(row) // 'x'
+                // 'p'
+                8'h70: case(row)
                     3'd0: font_row_bits = 5'b00000;
-                    3'd1: font_row_bits = 5'b10001;
-                    3'd2: font_row_bits = 5'b01010;
-                    3'd3: font_row_bits = 5'b00100;
-                    3'd4: font_row_bits = 5'b01010;
-                    3'd5: font_row_bits = 5'b10001;
-                    3'd6: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b11110;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b10001;
+                    3'd4: font_row_bits = 5'b11110;
+                    3'd5: font_row_bits = 5'b10000;
+                    3'd6: font_row_bits = 5'b10000;
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h74: case(row) // 't'
+                // 'a'
+                8'h61: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b01110;
+                    3'd2: font_row_bits = 5'b00001;
+                    3'd3: font_row_bits = 5'b01111;
+                    3'd4: font_row_bits = 5'b10001;
+                    3'd5: font_row_bits = 5'b10011;
+                    3'd6: font_row_bits = 5'b01101;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'y'
+                8'h79: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b10001;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b10001;
+                    3'd4: font_row_bits = 5'b01111;
+                    3'd5: font_row_bits = 5'b00001;
+                    3'd6: font_row_bits = 5'b01110;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'i'
+                8'h69: case(row)
+                    3'd0: font_row_bits = 5'b00100;
+                    3'd1: font_row_bits = 5'b00000;
+                    3'd2: font_row_bits = 5'b01100;
+                    3'd3: font_row_bits = 5'b00100;
+                    3'd4: font_row_bits = 5'b00100;
+                    3'd5: font_row_bits = 5'b00100;
+                    3'd6: font_row_bits = 5'b01110;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'g'
+                8'h67: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b01111;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b10001;
+                    3'd4: font_row_bits = 5'b01111;
+                    3'd5: font_row_bits = 5'b00001;
+                    3'd6: font_row_bits = 5'b01110;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'm'
+                8'h6D: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b11010;
+                    3'd2: font_row_bits = 5'b10101;
+                    3'd3: font_row_bits = 5'b10101;
+                    3'd4: font_row_bits = 5'b10101;
+                    3'd5: font_row_bits = 5'b10101;
+                    3'd6: font_row_bits = 5'b10101;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'n'
+                8'h6E: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b11110;
+                    3'd2: font_row_bits = 5'b10001;
+                    3'd3: font_row_bits = 5'b10001;
+                    3'd4: font_row_bits = 5'b10001;
+                    3'd5: font_row_bits = 5'b10001;
+                    3'd6: font_row_bits = 5'b10001;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 't'
+                8'h74: case(row)
                     3'd0: font_row_bits = 5'b00100;
                     3'd1: font_row_bits = 5'b00100;
                     3'd2: font_row_bits = 5'b11111;
@@ -523,7 +518,20 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
-                8'h62: case(row) // 'b'
+                // 'k'
+                8'h6B: case(row)
+                    3'd0: font_row_bits = 5'b10000;
+                    3'd1: font_row_bits = 5'b10000;
+                    3'd2: font_row_bits = 5'b10010;
+                    3'd3: font_row_bits = 5'b10100;
+                    3'd4: font_row_bits = 5'b11000;
+                    3'd5: font_row_bits = 5'b10100;
+                    3'd6: font_row_bits = 5'b10010;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'b'
+                8'h62: case(row)
                     3'd0: font_row_bits = 5'b10000;
                     3'd1: font_row_bits = 5'b10000;
                     3'd2: font_row_bits = 5'b11110;
@@ -534,19 +542,32 @@ module intro2 (
                     default: font_row_bits = 5'b00000;
                 endcase
 
+                // 'x'
+                8'h78: case(row)
+                    3'd0: font_row_bits = 5'b00000;
+                    3'd1: font_row_bits = 5'b10001;
+                    3'd2: font_row_bits = 5'b01010;
+                    3'd3: font_row_bits = 5'b00100;
+                    3'd4: font_row_bits = 5'b01010;
+                    3'd5: font_row_bits = 5'b10001;
+                    3'd6: font_row_bits = 5'b00000;
+                    default: font_row_bits = 5'b00000;
+                endcase
+
+                // 'y' handled above (8'h79)
+
                 default: font_row_bits = 5'b00000;
             endcase
         end
     endfunction
 
     // =====================================
-    // 3. pixel_on_text(x,y)
+    // pixel_on_text(x,y)
     //
-    // Returns 1 if the pixel at (x,y) should be lit white.
-    // We:
-    //   - figure out which line y is in
-    //   - figure out which character x,y lands in
-    //   - pull the 5x7 bitmap for that char
+    // For each pixel (x,y):
+    //   1. figure out which line it's in
+    //   2. figure out which character cell it's in
+    //   3. index into glyph bitmap (5x7) and return 1 if lit
     // =====================================
     function pixel_on_text;
         input [6:0] px;
@@ -559,49 +580,49 @@ module intro2 (
         integer glyph_x, glyph_y;
         integer font_col, font_row;
         integer line_len;
-
         reg [7:0] ch;
         reg [4:0] rowbits;
         integer bitpos;
-
         reg hit;
+
     begin
         hit = 1'b0;
 
-        // check all lines
+        // Loop through each of the 5 lines
         for (line_idx = 0; line_idx < NUM_LINES; line_idx = line_idx + 1) begin
             if (!hit) begin
-                // line origin
+                // Origin of this line
                 line_x0 = X0;
                 line_y0 = Y0 + line_idx * LINE_STEP_Y;
 
-                // active line height check
+                // Check vertical fit first
                 if ((py >= line_y0) && (py < line_y0 + FONT_H)) begin
                     rel_y = py - line_y0;
 
-                    // figure out which character cell horizontally
-                    rel_x    = px - line_x0;
+                    // Horizontal offset from start of line
+                    rel_x = px - line_x0;
+
                     if (rel_x >= 0) begin
+                        // figure out which character index this pixel falls in
                         char_idx = rel_x / CHAR_STEP_X;
                         line_len = get_line_len(line_idx[2:0]);
 
                         if ((char_idx >= 0) && (char_idx < line_len)) begin
-
                             glyph_x = rel_x % CHAR_STEP_X;
                             glyph_y = rel_y;
 
-                            // only draw if we're inside the 5px glyph, not in the 1px gap
+                            // only within the 5x7 box, not the gap column
                             if ((glyph_x < FONT_W) && (glyph_y < FONT_H)) begin
                                 font_col = glyph_x; // 0..4
                                 font_row = glyph_y; // 0..6
 
-                                // get character
+                                // which ASCII character
                                 ch = get_line_char(line_idx[2:0], char_idx);
 
-                                // look up bitmap row for that char/row
+                                // look up bitmap row for that char+row
                                 rowbits = font_row_bits(ch, font_row[2:0]);
 
-                                // bit4 is leftmost pixel column 0
+                                // bit4 is leftmost column (font_col=0)
                                 bitpos = 4 - font_col;
 
                                 if ((bitpos >= 0) && (bitpos < 5)) begin
@@ -620,7 +641,7 @@ module intro2 (
     endfunction
 
     // =====================================
-    // 4. Registered pixel output
+    // output pixel_data (registered)
     // =====================================
     always @(posedge clk) begin
         if (pixel_on_text(x, y))
@@ -630,3 +651,4 @@ module intro2 (
     end
 
 endmodule
+

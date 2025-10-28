@@ -39,20 +39,25 @@ read_verilog -library xil_defaultlib {
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v
+  D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v
   D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v

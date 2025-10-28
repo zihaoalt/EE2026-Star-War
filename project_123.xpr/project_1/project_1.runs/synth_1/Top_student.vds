@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct 28 18:51:36 2025
-# Process ID: 29612
+# Start of session at: Tue Oct 28 20:26:54 2025
+# Process ID: 48964
 # Current directory: D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log Top_student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_student.tcl
 # Log file: D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.vds
@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 44500 
+INFO: Helper process launched with PID 11368 
 WARNING: [Synth 8-2611] redeclaration of ansi port clk_625m is not allowed [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:29]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 368.641 ; gain = 111.789
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 369.148 ; gain = 112.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_student' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clk_625m' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
@@ -125,8 +125,8 @@ INFO: [Synth 8-6155] done synthesizing module 'introduction1' (8#1) [D:/github/E
 INFO: [Synth 8-6157] synthesizing module 'intro2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
 	Parameter WHITE bound to: 16'b1111111111111111 
 	Parameter BLACK bound to: 16'b0000000000000000 
-	Parameter FONT_W_LOG bound to: 5 - type: integer 
-	Parameter FONT_H_LOG bound to: 7 - type: integer 
+	Parameter FONT_W bound to: 5 - type: integer 
+	Parameter FONT_H bound to: 7 - type: integer 
 	Parameter CHAR_GAP_X bound to: 1 - type: integer 
 	Parameter LINE_GAP_Y bound to: 2 - type: integer 
 	Parameter CHAR_STEP_X bound to: 6 - type: integer 
@@ -139,24 +139,37 @@ INFO: [Synth 8-6157] synthesizing module 'intro2' [D:/github/EE2026-Star-War/pro
 	Parameter LINE3_LEN bound to: 13 - type: integer 
 	Parameter LINE4_LEN bound to: 16 - type: integer 
 	Parameter NUM_LINES bound to: 5 - type: integer 
-WARNING: [Synth 8-151] case item 8'b01101101 is unreachable [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:197]
-WARNING: [Synth 8-151] case item 8'b01101101 is unreachable [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:197]
-WARNING: [Synth 8-151] case item 8'b01101101 is unreachable [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:197]
-WARNING: [Synth 8-151] case item 8'b01101101 is unreachable [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:197]
-WARNING: [Synth 8-151] case item 8'b01101101 is unreachable [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:197]
 INFO: [Synth 8-6155] done synthesizing module 'intro2' (9#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'intro3' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter FONT_W bound to: 5 - type: integer 
+	Parameter FONT_H bound to: 7 - type: integer 
+	Parameter CHAR_GAP_X bound to: 1 - type: integer 
+	Parameter LINE_GAP_Y bound to: 2 - type: integer 
+	Parameter CHAR_STEP_X bound to: 6 - type: integer 
+	Parameter LINE_STEP_Y bound to: 9 - type: integer 
+	Parameter X0 bound to: 4 - type: integer 
+	Parameter Y0 bound to: 8 - type: integer 
+	Parameter LINE0_LEN bound to: 12 - type: integer 
+	Parameter LINE1_LEN bound to: 14 - type: integer 
+	Parameter LINE2_LEN bound to: 15 - type: integer 
+	Parameter LINE3_LEN bound to: 12 - type: integer 
+	Parameter LINE4_LEN bound to: 15 - type: integer 
+	Parameter NUM_LINES bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'intro3' (10#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
 INFO: [Synth 8-6157] synthesizing module 'skill1' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'skill1' (10#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'skill1' (11#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:23]
 INFO: [Synth 8-6157] synthesizing module 'skill2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'skill2' (11#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Start' (12#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'skill2' (12#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Start' (13#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
 INFO: [Synth 8-6157] synthesizing module 'End' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
 	Parameter color bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'End' (13#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'End' (14#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
 INFO: [Synth 8-6157] synthesizing module 'play' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
 INFO: [Synth 8-6157] synthesizing module 'enemy_package' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
 INFO: [Synth 8-6157] synthesizing module 'move_pulse' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'move_pulse' (14#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'move_pulse' (15#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
 INFO: [Synth 8-6157] synthesizing module 'enemy_master' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
 INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
 	Parameter CLK_HZ bound to: 6250000 - type: integer 
@@ -171,24 +184,44 @@ INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new' [D:/github/EE2026-Sta
 	Parameter STEP2 bound to: 6'b010110 
 	Parameter STEP3 bound to: 6'b100001 
 	Parameter STEP4 bound to: 6'b101100 
-INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new' (15#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new' (16#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
+	Parameter CLK_HZ bound to: 6250000 - type: integer 
+	Parameter DIV_0P2HZ bound to: 30000000 - type: integer 
+	Parameter DIV_0P5HZ bound to: 15000000 - type: integer 
+	Parameter MAX_DIV bound to: 30000000 - type: integer 
+	Parameter CNT_W bound to: 25 - type: integer 
+	Parameter STEP0 bound to: 6'b000000 
+	Parameter STEP1 bound to: 6'b001011 
+	Parameter STEP2 bound to: 6'b010110 
+	Parameter STEP3 bound to: 6'b100001 
+	Parameter STEP4 bound to: 6'b101100 
+INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new2' (17#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
 INFO: [Synth 8-6157] synthesizing module 'enemy_unit' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
 INFO: [Synth 8-6157] synthesizing module 'enemy_move' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_move' (16#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_move' (18#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
 INFO: [Synth 8-6157] synthesizing module 'position_check' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
 	Parameter image_width bound to: 4'b1000 
 	Parameter image_height bound to: 4'b1000 
-INFO: [Synth 8-6155] done synthesizing module 'position_check' (17#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_unit' (18#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_master' (19#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_package' (20#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'position_check' (19#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_unit' (20#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'enemy_unit2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
+INFO: [Synth 8-6157] synthesizing module 'enemy_move2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_move2' (21#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'position_check2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
+	Parameter image_width bound to: 4'b1000 
+	Parameter image_height bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'position_check2' (22#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_unit2' (23#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_master' (24#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_package' (25#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
 INFO: [Synth 8-6157] synthesizing module 'starship' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:23]
 	Parameter NONE bound to: 2'b00 
 	Parameter UP bound to: 2'b01 
 	Parameter DOWN bound to: 2'b10 
 INFO: [Synth 8-6157] synthesizing module 'starship_design' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'starship_design' (21#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'starship' (22#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'starship_design' (26#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'starship' (27#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:23]
 INFO: [Synth 8-6157] synthesizing module 'priority_module' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
 	Parameter background bound to: 16'b0000000000000000 
 	Parameter starship bound to: 16'b0110001101001101 
@@ -197,7 +230,7 @@ INFO: [Synth 8-6157] synthesizing module 'priority_module' [D:/github/EE2026-Sta
 	Parameter red bound to: 16'b1111100100000100 
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter CD bound to: 16'b0100101110111111 
-INFO: [Synth 8-6155] done synthesizing module 'priority_module' (23#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'priority_module' (28#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet_module' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
 	Parameter max_bullets_normal bound to: 4 - type: integer 
 	Parameter max_bullets_skill bound to: 7 - type: integer 
@@ -205,20 +238,20 @@ INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/proje
 WARNING: [Synth 8-6014] Unused sequential element break_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:100]
 WARNING: [Synth 8-6014] Unused sequential element bx_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:153]
 WARNING: [Synth 8-6014] Unused sequential element by_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:154]
-INFO: [Synth 8-6155] done synthesizing module 'bullet_module' (24#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bullet_module' (29#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
 INFO: [Synth 8-6157] synthesizing module 'bullet_CD_display' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
 	Parameter MAX_COUNT bound to: 25'b1110111001101011001001111 
 	Parameter CENTER bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bullet_CD_display' (25#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bullet_CD_display' (30#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
 INFO: [Synth 8-6157] synthesizing module 'score_display' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'score_display' (26#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'score_display' (31#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
 INFO: [Synth 8-6157] synthesizing module 'hp_bar' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (27#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (32#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:23]
 INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'pulse' (28#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'play' (29#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'state_crl' (30#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_student' (31#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (33#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'play' (34#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'state_crl' (35#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_student' (36#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:23]
 WARNING: [Synth 8-3331] design starship_design has unconnected port clk
 WARNING: [Synth 8-3331] design play has unconnected port clk
 WARNING: [Synth 8-3331] design play has unconnected port sample_pixel
@@ -255,7 +288,7 @@ WARNING: [Synth 8-3331] design Start has unconnected port sample_pixel
 WARNING: [Synth 8-3331] design Top_student has unconnected port JB[2]
 WARNING: [Synth 8-3331] design Top_student has unconnected port SW0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 455.277 ; gain = 198.426
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 466.207 ; gain = 209.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -268,10 +301,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 455.277 ; gain = 198.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 466.207 ; gain = 209.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 455.277 ; gain = 198.426
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 466.207 ; gain = 209.188
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -290,22 +323,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 821.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 829.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 821.875 ; gain = 565.023
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 830.020 ; gain = 573.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 821.875 ; gain = 565.023
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 830.020 ; gain = 573.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 821.875 ; gain = 565.023
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 830.020 ; gain = 573.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "clk_625m" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
@@ -323,8 +356,17 @@ INFO: [Synth 8-5545] ROM "get_line_char3" won't be mapped to RAM because address
 INFO: [Synth 8-5545] ROM "get_line_char4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "get_line_char5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "get_line_char6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_line_char" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_line_char7" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_line_char8" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_line_char9" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_line_char10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "image" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:57]
+INFO: [Synth 8-5546] ROM "y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "image" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:45]
 INFO: [Synth 8-5546] ROM "CD" won't be mapped to RAM because it is too sparse
@@ -390,15 +432,15 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'anode_reg' using encoding 'sequential' in module 'score_display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 821.875 ; gain = 565.023
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 830.020 ; gain = 573.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |state_crl__GB0   |           1|     30596|
-|2     |state_crl__GB1   |           1|     17852|
+|1     |state_crl__GB0   |           1|     33677|
+|2     |state_crl__GB1   |           1|     25614|
 |3     |Top_student__GC0 |           1|      2216|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -406,45 +448,47 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 28    
+	   2 Input     32 Bit       Adders := 38    
+	   2 Input     25 Bit       Adders := 1     
 	   2 Input     18 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 1     
-	   3 Input     10 Bit       Adders := 5     
-	   2 Input      9 Bit       Adders := 10    
+	   3 Input     10 Bit       Adders := 10    
+	   2 Input      9 Bit       Adders := 20    
 	   3 Input      9 Bit       Adders := 1     
-	   3 Input      8 Bit       Adders := 6     
+	   3 Input      8 Bit       Adders := 11    
 	   2 Input      8 Bit       Adders := 7     
-	   2 Input      7 Bit       Adders := 96    
+	   2 Input      7 Bit       Adders := 116   
 	   3 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 15    
+	   2 Input      6 Bit       Adders := 26    
 	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 4     
-	   2 Input      3 Bit       Adders := 12    
-	   3 Input      3 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 23    
+	   3 Input      3 Bit       Adders := 10    
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	              350 Bit    Registers := 1     
 	               40 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 7     
-	                9 Bit    Registers := 5     
-	                7 Bit    Registers := 19    
-	                6 Bit    Registers := 4     
+	                9 Bit    Registers := 10    
+	                7 Bit    Registers := 30    
+	                6 Bit    Registers := 5     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 4     
-	                3 Bit    Registers := 5     
+	                3 Bit    Registers := 8     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 69    
+	                1 Bit    Registers := 118   
 +---Multipliers : 
 	                 5x25  Multipliers := 1     
 +---Muxes : 
 	   2 Input    350 Bit        Muxes := 47    
 	   2 Input     40 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 11    
 	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
 	   4 Input     23 Bit        Muxes := 1     
 	  32 Input     20 Bit        Muxes := 1     
 	   4 Input     18 Bit        Muxes := 1     
@@ -455,36 +499,36 @@ Detailed RTL Component Info :
 	   4 Input     16 Bit        Muxes := 1     
 	   5 Input     16 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 71    
-	   2 Input      9 Bit        Muxes := 5     
-	   2 Input      8 Bit        Muxes := 5     
-	   9 Input      8 Bit        Muxes := 5     
-	   3 Input      7 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 13    
+	   2 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 10    
+	   9 Input      8 Bit        Muxes := 10    
+	   3 Input      7 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 28    
 	   5 Input      7 Bit        Muxes := 4     
 	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 20    
+	   2 Input      6 Bit        Muxes := 37    
 	  32 Input      6 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
-	   8 Input      5 Bit        Muxes := 222   
+	   8 Input      5 Bit        Muxes := 352   
 	  27 Input      5 Bit        Muxes := 4     
+	  31 Input      5 Bit        Muxes := 5     
 	  29 Input      5 Bit        Muxes := 5     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 4     
 	   5 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   8 Input      4 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 11    
+	   8 Input      4 Bit        Muxes := 14    
+	   2 Input      3 Bit        Muxes := 20    
 	   4 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 9     
+	   8 Input      3 Bit        Muxes := 14    
 	   3 Input      3 Bit        Muxes := 1     
-	   5 Input      3 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 7     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 82    
-	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 122   
+	   4 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 10    
 	   8 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -533,6 +577,26 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 17    
 	   2 Input      3 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 4     
+Module reset_enemy_new2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 10    
+	   2 Input      6 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 17    
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 11    
 	   4 Input      1 Bit        Muxes := 4     
 Module enemy_move__1 
 Detailed RTL Component Info : 
@@ -684,6 +748,191 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
+Module enemy_move2__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module position_check2__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_unit2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_move2__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module position_check2__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_unit2__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_move2__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module position_check2__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_unit2__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_move2__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module position_check2__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_unit2__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_move2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module position_check2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_unit2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module starship_design 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -822,8 +1071,22 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   2 Input      7 Bit        Muxes := 5     
-	   8 Input      5 Bit        Muxes := 130   
+	   8 Input      5 Bit        Muxes := 140   
+	  31 Input      5 Bit        Muxes := 5     
+	   8 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module intro3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 5     
+	   8 Input      5 Bit        Muxes := 120   
 	  29 Input      5 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 10    
 	   8 Input      3 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 4     
 Module skill1 
@@ -841,9 +1104,8 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 13    
 	   3 Input      3 Bit        Muxes := 1     
-	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
 Module state_crl 
 Detailed RTL Component Info : 
@@ -903,14 +1165,16 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'u_enemy_master/enemy2/ka_q_reg' into 'u_enemy_master/enemy1/ka_q_reg' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-INFO: [Synth 8-4471] merging register 'u_enemy_master/enemy3/ka_q_reg' into 'u_enemy_master/enemy1/ka_q_reg' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-INFO: [Synth 8-4471] merging register 'u_enemy_master/enemy4/ka_q_reg' into 'u_enemy_master/enemy1/ka_q_reg' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-INFO: [Synth 8-4471] merging register 'u_enemy_master/enemy5/ka_q_reg' into 'u_enemy_master/enemy1/ka_q_reg' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-WARNING: [Synth 8-6014] Unused sequential element u_enemy_master/enemy2/ka_q_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-WARNING: [Synth 8-6014] Unused sequential element u_enemy_master/enemy3/ka_q_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-WARNING: [Synth 8-6014] Unused sequential element u_enemy_master/enemy4/ka_q_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
-WARNING: [Synth 8-6014] Unused sequential element u_enemy_master/enemy5/ka_q_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:19]
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "anode" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'u134/pixel_data_reg[15:0]' into 'u12/pixel_data_reg[15:0]' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:32]
 WARNING: [Synth 8-6014] Unused sequential element u134/pixel_data_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:32]
@@ -920,11 +1184,25 @@ INFO: [Synth 8-5546] ROM "oled/fsm_next_state0" won't be mapped to RAM because i
 WARNING: [Synth 8-3331] design Top_student has unconnected port JB[2]
 WARNING: [Synth 8-3331] design Top_student has unconnected port SW0
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset/random_num_1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset2/random_num_5_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset2/random_num_4_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset2/random_num_3_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset2/random_num_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset2/random_num_1_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset/random_num_5_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset/random_num_4_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset/random_num_3_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/u_reset/random_num_2_reg[6] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (sti_1/pl/bu/\frame_count_comparator_reg[4] )
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy1/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy5/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy25/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy24/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy24/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy23/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy23/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy22/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy22/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy21/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/u_reset2/start_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/u_reset/start_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy5/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy4/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy4/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy3/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy3/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy2/ka_q_reg'
 INFO: [Synth 8-3886] merging instance 'sti_1/pl/star/centre_x_reg[0]' (FDPE) to 'sti_1/pl/star/centre_x_reg[2]'
 INFO: [Synth 8-3886] merging instance 'sti_1/pl/star/centre_x_reg[1]' (FDCE) to 'sti_1/pl/star/centre_x_reg[6]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (sti_1/pl/star/\centre_x_reg[2] )
@@ -999,14 +1277,19 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/enemy3/enemy_move_inst/anchor_y_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_1/pl/u2/\u_enemy_master/enemy2/enemy_move_inst/anchor_y_reg[6] )
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset/random_num_1_reg[6]) is unused and will be removed from module enemy_package.
-WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy1/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset/random_num_2_reg[6]) is unused and will be removed from module enemy_package.
-WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy2/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset/random_num_3_reg[6]) is unused and will be removed from module enemy_package.
-WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy3/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset/random_num_4_reg[6]) is unused and will be removed from module enemy_package.
-WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy4/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset/random_num_5_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset2/random_num_1_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset2/random_num_2_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset2/random_num_3_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset2/random_num_4_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/u_reset2/random_num_5_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy1/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy2/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy3/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
+WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy4/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (u_enemy_master/enemy5/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_package.
 WARNING: [Synth 8-3332] Sequential element (centre_x_reg[6]) is unused and will be removed from module starship.
 WARNING: [Synth 8-3332] Sequential element (centre_x_reg[2]) is unused and will be removed from module starship.
@@ -1038,12 +1321,13 @@ INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[1]' (FD) to 'sti
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[3]' (FD) to 'sti_2/sta/pixel_data_reg[9]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[4]' (FD) to 'sti_2/sta/pixel_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[5]' (FD) to 'sti_2/sta/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_1/pl/u2/u_enemy_master/enemy21/ka_q_reg' (FD) to 'sti_1/pl/u2/u_enemy_master/enemy2/ka_q_reg'
 INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[1]' (FD) to 'sti_1/oled_data_reg[4]'
 INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[3]' (FD) to 'sti_1/oled_data_reg[9]'
 INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[4]' (FD) to 'sti_1/oled_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[5]' (FD) to 'sti_1/oled_data_reg[7]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:02:17 . Memory (MB): peak = 892.570 ; gain = 635.719
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:01:45 . Memory (MB): peak = 953.391 ; gain = 696.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1064,36 +1348,36 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |state_crl__GB0   |           1|      8037|
-|2     |state_crl__GB1   |           1|      7189|
+|1     |state_crl__GB0   |           1|      9794|
+|2     |state_crl__GB1   |           1|     10349|
 |3     |Top_student__GC0 |           1|       759|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:02:30 . Memory (MB): peak = 892.570 ; gain = 635.719
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:01:56 . Memory (MB): peak = 953.391 ; gain = 696.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:02:30 . Memory (MB): peak = 892.570 ; gain = 635.719
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:58 . Memory (MB): peak = 953.391 ; gain = 696.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |state_crl__GB0   |           1|      8037|
-|2     |state_crl__GB1   |           1|      7189|
+|1     |state_crl__GB0   |           1|      9794|
+|2     |state_crl__GB1   |           1|     10349|
 |3     |Top_student__GC0 |           1|       759|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:02:36 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:02:06 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1117,7 +1401,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:02:38 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:02:07 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1130,7 +1414,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:02:38 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:02:08 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1142,25 +1426,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:02:38 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:02:09 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:02:39 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:02:09 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:02:39 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:02:10 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:02:39 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:02:10 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1177,79 +1461,97 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |   635|
-|3     |LUT1   |   113|
-|4     |LUT2   |   796|
-|5     |LUT3   |   629|
-|6     |LUT4   |   913|
-|7     |LUT5   |  1142|
-|8     |LUT6   |  2125|
-|9     |MUXF7  |     9|
-|10    |FDCE   |    31|
-|11    |FDE_1  |    32|
-|12    |FDPE   |     2|
-|13    |FDRE   |   784|
-|14    |FDSE   |    80|
-|15    |IBUF   |    11|
-|16    |OBUF   |    34|
-|17    |OBUFT  |     1|
+|2     |CARRY4 |   912|
+|3     |LUT1   |   133|
+|4     |LUT2   |  1058|
+|5     |LUT3   |   870|
+|6     |LUT4   |  1227|
+|7     |LUT5   |  1655|
+|8     |LUT6   |  2646|
+|9     |MUXF7  |    18|
+|10    |MUXF8  |     1|
+|11    |FDCE   |    31|
+|12    |FDE_1  |    32|
+|13    |FDPE   |     2|
+|14    |FDRE   |   961|
+|15    |FDSE   |   103|
+|16    |IBUF   |    11|
+|17    |OBUF   |    34|
+|18    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+--------------------------------+------------------+------+
-|      |Instance                        |Module            |Cells |
-+------+--------------------------------+------------------+------+
-|1     |top                             |                  |  7339|
-|2     |  cl                            |clk_625m          |     8|
-|3     |  oled                          |Oled_Display      |   897|
-|4     |  st                            |state_crl         |  6229|
-|5     |    di                          |difficulty_choose |    53|
-|6     |    en                          |End               |    85|
-|7     |    pl                          |play              |  2707|
-|8     |      bu                        |bullet_module     |  1338|
-|9     |      hp                        |hp_bar            |    41|
-|10    |      pri                       |priority_module   |   228|
-|11    |      pu                        |pulse             |    19|
-|12    |      sc                        |score_display     |   206|
-|13    |      star                      |starship          |   224|
-|14    |        C0                      |starship_design   |    33|
-|15    |      u2                        |enemy_package     |   651|
-|16    |        u_enemy_master          |enemy_master      |   577|
-|17    |          enemy1                |enemy_unit        |    80|
-|18    |            enemy_move_inst     |enemy_move_11     |    56|
-|19    |            position_check_inst |position_check_12 |    13|
-|20    |          enemy2                |enemy_unit_1      |    79|
-|21    |            enemy_move_inst     |enemy_move_9      |    56|
-|22    |            position_check_inst |position_check_10 |    13|
-|23    |          enemy3                |enemy_unit_2      |    78|
-|24    |            enemy_move_inst     |enemy_move_7      |    56|
-|25    |            position_check_inst |position_check_8  |    12|
-|26    |          enemy4                |enemy_unit_3      |    80|
-|27    |            enemy_move_inst     |enemy_move_5      |    56|
-|28    |            position_check_inst |position_check_6  |    13|
-|29    |          enemy5                |enemy_unit_4      |    80|
-|30    |            enemy_move_inst     |enemy_move        |    56|
-|31    |            position_check_inst |position_check    |    13|
-|32    |          u_reset               |reset_enemy_new   |   179|
-|33    |        u_move_pulse            |move_pulse        |    74|
-|34    |    sta                         |Start             |  3234|
-|35    |      be                        |begining          |     4|
-|36    |      in                        |intro             |     2|
-|37    |      int1                      |introduction1     |   784|
-|38    |      int2                      |intro2            |   936|
-|39    |      u12                       |skill1            |    22|
-|40    |      xy                        |xy_coordinate     |  1409|
-|41    |    u0                          |on_press          |    66|
-|42    |    u1                          |on_press_0        |    64|
-+------+--------------------------------+------------------+------+
++------+---------------------------------+-------------------+------+
+|      |Instance                         |Module             |Cells |
++------+---------------------------------+-------------------+------+
+|1     |top                              |                   |  9697|
+|2     |  cl                             |clk_625m           |     8|
+|3     |  oled                           |Oled_Display       |  1293|
+|4     |  st                             |state_crl          |  8120|
+|5     |    di                           |difficulty_choose  |    74|
+|6     |    en                           |End                |    75|
+|7     |    pl                           |play               |  3409|
+|8     |      bu                         |bullet_module      |  1339|
+|9     |      hp                         |hp_bar             |    42|
+|10    |      pri                        |priority_module    |   230|
+|11    |      pu                         |pulse              |    19|
+|12    |      sc                         |score_display      |   206|
+|13    |      star                       |starship           |   224|
+|14    |        C0                       |starship_design    |    33|
+|15    |      u2                         |enemy_package      |  1349|
+|16    |        u_enemy_master           |enemy_master       |  1275|
+|17    |          enemy1                 |enemy_unit         |    76|
+|18    |            enemy_move_inst      |enemy_move_23      |    56|
+|19    |            position_check_inst  |position_check_24  |    13|
+|20    |          enemy2                 |enemy_unit_1       |    81|
+|21    |            enemy_move_inst      |enemy_move_21      |    56|
+|22    |            position_check_inst  |position_check_22  |    13|
+|23    |          enemy21                |enemy_unit2        |    99|
+|24    |            enemy_move2_inst     |enemy_move2_19     |    78|
+|25    |            position_check2_inst |position_check2_20 |    12|
+|26    |          enemy22                |enemy_unit2_2      |   100|
+|27    |            enemy_move2_inst     |enemy_move2_17     |    80|
+|28    |            position_check2_inst |position_check2_18 |    11|
+|29    |          enemy23                |enemy_unit2_3      |   102|
+|30    |            enemy_move2_inst     |enemy_move2_15     |    80|
+|31    |            position_check2_inst |position_check2_16 |    13|
+|32    |          enemy24                |enemy_unit2_4      |   101|
+|33    |            enemy_move2_inst     |enemy_move2_13     |    80|
+|34    |            position_check2_inst |position_check2_14 |    12|
+|35    |          enemy25                |enemy_unit2_5      |   110|
+|36    |            enemy_move2_inst     |enemy_move2        |    80|
+|37    |            position_check2_inst |position_check2    |    21|
+|38    |          enemy3                 |enemy_unit_6       |    75|
+|39    |            enemy_move_inst      |enemy_move_11      |    56|
+|40    |            position_check_inst  |position_check_12  |    12|
+|41    |          enemy4                 |enemy_unit_7       |    79|
+|42    |            enemy_move_inst      |enemy_move_9       |    56|
+|43    |            position_check_inst  |position_check_10  |    16|
+|44    |          enemy5                 |enemy_unit_8       |    75|
+|45    |            enemy_move_inst      |enemy_move         |    56|
+|46    |            position_check_inst  |position_check     |    11|
+|47    |          u_reset                |reset_enemy_new    |   188|
+|48    |          u_reset2               |reset_enemy_new2   |   187|
+|49    |        u_move_pulse             |move_pulse         |    74|
+|50    |    sta                          |Start              |  4411|
+|51    |      be                         |begining           |     3|
+|52    |      in                         |intro              |     1|
+|53    |      int1                       |introduction1      |   793|
+|54    |      int2                       |intro2             |   977|
+|55    |      int3                       |intro3             |   985|
+|56    |      u12                        |skill1             |    11|
+|57    |      xy                         |xy_coordinate      |  1524|
+|58    |    u0                           |on_press           |    66|
+|59    |    u1                           |on_press_0         |    64|
++------+---------------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:02:39 . Memory (MB): peak = 981.285 ; gain = 724.434
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:02:10 . Memory (MB): peak = 985.355 ; gain = 728.336
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:02:28 . Memory (MB): peak = 981.285 ; gain = 357.836
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:02:39 . Memory (MB): peak = 981.285 ; gain = 724.434
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:02:02 . Memory (MB): peak = 985.355 ; gain = 364.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:02:10 . Memory (MB): peak = 985.355 ; gain = 728.336
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 687 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 974 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1258,11 +1560,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-230 Infos, 70 Warnings, 1 Critical Warnings and 0 Errors encountered.
+270 Infos, 66 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:02:44 . Memory (MB): peak = 981.285 ; gain = 737.094
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:02:16 . Memory (MB): peak = 985.355 ; gain = 741.215
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_student_utilization_synth.rpt -pb Top_student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 981.285 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 28 18:54:26 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 985.355 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 28 20:29:14 2025...

@@ -39,6 +39,7 @@ module Start(
     wire [15:0] page2;
     wire [15:0] page3;
     wire [15:0] page4;
+    wire [15:0] page5;
     wire [15:0] skill1_page;
     wire [15:0] skill2_page;
     reg [2:0] page = 3'b001;
@@ -48,6 +49,7 @@ module Start(
     intro in (clk_625m, x, y, page2);
     introduction1 int1 (clk_625m, x, y, page3);
     intro2 int2 (clk_625m, x, y, page4);
+    intro3 int3 (clk_625m, x, y, page5);
     skill1 u12 (clk_625m, x, y, oled_data_play, skill1_page);
     skill2 u134 (clk_625m, x, y, oled_data_play, skill2_page);
     
@@ -71,6 +73,9 @@ module Start(
             page <= 6;
         end
         else if (page == 6 && btnL) begin
+            page <= 7;
+        end
+        else if (page == 7 && btnL) begin
             finish <= 1;
         end
       end else begin
@@ -85,8 +90,9 @@ module Start(
             3'd2:    pixel_data <= page2;
             3'd3:    pixel_data <= page3;
             3'd4:    pixel_data <= page4;
-            3'd5:    pixel_data <= skill1_page;
-            3'd6:    pixel_data <= skill2_page;
+            3'd5:    pixel_data <= page5;
+            3'd6:    pixel_data <= skill1_page;
+            3'd7:    pixel_data <= skill2_page;
             default: pixel_data <= 16'h0000; // Default to black
         endcase
     end
