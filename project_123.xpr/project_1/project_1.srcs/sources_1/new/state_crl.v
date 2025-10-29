@@ -24,6 +24,7 @@ module state_crl(
     input btnR,
     input SW15, SW14, SW13, SW12,
     input bullet_skill,
+    input shield_skill,
     input up, 
     input down,
     input [12:0] pixel_index,
@@ -61,7 +62,7 @@ module state_crl(
     on_press u1 (btnR, clk_625m, pulseR);
     Start sta (oled_data_play, pulseR, btn_pulse, pixel_index, state, frame_begin, sample_pixel, clk_625m, oled_data_start, start_finish);
     End en (frame_begin,sample_pixel,clk_625m,oled_data_end);
-    play pl (level_state, bullet_skill, up, down, pixel_index, reset, clk, state, frame_begin, sample_pixel, clk_625m, oled_data_play, anode, seg, led, dead_flag);
+    play pl (level_state, bullet_skill,shield_skill, up, down, pixel_index, reset, clk, state, frame_begin, sample_pixel, clk_625m, oled_data_play, anode, seg, led, dead_flag);
     
     always @(posedge clk_625m) begin
         if (start_finish && (state == start)) begin

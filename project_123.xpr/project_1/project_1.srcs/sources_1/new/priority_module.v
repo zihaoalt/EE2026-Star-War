@@ -26,6 +26,7 @@ module priority_module(
     input white_flag,
     input clk_625m,
     input starship_flag,
+    input shield_flag,
     input bullet_flag,
     input enemy_flag,
     output BE_collision,
@@ -39,6 +40,7 @@ module priority_module(
     parameter red = 16'hF904;
     parameter white = 16'hFFFF;
     parameter CD = 16'h4BBF;
+    parameter shield = 16'h5DFF;
     
     always @(posedge clk_625m) begin
         if (red_flag) begin
@@ -49,6 +51,8 @@ module priority_module(
             pixel_data <= CD;
         end else if (starship_flag) begin
             pixel_data <= starship;
+        end else if (shield_flag) begin
+            pixel_data <= shield;            
         end else if (enemy_flag) begin
             pixel_data <= enemy;
         end else if (bullet_flag) begin
