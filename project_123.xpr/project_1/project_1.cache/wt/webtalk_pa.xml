@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Oct 28 20:32:50 2025">
+<application name="pa" timeStamp="Thu Oct 30 17:13:11 2025">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="db9fb59a53584dcfb392e45d7bfe9a95" type="ProjectID"/>
-<property name="ProjectIteration" value="137" type="ProjectIteration"/>
+<property name="ProjectIteration" value="139" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -19,19 +19,19 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="AddSources" value="46" type="JavaHandler"/>
 <property name="ArchiveProject" value="2" type="JavaHandler"/>
-<property name="AutoConnectTarget" value="76" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="78" type="JavaHandler"/>
 <property name="EditDelete" value="18" type="JavaHandler"/>
 <property name="LaunchOpenTarget" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="123" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="126" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenFile" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="231" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="238" type="JavaHandler"/>
 <property name="OpenProject" value="3" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="78" type="JavaHandler"/>
-<property name="ProgramDevice" value="118" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="80" type="JavaHandler"/>
+<property name="ProgramDevice" value="121" type="JavaHandler"/>
 <property name="ProjectSummary" value="1" type="JavaHandler"/>
 <property name="RefreshDevice" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="138" type="JavaHandler"/>
+<property name="RunBitgen" value="140" type="JavaHandler"/>
 <property name="RunImplementation" value="3" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="11" type="JavaHandler"/>
 <property name="SetTopNode" value="6" type="JavaHandler"/>
@@ -59,7 +59,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_CANCEL" value="12" type="GuiHandlerData"/>
 <property name="BaseDialog_OK" value="154" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="1" type="GuiHandlerData"/>
-<property name="CmdMsgDialog_OK" value="43" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="45" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="2" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_CREATE_FILE" value="1" type="GuiHandlerData"/>
 <property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiHandlerData"/>
@@ -70,8 +70,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="944" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="441" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="948" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="450" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="1" type="GuiHandlerData"/>
 <property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="6" type="GuiHandlerData"/>
@@ -104,7 +104,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenFileAction_OPEN_DIRECTORY" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="13" type="GuiHandlerData"/>
 <property name="PACommandNames_ARCHIVE_PROJECT" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_CONNECT_TARGET" value="76" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="78" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="26" type="GuiHandlerData"/>
 <property name="PACommandNames_FILESET_WINDOW" value="5" type="GuiHandlerData"/>
 <property name="PACommandNames_GOTO_INSTANTIATION" value="2" type="GuiHandlerData"/>
@@ -124,7 +124,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProgramDebugTab_OPEN_TARGET" value="4" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="6" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_REFRESH_DEVICE" value="1" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="122" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="125" type="GuiHandlerData"/>
 <property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="5" type="GuiHandlerData"/>
 <property name="ProgressDialog_CANCEL" value="2" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
@@ -153,9 +153,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="7" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="93" type="GuiMode"/>
+<property name="GuiMode" value="95" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="72" type="TclMode"/>
+<property name="TclMode" value="74" type="TclMode"/>
 </item>
 </section>
 </application>

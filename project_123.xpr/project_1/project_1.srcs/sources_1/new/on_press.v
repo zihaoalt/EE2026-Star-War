@@ -40,7 +40,7 @@ module on_press(
         if (btn_sync1 && !stable && counter == 0) begin
             btn_pulse <= 1;         
             stable <= 1;
-            counter <= 625000;  
+            counter <= 1250000;  
         end else begin
             btn_pulse <= 0;
             if (counter > 0) counter <= counter - 1;
