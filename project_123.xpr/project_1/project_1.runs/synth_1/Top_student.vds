@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Oct 31 03:34:12 2025
-# Process ID: 15704
-# Current directory: C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1
+# Start of session at: Fri Oct 31 09:28:28 2025
+# Process ID: 6684
+# Current directory: D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log Top_student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_student.tcl
-# Log file: C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.vds
-# Journal file: C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.vds
+# Journal file: D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_student.tcl -notrace
 Command: synth_design -top Top_student -part xc7a35tcpg236-1
@@ -15,15 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19564 
-WARNING: [Synth 8-2611] redeclaration of ansi port clk_625m is not allowed [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:29]
+INFO: Helper process launched with PID 36608 
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_625m is not allowed [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:29]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 368.328 ; gain = 111.383
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 368.680 ; gain = 111.250
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_student' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:22]
-INFO: [Synth 8-6157] synthesizing module 'clk_625m' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clk_625m' (1#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Top_student' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_625m' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_625m' (1#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -74,38 +74,38 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/XuZihao/Docume
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'state_crl' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
+INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'state_crl' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
 	Parameter start bound to: 2'b00 
 	Parameter gameplay bound to: 2'b01 
 	Parameter pause bound to: 2'b10 
 	Parameter over bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'difficulty_choose' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
+INFO: [Synth 8-6157] synthesizing module 'difficulty_choose' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
 	Parameter easy bound to: 2'b00 
 	Parameter normal bound to: 2'b01 
 	Parameter hard bound to: 2'b10 
 	Parameter expert bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'difficulty_choose' (3#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
-INFO: [Synth 8-6157] synthesizing module 'on_press' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:23]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:32]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'on_press' (4#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Start' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
-INFO: [Synth 8-6157] synthesizing module 'xy_coordinate' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xy_coordinate' (5#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v:23]
-INFO: [Synth 8-6157] synthesizing module 'begining' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/begining.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'difficulty_choose' (3#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v:23]
+INFO: [Synth 8-6157] synthesizing module 'on_press' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:32]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'on_press' (4#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Start' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xy_coordinate' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xy_coordinate' (5#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'begining' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/begining.v:23]
 	Parameter starwar bound to: 16'b1111111111111111 
 	Parameter difficulty bound to: 16'b1111111111111111 
 	Parameter level bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'begining' (6#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/begining.v:23]
-INFO: [Synth 8-6157] synthesizing module 'intro' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'begining' (6#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/begining.v:23]
+INFO: [Synth 8-6157] synthesizing module 'intro' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'intro' (7#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v:23]
-INFO: [Synth 8-6157] synthesizing module 'introduction1' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'intro' (7#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v:23]
+INFO: [Synth 8-6157] synthesizing module 'introduction1' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v:23]
 	Parameter WHITE bound to: 16'b1111111111111111 
 	Parameter BLACK bound to: 16'b0000000000000000 
 	Parameter FONT_W_LOG bound to: 5 - type: integer 
@@ -121,8 +121,8 @@ INFO: [Synth 8-6157] synthesizing module 'introduction1' [C:/Users/XuZihao/Docum
 	Parameter LINE2_LEN bound to: 13 - type: integer 
 	Parameter LINE3_LEN bound to: 16 - type: integer 
 	Parameter NUM_LINES bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'introduction1' (8#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'intro2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'introduction1' (8#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'intro2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
 	Parameter WHITE bound to: 16'b1111111111111111 
 	Parameter BLACK bound to: 16'b0000000000000000 
 	Parameter FONT_W bound to: 5 - type: integer 
@@ -139,8 +139,8 @@ INFO: [Synth 8-6157] synthesizing module 'intro2' [C:/Users/XuZihao/Documents/Gi
 	Parameter LINE3_LEN bound to: 13 - type: integer 
 	Parameter LINE4_LEN bound to: 16 - type: integer 
 	Parameter NUM_LINES bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'intro2' (9#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'intro3' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'intro2' (9#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'intro3' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
 	Parameter WHITE bound to: 16'b1111111111111111 
 	Parameter BLACK bound to: 16'b0000000000000000 
 	Parameter FONT_W bound to: 5 - type: integer 
@@ -157,22 +157,22 @@ INFO: [Synth 8-6157] synthesizing module 'intro3' [C:/Users/XuZihao/Documents/Gi
 	Parameter LINE3_LEN bound to: 12 - type: integer 
 	Parameter LINE4_LEN bound to: 15 - type: integer 
 	Parameter NUM_LINES bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'intro3' (10#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'skill1' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'intro3' (10#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'skill1' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:3]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'skill1' (11#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:3]
-INFO: [Synth 8-6157] synthesizing module 'skill2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'skill2' (12#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Start' (13#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
-INFO: [Synth 8-6157] synthesizing module 'End' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'skill1' (11#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'skill2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'skill2' (12#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Start' (13#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'End' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
 	Parameter color bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'End' (14#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
-INFO: [Synth 8-6157] synthesizing module 'play' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
-INFO: [Synth 8-6157] synthesizing module 'enemy_package' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
-INFO: [Synth 8-6157] synthesizing module 'move_pulse' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'move_pulse' (15#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
-INFO: [Synth 8-6157] synthesizing module 'enemy_master' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
-INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'End' (14#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v:3]
+INFO: [Synth 8-6157] synthesizing module 'play' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enemy_package' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
+INFO: [Synth 8-6157] synthesizing module 'move_pulse' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'move_pulse' (15#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/move_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enemy_master' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
+INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
 	Parameter CLK_HZ bound to: 6250000 - type: integer 
 	Parameter DIV_0P8HZ bound to: 7000000 - type: integer 
 	Parameter DIV_1P2HZ bound to: 5000000 - type: integer 
@@ -185,8 +185,8 @@ INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new' [C:/Users/XuZihao/Doc
 	Parameter STEP2 bound to: 6'b010110 
 	Parameter STEP3 bound to: 6'b100001 
 	Parameter STEP4 bound to: 6'b101100 
-INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new' (16#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
-INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new' (16#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
 	Parameter CLK_HZ bound to: 6250000 - type: integer 
 	Parameter DIV_0P2HZ bound to: 30000000 - type: integer 
 	Parameter DIV_0P5HZ bound to: 15000000 - type: integer 
@@ -197,34 +197,34 @@ INFO: [Synth 8-6157] synthesizing module 'reset_enemy_new2' [C:/Users/XuZihao/Do
 	Parameter STEP2 bound to: 6'b010110 
 	Parameter STEP3 bound to: 6'b100001 
 	Parameter STEP4 bound to: 6'b101100 
-INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new2' (17#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'enemy_unit' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
-INFO: [Synth 8-6157] synthesizing module 'enemy_move' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_move' (18#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
-INFO: [Synth 8-6157] synthesizing module 'position_check' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reset_enemy_new2' (17#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/reset_enemy_new2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enemy_unit' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'enemy_move' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_move' (18#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_move.v:1]
+INFO: [Synth 8-6157] synthesizing module 'position_check' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
 	Parameter image_width bound to: 4'b1000 
 	Parameter image_height bound to: 4'b1000 
-INFO: [Synth 8-6155] done synthesizing module 'position_check' (19#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_unit' (20#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
-INFO: [Synth 8-6157] synthesizing module 'enemy_unit2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
-INFO: [Synth 8-6157] synthesizing module 'enemy_move2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_move2' (21#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'position_check2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'position_check' (19#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/position_check.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_unit' (20#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_unit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'enemy_unit2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
+INFO: [Synth 8-6157] synthesizing module 'enemy_move2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_move2' (21#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'position_check2' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
 	Parameter image_width bound to: 4'b1000 
 	Parameter image_height bound to: 4'b1000 
-INFO: [Synth 8-6155] done synthesizing module 'position_check2' (22#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_unit2' (23#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_master' (24#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'enemy_package' (25#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
-INFO: [Synth 8-6157] synthesizing module 'starship' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'position_check2' (22#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/position_check2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_unit2' (23#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_unit2.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_master' (24#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/FDPvivado1.srcs/FDPvivado1.srcs/sources_1/new/enemy_master.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'enemy_package' (25#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_package.v:23]
+INFO: [Synth 8-6157] synthesizing module 'starship' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:1]
 	Parameter NONE bound to: 2'b00 
 	Parameter UP bound to: 2'b01 
 	Parameter DOWN bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'starship_design' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
+INFO: [Synth 8-6157] synthesizing module 'starship_design' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
 	Parameter SHIELD_RADIUS bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'starship_design' (26#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'starship' (27#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:1]
-INFO: [Synth 8-6157] synthesizing module 'priority_module' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'starship_design' (26#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'starship' (27#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:1]
+INFO: [Synth 8-6157] synthesizing module 'priority_module' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
 	Parameter background bound to: 16'b0000000000000000 
 	Parameter starship bound to: 16'b0110001101001101 
 	Parameter bullet bound to: 16'b1011100001000001 
@@ -233,29 +233,29 @@ INFO: [Synth 8-6157] synthesizing module 'priority_module' [C:/Users/XuZihao/Doc
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter CD bound to: 16'b0100101110111111 
 	Parameter shield bound to: 16'b0101110111111111 
-INFO: [Synth 8-6155] done synthesizing module 'priority_module' (28#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet_module' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'priority_module' (28#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bullet_module' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
 	Parameter max_bullets_normal bound to: 4 - type: integer 
 	Parameter max_bullets_skill bound to: 7 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:75]
-WARNING: [Synth 8-6014] Unused sequential element break_reg was removed.  [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:100]
-WARNING: [Synth 8-6014] Unused sequential element bx_reg was removed.  [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:153]
-WARNING: [Synth 8-6014] Unused sequential element by_reg was removed.  [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:154]
-INFO: [Synth 8-6155] done synthesizing module 'bullet_module' (29#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
-INFO: [Synth 8-6157] synthesizing module 'bullet_CD_display' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
+INFO: [Synth 8-226] default block is never used [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:75]
+WARNING: [Synth 8-6014] Unused sequential element break_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:100]
+WARNING: [Synth 8-6014] Unused sequential element bx_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:153]
+WARNING: [Synth 8-6014] Unused sequential element by_reg was removed.  [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'bullet_module' (29#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bullet_CD_display' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
 	Parameter MAX_COUNT bound to: 25'b1110111001101011001001111 
 	Parameter CENTER bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bullet_CD_display' (30#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
-INFO: [Synth 8-6157] synthesizing module 'score_display' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'score_display' (31#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hp_bar' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bullet_CD_display' (30#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'score_display' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'score_display' (31#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hp_bar' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:7]
 	Parameter SHIELD_COOLDOWN bound to: 62500000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (32#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:7]
-INFO: [Synth 8-6157] synthesizing module 'pulse' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'pulse' (33#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'play' (34#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'state_crl' (35#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_student' (36#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (32#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v:7]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (33#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'play' (34#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'state_crl' (35#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_student' (36#1) [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v:22]
 WARNING: [Synth 8-3331] design starship_design has unconnected port clk
 WARNING: [Synth 8-3331] design play has unconnected port clk
 WARNING: [Synth 8-3331] design play has unconnected port sample_pixel
@@ -278,7 +278,7 @@ WARNING: [Synth 8-3331] design Start has unconnected port sample_pixel
 WARNING: [Synth 8-3331] design Top_student has unconnected port JB[2]
 WARNING: [Synth 8-3331] design Top_student has unconnected port SW0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 471.934 ; gain = 214.988
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 472.000 ; gain = 214.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -291,44 +291,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 471.934 ; gain = 214.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 472.000 ; gain = 214.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 471.934 ; gain = 214.988
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 472.000 ; gain = 214.570
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
-WARNING: [Vivado 12-584] No ports matched 'seg[7]'. [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc:58]
+Parsing XDC File [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
+WARNING: [Vivado 12-584] No ports matched 'seg[7]'. [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc:58]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_student_propImpl.xdc].
+Finished Parsing XDC File [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 840.445 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 840.914 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 840.473 ; gain = 583.527
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 840.926 ; gain = 583.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 840.473 ; gain = 583.527
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 840.926 ; gain = 583.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 840.473 ; gain = 583.527
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 840.926 ; gain = 583.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "clk_625m" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
@@ -354,11 +354,11 @@ INFO: [Synth 8-5545] ROM "get_line_char10" won't be mapped to RAM because addres
 INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "image" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/enemy_move2.v:57]
 INFO: [Synth 8-5546] ROM "y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "image" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:45]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v:45]
 INFO: [Synth 8-5546] ROM "CD" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
@@ -422,7 +422,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'anode_reg' using encoding 'sequential' in module 'score_display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 840.473 ; gain = 583.527
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 840.926 ; gain = 583.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -431,7 +431,7 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |1     |play             |           1|     34213|
 |2     |state_crl__GB1   |           1|       356|
-|3     |state_crl__GB2   |           1|     26566|
+|3     |state_crl__GB2   |           1|     26581|
 |4     |Top_student__GC0 |           1|      2216|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -466,7 +466,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 6     
+	               16 Bit    Registers := 7     
 	                9 Bit    Registers := 10    
 	                7 Bit    Registers := 30    
 	                6 Bit    Registers := 5     
@@ -474,7 +474,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 8     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 121   
+	                1 Bit    Registers := 120   
 +---Multipliers : 
 	                32x32  Multipliers := 2     
 	                 5x25  Multipliers := 1     
@@ -1094,7 +1094,7 @@ Detailed RTL Component Info :
 Module skill1 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 Module skill2 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1177,8 +1177,8 @@ INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM b
 INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
 DSP Report: Generating DSP C0/shield_flag3, operation Mode is: A*B.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
@@ -1345,19 +1345,19 @@ INFO: [Synth 8-3886] merging instance 'sti_2/sta/be/pixel_data_reg[12]' (FDS) to
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/be/pixel_data_reg[13]' (FDS) to 'sti_2/sta/be/pixel_data_reg[14]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/be/pixel_data_reg[14]' (FDS) to 'sti_2/sta/be/pixel_data_reg[15]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/u134/pixel_data_reg[1]' (FD) to 'sti_2/sta/u134/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_2/sta/u12/pixel_data_reg[1]' (FDS) to 'sti_2/sta/u12/pixel_data_reg[4]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/u134/pixel_data_reg[2]' (FD) to 'sti_2/sta/u134/pixel_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sti_2/sta/u12/pixel_data_reg[2]' (FDS) to 'sti_2/sta/u12/pixel_data_reg[14]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/u134/pixel_data_reg[4]' (FD) to 'sti_2/sta/u134/pixel_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sti_2/sta/u12/pixel_data_reg[4]' (FDS) to 'sti_2/sta/u12/pixel_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/u134/pixel_data_reg[5]' (FD) to 'sti_2/sta/u134/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_2/sta/u12/pixel_data_reg[5]' (FDS) to 'sti_2/sta/u12/pixel_data_reg[7]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[1]' (FD) to 'sti_2/sta/pixel_data_reg[4]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[4]' (FD) to 'sti_2/sta/pixel_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'sti_2/sta/pixel_data_reg[5]' (FD) to 'sti_2/sta/pixel_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'st/pl/u2/u_enemy_master/enemy21/ka_q_reg' (FD) to 'st/pl/u2/u_enemy_master/enemy2/ka_q_reg'
-INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[1]' (FD) to 'sti_1/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[4]' (FD) to 'sti_1/oled_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sti_1/oled_data_reg[5]' (FD) to 'sti_1/oled_data_reg[7]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 848.398 ; gain = 591.453
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:05 . Memory (MB): peak = 849.887 ; gain = 592.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1396,20 +1396,20 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |1     |play             |           1|      9971|
 |2     |state_crl__GB1   |           1|       226|
-|3     |state_crl__GB2   |           1|     10854|
+|3     |state_crl__GB2   |           1|     10886|
 |4     |Top_student__GC0 |           1|       760|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 864.477 ; gain = 607.531
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:01:15 . Memory (MB): peak = 863.465 ; gain = 606.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 889.992 ; gain = 633.047
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:15 . Memory (MB): peak = 888.242 ; gain = 630.812
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1418,14 +1418,14 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |1     |play             |           1|      9971|
 |2     |state_crl__GB1   |           1|       226|
-|3     |state_crl__GB2   |           1|     10854|
+|3     |state_crl__GB2   |           1|     10886|
 |4     |Top_student__GC0 |           1|       760|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:36 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:01:19 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1449,7 +1449,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:20 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1462,7 +1462,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:20 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1474,25 +1474,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:38 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:21 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:21 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:21 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:21 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1513,16 +1513,16 @@ Report Cell Usage:
 |3     |DSP48E1 |     6|
 |4     |LUT1    |   138|
 |5     |LUT2    |  1156|
-|6     |LUT3    |   895|
-|7     |LUT4    |  1202|
-|8     |LUT5    |  1684|
-|9     |LUT6    |  2861|
+|6     |LUT3    |   896|
+|7     |LUT4    |  1201|
+|8     |LUT5    |  1673|
+|9     |LUT6    |  2872|
 |10    |MUXF7   |    47|
 |11    |FDCE    |    58|
 |12    |FDE_1   |    32|
 |13    |FDPE    |     3|
-|14    |FDRE    |   955|
-|15    |FDSE    |   114|
+|14    |FDRE    |   965|
+|15    |FDSE    |   115|
 |16    |IBUF    |    12|
 |17    |OBUF    |    34|
 |18    |OBUFT   |     1|
@@ -1532,17 +1532,17 @@ Report Instance Areas:
 +------+---------------------------------+-------------------+------+
 |      |Instance                         |Module             |Cells |
 +------+---------------------------------+-------------------+------+
-|1     |top                              |                   | 10147|
+|1     |top                              |                   | 10158|
 |2     |  cl                             |clk_625m           |     8|
 |3     |  oled                           |Oled_Display       |   818|
-|4     |  st                             |state_crl          |  9054|
+|4     |  st                             |state_crl          |  9065|
 |5     |    di                           |difficulty_choose  |    82|
-|6     |    en                           |End                |    75|
-|7     |    pl                           |play               |  3937|
-|8     |      bu                         |bullet_module      |  1395|
-|9     |      bu_cd                      |bullet_CD_display  |   259|
-|10    |      hp                         |hp_bar             |   114|
-|11    |      pri                        |priority_module    |    24|
+|6     |    en                           |End                |    86|
+|7     |    pl                           |play               |  3925|
+|8     |      pri                        |priority_module    |    12|
+|9     |      bu                         |bullet_module      |  1395|
+|10    |      bu_cd                      |bullet_CD_display  |   259|
+|11    |      hp                         |hp_bar             |   114|
 |12    |      pu                         |pulse              |     5|
 |13    |      sc                         |score_display      |   208|
 |14    |      star                       |starship           |   381|
@@ -1583,24 +1583,24 @@ Report Instance Areas:
 |49    |          u_reset2               |reset_enemy_new2   |   180|
 |50    |        u_move_pulse             |move_pulse         |    74|
 |51    |      xy                         |xy_coordinate_1    |   189|
-|52    |    sta                          |Start              |  4813|
-|53    |      be                         |begining           |     5|
+|52    |    sta                          |Start              |  4825|
+|53    |      be                         |begining           |     2|
 |54    |      in                         |intro              |     1|
 |55    |      int1                       |introduction1      |   791|
 |56    |      int2                       |intro2             |   969|
-|57    |      int3                       |intro3             |   974|
-|58    |      u12                        |skill1             |    13|
+|57    |      int3                       |intro3             |   986|
+|58    |      u12                        |skill1             |    14|
 |59    |      u134                       |skill2             |    12|
 |60    |      xy                         |xy_coordinate      |  1929|
 |61    |    u0                           |on_press           |    66|
 |62    |    u1                           |on_press_0         |    64|
 +------+---------------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:21 . Memory (MB): peak = 1046.852 ; gain = 789.422
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:31 . Memory (MB): peak = 1029.070 ; gain = 403.586
-Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1029.070 ; gain = 772.125
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:01:14 . Memory (MB): peak = 1046.852 ; gain = 420.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:22 . Memory (MB): peak = 1046.852 ; gain = 789.422
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1044 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1613,9 +1613,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 274 Infos, 52 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 1029.070 ; gain = 784.992
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:25 . Memory (MB): peak = 1046.852 ; gain = 802.461
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/github/EE2026-Star-War/project_123.xpr/project_1/project_1.runs/synth_1/Top_student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_student_utilization_synth.rpt -pb Top_student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1029.070 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 03:36:01 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1046.852 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 09:29:58 2025...

@@ -4,6 +4,7 @@ module skill1(
     input clk,
     input [6:0] x,
     input [6:0] y,
+    input [15:0] oled_data_play,
     output reg [15:0] pixel_data
 );
     parameter white = 16'hFFFF;
@@ -105,7 +106,7 @@ if (
  ) begin
     pixel_data <= white;
 end else begin
-    pixel_data <= 16'h0000;
+    pixel_data <= oled_data_play;
 end
 end
 
