@@ -58,6 +58,8 @@ module play(
     wire boss_flag;
     wire boss_bullet_flag;
     wire boss_fire;
+    wire boss_HP_deduct;
+    wire enemy_HP_deduct;
     
     enemy_package  enemy_package_inst (
     .clk625(clk_625m),
@@ -70,11 +72,12 @@ module play(
     .boss_appear(boss_appear),
     .enemy_flag(enemy_flag),
     .boss_flag(boss_flag),
-    .HP_deduct(HP_deduct),
+    .HP_deduct(enemy_HP_deduct),
     .boss_fire(boss_fire)
   );
+  
     starship star (clk_625m, x, y, reset, up, down, state, shield_active, starship_flag, starship_bullet_flag, shield_flag); 
-    priority_module pri (boss_flag, bullet_CD_flag, red_flag, white_flag, clk_625m, starship_flag, shield_flag, bullet_flag, enemy_flag, BE_collision, pixel_data);
+    priority_module pri (boss_flag, bullet_CD_flag, red_flag, white_flag, clk_625m, starship_flag, shield_flag, bullet_flag, enemy_flag, BE_collision, pixel_data, boss_HP_deduct);
     bullet_module bu (clk_625m, x, y, starship_bullet_flag, frame_begin, bullet_skill, BE_collision, level_state, state, CD, bullet_flag);
     bullet_CD_display bu_cd (x, y, CD, bullet_CD_flag);
     boss_bullet boss_bu (clk_625m, x, y, boss_fire, frame_begin, BE_collision, level_state, state, boss_bullet_flag);
@@ -83,4 +86,5 @@ module play(
     hp_bar hp(clk_625m,HP_deduct,state,level_state,reset,shield_skill,led,dead_flag,shield_active);
     pulse pu (state, x, y, clk_625m, red_flag, white_flag); //Pause
     
+    assign HP_deduct = enemy_HP_deduct || boss_HP_deduct;
 endmodule

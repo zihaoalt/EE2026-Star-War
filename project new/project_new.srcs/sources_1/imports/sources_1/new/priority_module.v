@@ -21,6 +21,7 @@
 
 
 module priority_module(
+    input boss_bullet_flag,
     input boss_flag,
     input bullet_CD_flag,
     input red_flag,
@@ -31,7 +32,8 @@ module priority_module(
     input bullet_flag,
     input enemy_flag,
     output BE_collision,
-    output reg [15:0] pixel_data
+    output reg [15:0] pixel_data,
+    output HP_deduct
     );
     
     parameter background = 16'h0000;
@@ -43,6 +45,7 @@ module priority_module(
     parameter CD = 16'h4BBF;
     parameter shield = 16'h5DFF;
     parameter boss = 16'h97DF;
+    parameter boss_bullet = 16'h97DF;
     
     always @(posedge clk_625m) begin
         if (red_flag) begin
@@ -61,9 +64,13 @@ module priority_module(
             pixel_data <= enemy;
         end else if (bullet_flag) begin
             pixel_data <= bullet;
+        end else if (boss_bullet_flag) begin
+            pixel_data <= boss_bullet;
         end else begin
             pixel_data <= background;
         end
     end
-    assign BE_collision = (enemy_flag && bullet_flag) || (boss_flag && bullet_flag) ;
+    
+    assign BE_collision = (enemy_flag && bullet_flag) || (boss_flag && bullet_flag) || (boss_bullet_flag && bullet_flag) || (boss_bullet_flag && starship_flag);
+    assign HP_deduct = boss_bullet_flag && starship_flag;
 endmodule

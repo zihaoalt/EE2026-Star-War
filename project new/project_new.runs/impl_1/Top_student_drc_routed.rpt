@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Nov  4 19:18:13 2025
-| Host         : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
+| Date         : Tue Nov  4 20:00:59 2025
+| Host         : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_student_drc_routed.rpt -pb Top_student_drc_routed.pb -rpx Top_student_drc_routed.rpx
 | Design       : Top_student
 | Device       : xc7a35tcpg236-1
@@ -24,14 +24,16 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 24
-+--------+----------+------------------------+------------+
-| Rule   | Severity | Description            | Violations |
-+--------+----------+------------------------+------------+
-| DPIP-1 | Warning  | Input pipelining       | 12         |
-| DPOP-1 | Warning  | PREG Output pipelining | 6          |
-| DPOP-2 | Warning  | MREG Output pipelining | 6          |
-+--------+----------+------------------------+------------+
+             Violations found: 26
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| DPIP-1      | Warning  | Input pipelining                                            | 12         |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 6          |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 6          |
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -153,6 +155,18 @@ Related violations: <none>
 DPOP-2#6 Warning
 MREG Output pipelining  
 DSP st/pl/star/C0/shield_flag3__4 multiplier stage st/pl/star/C0/shield_flag3__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net st/pl/star/starship_flag is a gated clock net sourced by a combinational pin st/pl/star/pixel_data[0]_i_2__0/O, cell st/pl/star/pixel_data[0]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT st/pl/star/pixel_data[0]_i_2__0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    st/pl/pri/pixel_data_reg[0] {FDRE}
+
 Related violations: <none>
 
 

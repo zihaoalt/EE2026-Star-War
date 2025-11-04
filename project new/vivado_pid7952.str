@@ -1,0 +1,225 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 7952
+License: Customer
+
+Current time: 	Tue Nov 04 19:22:39 SGT 2025
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 22
+
+Screen size: 1560x1040
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 7 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	HUAWEI
+User home directory: C:/Users/HUAWEI
+User working directory: D:/github/EE2026-Star-War/project new
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/HUAWEI/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/HUAWEI/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/HUAWEI/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/github/EE2026-Star-War/project new/vivado.log
+Vivado journal file location: 	D:/github/EE2026-Star-War/project new/vivado.jou
+Engine tmp dir: 	D:/github/EE2026-Star-War/project new/.Xil/Vivado-7952-Bruce-Wayn
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 551 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 49 MB (+48568kb) [00:00:10]
+// [Engine Memory]: 507 MB (+380418kb) [00:00:10]
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\github\EE2026-Star-War\project new\project_new.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/github/EE2026-Star-War/project new/project_new.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/github/EE2026-Star-War/project new/project_new.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 70 MB (+19608kb) [00:00:15]
+// [Engine Memory]: 579 MB (+48389kb) [00:00:15]
+// [GUI Memory]: 86 MB (+13213kb) [00:00:15]
+// [Engine Memory]: 622 MB (+14975kb) [00:00:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 41 MB. Current time: 11/4/25 7:22:45 PM SGT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 263ms to process. Increasing delay to 2000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 913.102 ; gain = 124.145 
+// Project name: project_new; location: D:/github/EE2026-Star-War/project new; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 59 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v), st : state_crl (state_crl.v)]", 4); // B (D, ck)
+// PAPropertyPanels.initPanels (play.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v), st : state_crl (state_crl.v), pl : play (play.v)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v), st : state_crl (state_crl.v), pl : play (play.v), bu_cd : bullet_CD_display (bullet_CD_display.v)]", 15, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 161 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v), st : state_crl (state_crl.v), pl : play (play.v), pri : priority_module (priority_module.v)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_student (Top_student.v), st : state_crl (state_crl.v), pl : play (play.v), pri : priority_module (priority_module.v)]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("priority_module.v", 200, 177); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 664 MB. GUI used memory: 44 MB. Current time: 11/4/25 7:26:42 PM SGT
+// [Engine Memory]: 664 MB (+11372kb) [00:04:16]
+// Elapsed time: 21 seconds
+selectCodeEditor("priority_module.v", 232, 333); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 266, 365); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 168, 402); // ce (w, ck)
+selectCodeEditor("priority_module.v", 177, 314); // ce (w, ck)
+selectCodeEditor("priority_module.v", 179, 314); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("priority_module.v", 225, 194); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 236, 199); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 127, 213); // ce (w, ck)
+selectCodeEditor("priority_module.v", 149, 216); // ce (w, ck)
+selectCodeEditor("priority_module.v", 292, 333); // ce (w, ck)
+selectCodeEditor("priority_module.v", 216, 348); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("priority_module.v", 417, 344); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 47 seconds
+selectCodeEditor("priority_module.v", 586, 417); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 90 MB (+16kb) [00:08:57]
+// Elapsed time: 237 seconds
+selectCodeEditor("priority_module.v", 377, 167); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 45 MB. Current time: 11/4/25 7:32:50 PM SGT
+// Elapsed time: 1020 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "play.v", 1); // k (j, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("play.v", 167, 219); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "priority_module.v", 2); // k (j, ck)
+selectCodeEditor("priority_module.v", 808, 420); // ce (w, ck)
+selectCodeEditor("priority_module.v", 267, 249); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("priority_module.v", 295, 249); // ce (w, ck)
+selectCodeEditor("priority_module.v", 114, 419); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("priority_module.v", 552, 402); // ce (w, ck)
+selectCodeEditor("priority_module.v", 552, 424); // ce (w, ck)
+selectCodeEditor("priority_module.v", 553, 403); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 229, 420); // ce (w, ck)
+typeControlKey((HResource) null, "priority_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("priority_module.v", 170, 417); // ce (w, ck)
+selectCodeEditor("priority_module.v", 433, 421); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "play.v", 1); // k (j, ck)
+selectCodeEditor("play.v", 793, 262); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("play.v", 188, 237); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("play.v", 506, 393); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("play.v", 106, 198); // ce (w, ck)
+selectCodeEditor("play.v", 218, 178); // ce (w, ck)
+// [GUI Memory]: 96 MB (+1590kb) [00:30:08]
+// Elapsed time: 14 seconds
+selectCodeEditor("play.v", 214, 297); // ce (w, ck)
+selectCodeEditor("play.v", 193, 402); // ce (w, ck)
+selectCodeEditor("play.v", 147, 384); // ce (w, ck)
+selectCodeEditor("play.v", 185, 402); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("play.v", 230, 251); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("play.v", 154, 352); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("play.v", 188, 397); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "priority_module.v", 2); // k (j, ck)
+selectCodeEditor("priority_module.v", 262, 374); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "play.v", 1); // k (j, ck)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 701 MB (+3667kb) [00:32:42]
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 11 
+// Tcl Message: [Tue Nov  4 19:55:10 2025] Launched synth_1... Run output will be captured here: D:/github/EE2026-Star-War/project new/project_new.runs/synth_1/runme.log [Tue Nov  4 19:55:10 2025] Launched impl_1... Run output will be captured here: D:/github/EE2026-Star-War/project new/project_new.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 44 MB. Current time: 11/4/25 7:55:14 PM SGT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1967ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 446ms to process. Increasing delay to 3000 ms.
