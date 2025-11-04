@@ -65,5 +65,5 @@ module priority_module(
             pixel_data <= background;
         end
     end
-    assign BE_collision = enemy_flag && bullet_flag;
+    assign BE_collision = (enemy_flag && bullet_flag) || (boss_flag && bullet_flag) ;
 endmodule

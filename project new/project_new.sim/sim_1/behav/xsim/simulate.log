@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Testbench Started... (Testing 1-cycle pulse)
+State set to 00 (Reset). Score should be 0.
+Time: 15000, Score:  0 0 0 0, boss_appear=0
+State set to 01 (Game Play).
+Simulating 29 score increments...

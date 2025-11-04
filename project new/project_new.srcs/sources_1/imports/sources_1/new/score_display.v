@@ -42,7 +42,7 @@ module score_display(
     reg [6:0] seg4 = 7'b1111111;
 
     always @ (posedge clk) begin
-        if (BE_collision && !counter_ && state == 2'b01) begin
+        if ( BE_collision && !counter_ && state == 2'b01) begin
             a <= a == 9 ? 0 : a + 1;
             b <= b == 9 ?  (a == 9 ? 0 : b) : (a == 9 ? b + 1 : b);
             c <= c == 9 ? (b == 9 ? (a == 9 ? 0 : c) : c ) : (b == 9 ? (a == 9 ? c + 1 : c) : c );
@@ -169,7 +169,7 @@ module score_display(
             seg4 <= 7'b1000000;
         end
         
-        if ( ((d*1000 + c*100 + b*10 + a) % 30 == 0) && (a !=0 || b!=0 || c!=0 || d!=0) && counter_ == 1) begin
+        if ( ((d*1000 + c*100 + b*10 + a) % 100 == 30) && counter_ == 1) begin
             boss_appear <= 1;
         end else begin
             boss_appear <= 0;

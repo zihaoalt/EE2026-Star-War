@@ -34,6 +34,7 @@ module difficulty_choose(
     parameter normal = 2'b01;
     parameter hard = 2'b10;
     parameter expert = 2'b11;
+    reg [30:0] counter = 0;
     
     always @(posedge clk) begin
         if (state == 2'b00) begin
@@ -46,6 +47,17 @@ module difficulty_choose(
             end else begin 
                 level_state <= easy;
             end
+        end else if (state == 2'b01) begin 
+            if (counter == 750000000) begin
+            if (level_state == easy) begin
+                level_state <= normal;
+            end else if (level_state == normal) begin
+                level_state <= hard;
+            end else if (level_state == hard) begin
+                level_state <= expert;
+            end
         end
+            counter <= (counter == 750000000) ? 0 : counter + 1;
+        end 
     end
 endmodule
