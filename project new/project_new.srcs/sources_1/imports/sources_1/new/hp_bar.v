@@ -10,45 +10,64 @@ module hp_bar(
     input [1:0] state,
     input [1:0] level_state,
     input reset,
-    input shield_switch,
+    input shield_switch,       // SW2 input
     output reg [15:0] starship_hp,
     output reg dead_flag,
-    output reg shield_active     // Shield status for display
-    );
+    output reg shield_active   // Shield status for display
+);
 
-    reg [5:0] HP = 6'd16;
+    // ================================
+    // Internal registers & parameters
+    // ================================
+    reg [5:0] HP;
     reg prev_deduct;
     wire hit_pulse = deduct_HP & ~prev_deduct;
 
     reg [3:0] damage;
-    reg [31:0] shield_counter;     // cooldown counter
-    reg shield_used;               // track if shield was consumed
+    reg [31:0] shield_counter;
+    reg shield_used;
 
     parameter SHIELD_COOLDOWN = 32'd62500000;  // 10s @ 6.25MHz
 
-    // damage based on level
+    // ================================
+    // Compute damage based on difficulty
+    // ================================
     always @(*) begin
         case(level_state)
-            2'b00: damage = 1; 
-            2'b01: damage = 2; 
-            2'b10: damage = 4; 
-            2'b11: damage = 8; 
-        endcase    
+            2'b00: damage = 1;
+            2'b01: damage = 2;
+            2'b10: damage = 4;
+            2'b11: damage = 8;
+        endcase
     end
 
+    // ================================
+    // Store previous deduct_HP for pulse detection
+    // ================================
     always @(posedge clk) begin
         prev_deduct <= deduct_HP;
     end
 
-    // === Shield and HP management ===
-always @(posedge clk or posedge reset) begin
+    // ================================
+    // HP and Shield logic
+    // ================================
+    always @(posedge clk or posedge reset) begin
         if (reset || state == 2'b00) begin
             HP <= 6'd16;
             dead_flag <= 0;
-            shield_active <= 1;
+            shield_active <= 0;
             shield_used <= 0;
             shield_counter <= 0;
-        end else if (state != 2'b10) begin
+        end 
+        else if (state != 2'b10) begin
+            // --- Handle shield switch OFF ---
+            if (!shield_switch) begin
+                shield_active <= 0;
+                shield_used <= 0;
+                shield_counter <= 0;
+            end
+
+            // --- Handle HP deduction on hit ---
             if (hit_pulse) begin
                 if (shield_active && shield_switch) begin
                     // Shield absorbs the hit
@@ -56,28 +75,34 @@ always @(posedge clk or posedge reset) begin
                     shield_used <= 1;
                     shield_counter <= 0;
                 end else if (HP > 0) begin
+                    // Deduct HP if no shield
                     HP <= HP - damage;
                 end
             end
-    
-            // Dead flag: use original working logic
-            if (!(shield_active && shield_switch))
-                dead_flag <= (HP == 1 && hit_pulse) || (HP == 0);
-    
-            // Shield cooldown
+
+            // --- Dead flag ---
+            dead_flag <= (HP == 0);
+
+            // --- Shield cooldown ---
             if (shield_used) begin
                 if (shield_counter < SHIELD_COOLDOWN)
                     shield_counter <= shield_counter + 1;
                 else begin
-                    shield_active <= shield_switch;
                     shield_used <= 0;
+                    if (shield_switch)
+                        shield_active <= 1; // re-enable shield only if switch is ON
                     shield_counter <= 0;
                 end
+            end
+            else if (!shield_active && !shield_used && shield_switch) begin
+                shield_active <= 1; // ensure shield appears if switch is ON and not cooling down
             end
         end
     end
 
-    // === HP bar display ===
+    // ================================
+    // HP bar display mapping
+    // ================================
     always @(*) begin
         case(HP)
             6'd0:  starship_hp = 16'b0;
@@ -100,4 +125,3 @@ always @(posedge clk or posedge reset) begin
             default: starship_hp = 16'b1111111111111111;
         endcase
     end
-endmodule
