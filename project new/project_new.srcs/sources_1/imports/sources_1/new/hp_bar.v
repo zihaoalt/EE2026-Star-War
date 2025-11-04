@@ -125,3 +125,4 @@ module hp_bar(
             default: starship_hp = 16'b1111111111111111;
         endcase
     end
+endmodule

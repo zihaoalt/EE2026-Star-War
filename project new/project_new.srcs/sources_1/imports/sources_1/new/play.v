@@ -56,6 +56,7 @@ module play(
     wire shield_flag; 
     wire boss_appear;
     wire boss_flag;
+    wire boss_bullet_flag;
     wire boss_fire;
     
     enemy_package  enemy_package_inst (
@@ -76,6 +77,7 @@ module play(
     priority_module pri (boss_flag, bullet_CD_flag, red_flag, white_flag, clk_625m, starship_flag, shield_flag, bullet_flag, enemy_flag, BE_collision, pixel_data);
     bullet_module bu (clk_625m, x, y, starship_bullet_flag, frame_begin, bullet_skill, BE_collision, level_state, state, CD, bullet_flag);
     bullet_CD_display bu_cd (x, y, CD, bullet_CD_flag);
+    boss_bullet boss_bu (clk_625m, x, y, boss_fire, frame_begin, BE_collision, level_state, state, boss_bullet_flag);
     xy_coordinate xy (pixel_index, x, y);
     score_display sc (BE_collision, clk_625m, state, anode, seg, boss_appear);
     hp_bar hp(clk_625m,HP_deduct,state,level_state,reset,shield_skill,led,dead_flag,shield_active);
