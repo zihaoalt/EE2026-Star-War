@@ -17,57 +17,58 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_new/project_new.cache/wt [current_project]
-set_property parent.project_path D:/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_new/project_new.xpr [current_project]
+set_property webtalk.parent_dir {D:/github/EE2026-Star-War/project new/project_new.cache/wt} [current_project]
+set_property parent.project_path {D:/github/EE2026-Star-War/project new/project_new.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_new/project_new.cache/ip [current_project]
+set_property ip_output_repo {d:/github/EE2026-Star-War/project new/project_new.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/Start.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/begining.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/boss_move.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/boss_position_check.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/boss_unit.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_CD_display.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/bullet_module.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/clk_625m.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/difficulty_choose.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/enemy_master.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/unchanged/enemy_move.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/enemy_move2.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/enemy_package.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/unchanged/enemy_unit.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/enemy_unit2.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/hp_bar.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro2.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/intro3.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/introduction1.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/move_pulse.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/on_press.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/over.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/play.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/unchanged/position_check.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/position_check2.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/priority_module.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/pulse.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/reset_enemy_new.v
-  {D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/source/reset_enemy_new2 .v}
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/score_display.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill1.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/skill2.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/state_crl.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v
-  D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/sources_1/new/Top_student.v
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/Oled_Display.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/Start.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/begining.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/boss_move.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/boss_position_check.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/boss_unit.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/bullet_CD_display.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/bullet_module.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/clk_625m.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/difficulty_choose.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/enemy_master.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/unchanged/enemy_move.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/enemy_move2.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/enemy_package.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/unchanged/enemy_unit.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/enemy_unit2.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/hp_bar.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/intro.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/intro2.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/intro3.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/introduction1.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/move_pulse.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/on_press.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/over.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/play.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/unchanged/position_check.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/position_check2.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/priority_module.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/pulse.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/reset_enemy_new.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/reset_enemy_new2 .v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/score_display.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill1.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill2.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/state_crl.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/xy_coordinate.v}
+  {D:/github/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/Top_student.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -77,8 +78,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc
-set_property used_in_implementation false [get_files D:/桌面/EE2026-Star-War-main/EE2026-Star-War-main/project_123.xpr/project_1/project_1.srcs/constrs_1/new/my_constriant.xdc]
+read_xdc {{D:/github/EE2026-Star-War/project new/project_new.srcs/constrs_1/imports/new/my_constriant.xdc}}
+set_property used_in_implementation false [get_files {{D:/github/EE2026-Star-War/project new/project_new.srcs/constrs_1/imports/new/my_constriant.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

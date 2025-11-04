@@ -50,7 +50,7 @@ module Start(
     introduction1 int1 (clk_625m, x, y, page3);
     intro2 int2 (clk_625m, x, y, page4);
     intro3 int3 (clk_625m, x, y, page5);
-    skill1 u12 (clk_625m, x, y, skill1_page);
+    skill1 u12 (clk_625m, x, y, oled_data_play, skill1_page);
     skill2 u134 (clk_625m, x, y, oled_data_play, skill2_page);
     
     always @(posedge clk_625m) begin

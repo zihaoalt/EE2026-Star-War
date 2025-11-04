@@ -25,10 +25,10 @@ module score_display(
     input clk,
     input [1:0] state,
     output reg [3:0] anode = 4'b1111,
-    output reg [6:0] seg = 7'b1111111
+    output reg [6:0] seg = 7'b1111111,
+    output reg boss_appear = 0
     );
     
-    reg [14:0] score = 0;
     reg [3:0] a = 0;
     reg [3:0] b = 0;
     reg [3:0] c = 0;
@@ -168,6 +168,13 @@ module score_display(
         end else begin
             seg4 <= 7'b1000000;
         end
+        
+        if ( ((d*1000 + c*100 + b*10 + a) % 30 == 0) && (a !=0 || b!=0 || c!=0 || d!=0) && counter_ == 1) begin
+            boss_appear <= 1;
+        end else begin
+            boss_appear <= 0;
+        end
     end
+    
     
 endmodule
