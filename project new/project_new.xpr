@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="D:/github/EE2026-Star-War/project new/project_new.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="44440595fb914f10985e86b9a6bec193"/>

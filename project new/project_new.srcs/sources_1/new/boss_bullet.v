@@ -31,7 +31,20 @@ module boss_bullet(
     reg break;
     
     
-    reg  [12 * 14 - 1 :0] bullet_xy_array = 0;
+    reg [11*14-1:0] bullet_xy_array = 154'b0;
+    reg move_toggle = 1'b0;
+   
+    always @(posedge clk) begin
+      if (need_to_reset) begin 
+        move_toggle <= 1'b0;
+      end
+      else if (fb_rise && !need_to_pause) begin 
+        move_toggle <= ~move_toggle;
+      end
+    end
+    
+    wire move_ce = fb_rise && move_toggle && !need_to_pause;
+
     
     
     always @(posedge clk) begin
@@ -47,7 +60,7 @@ module boss_bullet(
             fire <= 1'b0;
         end
         if (need_to_reset) begin
-            bullet_xy_array <= 350'b0;
+            bullet_xy_array <= 154'b0;
         end
         if (fire && boss_fire && !need_to_pause) begin 
             break = 1'b0;
@@ -63,10 +76,10 @@ module boss_bullet(
         end
 
         // Move once every 2 frames (right by 1 px). Clear when leaving screen.
-        if ((frame_count % 2 == 1) && !need_to_pause) begin
+        if (move_ce) begin
             for (i = 0; i < 11; i = i + 1) begin
                
-                    if ((bullet_xy_array[i*14+7 +: 7] >= 7'd95) || bullet_xy_array[i*14 +: 7] >= 7'd63 || bullet_xy_array[i*14 +: 7] <= 7'd0) begin
+                    if ((bullet_xy_array[i*14+7 +: 7] <= 7'd0) || bullet_xy_array[i*14 +: 7] >= 7'd63 || bullet_xy_array[i*14 +: 7] <= 7'd0) begin
                         bullet_xy_array[i*14 +: 14] <= 14'd0;  // this should check for x and y 
                     end else begin 
                         bullet_xy_array[i*14+7 +: 7] <= bullet_xy_array[i*14+7 +: 7] - 7'd1; // move left by 1

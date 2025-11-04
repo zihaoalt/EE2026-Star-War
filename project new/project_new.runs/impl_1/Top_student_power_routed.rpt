@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Nov  5 00:08:03 2025
-| Host             : Bruce-Wayn running 64-bit major release  (build 9200)
+| Date             : Wed Nov  5 05:04:06 2025
+| Host             : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_student_power_routed.rpt -pb Top_student_power_summary_routed.pb -rpx Top_student_power_routed.rpx
 | Design           : Top_student
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.194        |
+| Total On-Chip Power (W)  | 0.190        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.122        |
+| Dynamic (W)              | 0.118        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.058 |    11481 |       --- |             --- |
-|   LUT as Logic |     0.055 |     7564 |     20800 |           36.37 |
+| Slice Logic    |     0.055 |    11479 |       --- |             --- |
+|   LUT as Logic |     0.052 |     7590 |     20800 |           36.49 |
 |   CARRY4       |     0.003 |      987 |      8150 |           12.11 |
-|   Register     |    <0.001 |     1397 |     41600 |            3.36 |
+|   Register     |    <0.001 |     1398 |     41600 |            3.36 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |        9 |     32600 |            0.03 |
 |   Others       |     0.000 |      120 |       --- |             --- |
-| Signals        |     0.053 |     8639 |       --- |             --- |
+| Signals        |     0.052 |     8627 |       --- |             --- |
 | DSPs           |     0.006 |        6 |        90 |            6.67 |
 | I/O            |     0.005 |       47 |       106 |           44.34 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.194 |          |           |                 |
+| Total          |     0.190 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.126 |       0.117 |      0.010 |
+| Vccint    |       1.000 |     0.123 |       0.113 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,15 +143,15 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| Top_student                          |     0.122 |
+| Top_student                          |     0.118 |
 |   cl                                 |    <0.001 |
 |   oled                               |     0.007 |
-|   st                                 |     0.107 |
+|   st                                 |     0.103 |
 |     di                               |    <0.001 |
 |     en                               |    <0.001 |
-|     pl                               |     0.032 |
-|       boss_bu                        |     0.005 |
-|       bu                             |     0.004 |
+|     pl                               |     0.028 |
+|       boss_bu                        |     0.002 |
+|       bu                             |     0.003 |
 |       bu_cd                          |     0.004 |
 |       enemy_package_inst             |     0.004 |
 |         u_enemy_master               |     0.004 |
@@ -198,15 +198,15 @@ Table of Contents
 |       star                           |     0.009 |
 |         C0                           |     0.009 |
 |       xy                             |     0.006 |
-|     sta                              |     0.072 |
+|     sta                              |     0.073 |
 |       be                             |    <0.001 |
 |       in                             |    <0.001 |
 |       int1                           |     0.011 |
-|       int2                           |     0.012 |
+|       int2                           |     0.013 |
 |       int3                           |     0.013 |
 |       u12                            |    <0.001 |
 |       u134                           |    <0.001 |
-|       xy                             |     0.037 |
+|       xy                             |     0.036 |
 |     u0                               |    <0.001 |
 |     u1                               |    <0.001 |
 +--------------------------------------+-----------+
