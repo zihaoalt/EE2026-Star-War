@@ -47,7 +47,9 @@ module difficulty_choose(
             end else begin 
                 level_state <= easy;
             end
-        end else if (state == 2'b01) begin 
+            counter <= 0;
+        end
+        else if (state == 2'b01) begin 
             if (counter == 750000000) begin
             if (level_state == easy) begin
                 level_state <= normal;

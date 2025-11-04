@@ -200,11 +200,8 @@ module skill2(
         ) begin
             pixel_data <= WHITE;
         end
-        else if(y >= 7'd33 && oled_data_play!=16'h0000) begin
-            pixel_data <= 16'h7BEF;
-        end 
         else begin
-            pixel_data <= 16'h0000;
+            pixel_data <= oled_data_play;
         end
     end
 
