@@ -26,7 +26,7 @@ module boss_bullet(
     wire fb_rise = fb_0 & ~fb_1;
     integer i,j,k,m;
     reg [4:0] frame_count = 5'd0;
-    reg [4:0] frame_count_comparator = 5'd29; // default shooting slowest, change based on difficulty levels
+    reg [4:0] frame_count_comparator = 8'd29; // default shooting slowest, change based on difficulty levels
     reg fire = 1'b0;
     reg break;
     
@@ -65,7 +65,7 @@ module boss_bullet(
         if (fire && boss_fire && !need_to_pause) begin 
             break = 1'b0;
             for (j = 0; j < 11; j = j + 1) begin
-                if (!break && (j < 11)) begin
+                if (!break && (j < 4)) begin
                     if (bullet_xy_array[j*14 +:14] == 14'd0) begin
                         bullet_xy_array[j*14 +:14] <= {x, y};
                         break = 1'b1;
