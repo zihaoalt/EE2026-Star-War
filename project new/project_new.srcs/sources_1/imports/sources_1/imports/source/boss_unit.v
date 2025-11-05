@@ -24,7 +24,7 @@ module boss_unit(
     // Alive/shot state
     reg alive = 1'b0;       // visible/active on screen
     reg shot_state = 1'b0;  // has this enemy been shot
-    reg shot_count = 4'b0;
+    reg [3:0] shot_count = 4'b0;
 
     always @(posedge clk) begin
         if (kill_all_pulse) begin
@@ -77,3 +77,4 @@ module boss_unit(
 
 endmodule
 `default_nettype wire
+
