@@ -4,6 +4,7 @@ module boss_position_check(
     input [6:0] anchor_y,
     input [6:0] x,y,
     input shot_state,
+    input boss_appear,
     output reg enemy_flag,
     output reg boss_fire
 
@@ -14,6 +15,14 @@ wire [3:0] image_x,image_y;
 reg [11:0] image [0:11]; //12 rows, each row is 12 bits (12 pixels)
 parameter image_width=4'd12;
 parameter image_height=4'd12;
+reg boss_appear_state;
+
+always@(*)begin
+if (boss_appear)
+boss_appear_state = 1;
+else
+boss_appear_state = boss_appear_state;
+end
 
 initial begin
 
@@ -39,7 +48,8 @@ assign image_y = y - anchor_y;
 
 reg bf_q = 1'b0;
 always @(posedge clk) begin
-    if (image_x == 4'd0 && image_y == 4'd5) begin
+if (shot_state == 0 && boss_appear_state == 1)begin
+    if (image_x == 4'd0 && image_y == 4'd5 && enemy_flag) begin
         if (bf_q == 1'b0) begin
             boss_fire <= 1'b1;
             bf_q <= 1'b1;
@@ -48,8 +58,13 @@ always @(posedge clk) begin
             boss_fire <= 1'b0;
             bf_q <= bf_q;
         end
-    end else
+    end else begin
         bf_q <= 1'b0;
+        boss_fire <= 1'b0;
+        end
+end else
+    boss_fire <= 1'b0;
+           
 end
 
 always @(posedge clk) begin
@@ -63,6 +78,5 @@ always @(posedge clk) begin
     else 
         enemy_flag <= 1'b0;
 end
-
 
 endmodule
