@@ -39,7 +39,7 @@ assign image_y = y - anchor_y;
 
 reg bf_q = 1'b0;
 always @(posedge clk) begin
-    if (image_x == 4'd11 && image_y == 4'd5) begin
+    if (image_x == 4'd0 && image_y == 4'd5) begin
         if (bf_q == 1'b0) begin
             boss_fire <= 1'b1;
             bf_q <= 1'b1;
@@ -63,5 +63,6 @@ always @(posedge clk) begin
     else 
         enemy_flag <= 1'b0;
 end
+
 
 endmodule
