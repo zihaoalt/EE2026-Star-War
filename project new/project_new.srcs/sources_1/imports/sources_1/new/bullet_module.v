@@ -30,8 +30,8 @@ module bullet_module (
     wire need_to_reset = (state_sync == 2'b11);
     wire fb_rise = fb_0 & ~fb_1;
     integer i,j,k,m;
-    reg [4:0] frame_count = 5'd0;
-    reg [4:0] frame_count_comparator = 5'd29; // default shooting slowest, change based on difficulty levels
+    reg [5:0] frame_count = 6'd0;
+    reg [5:0] frame_count_comparator = 6'd29; // default shooting slowest, change based on difficulty levels
     reg fire = 1'b0;
     reg break;
     reg [24:0] skill_counter;
@@ -73,21 +73,21 @@ module bullet_module (
     
     always @(posedge clk) begin
         case(level_state)
-            2'b00: frame_count_comparator <= 5'd29;
-            2'b01: frame_count_comparator <= 5'd24;
-            2'b10: frame_count_comparator <= 5'd19;
-            2'b11: frame_count_comparator <= 5'd16;
-            default: frame_count_comparator <= 5'd29;
+            2'b00: frame_count_comparator <= 6'd44;
+            2'b01: frame_count_comparator <= 6'd40;
+            2'b10: frame_count_comparator <= 6'd36;
+            2'b11: frame_count_comparator <= 6'd32;
+            default: frame_count_comparator <= 6'd32;
         endcase
     end
 
     always @(posedge clk) begin
         if (fb_rise && !need_to_pause) begin
             if (frame_count == frame_count_comparator) begin
-                frame_count <= 5'd0;
+                frame_count <= 6'd0;
                 fire <= 1'b1; 
             end else begin
-                frame_count <= frame_count + 5'd1;
+                frame_count <= frame_count + 6'd1;
             end
         end
         if (need_to_pause || need_to_reset) begin

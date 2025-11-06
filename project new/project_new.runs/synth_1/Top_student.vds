@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Nov  5 22:39:32 2025
-# Process ID: 19616
+# Start of session at: Thu Nov  6 17:05:27 2025
+# Process ID: 24164
 # Current directory: C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.runs/synth_1
 # Command line: vivado.exe -log Top_student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_student.tcl
 # Log file: C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.runs/synth_1/Top_student.vds
@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29532 
+INFO: Helper process launched with PID 27548 
 WARNING: [Synth 8-2611] redeclaration of ansi port clk_625m is not allowed [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/clk_625m.v:29]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 370.191 ; gain = 112.965
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 369.062 ; gain = 112.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_student' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/Top_student.v:22]
 INFO: [Synth 8-6157] synthesizing module 'clk_625m' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/clk_625m.v:23]
@@ -161,9 +161,9 @@ INFO: [Synth 8-6155] done synthesizing module 'intro3' (10#1) [C:/Users/XuZihao/
 INFO: [Synth 8-6157] synthesizing module 'skill1' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill1.v:3]
 	Parameter white bound to: 16'b1111111111111111 
 INFO: [Synth 8-6155] done synthesizing module 'skill1' (11#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill1.v:3]
-INFO: [Synth 8-6157] synthesizing module 'skill2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'skill2' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill2.v:3]
 	Parameter WHITE bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'skill2' (12#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'skill2' (12#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/skill2.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Start' (13#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/Start.v:23]
 INFO: [Synth 8-6157] synthesizing module 'End' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/over.v:3]
 	Parameter color bound to: 16'b1111111111111111 
@@ -229,9 +229,9 @@ INFO: [Synth 8-6157] synthesizing module 'starship' [C:/Users/XuZihao/Documents/
 	Parameter NONE bound to: 2'b00 
 	Parameter UP bound to: 2'b01 
 	Parameter DOWN bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'starship_design' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
+INFO: [Synth 8-6157] synthesizing module 'starship_design' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:3]
 	Parameter SHIELD_RADIUS bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'starship_design' (29#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'starship_design' (29#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'starship' (30#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship.v:1]
 INFO: [Synth 8-6157] synthesizing module 'priority_module' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/priority_module.v:23]
 	Parameter background bound to: 16'b0000000000000000 
@@ -264,9 +264,9 @@ WARNING: [Synth 8-6014] Unused sequential element by_reg was removed.  [C:/Users
 INFO: [Synth 8-6155] done synthesizing module 'boss_bullet' (34#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/new/boss_bullet.v:4]
 INFO: [Synth 8-6157] synthesizing module 'score_display' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/score_display.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'score_display' (35#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/score_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hp_bar' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/hp_bar.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hp_bar' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/hp_bar.v:3]
 	Parameter SHIELD_COOLDOWN bound to: 62500000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (36#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/hp_bar.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (36#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/hp_bar.v:3]
 INFO: [Synth 8-6157] synthesizing module 'pulse' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/pulse.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'pulse' (37#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/pulse.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'play' (38#1) [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/new/play.v:23]
@@ -282,7 +282,7 @@ WARNING: [Synth 8-3331] design Start has unconnected port sample_pixel
 WARNING: [Synth 8-3331] design Top_student has unconnected port JB[2]
 WARNING: [Synth 8-3331] design Top_student has unconnected port SW0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 484.723 ; gain = 227.496
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 485.254 ; gain = 228.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -295,10 +295,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 484.723 ; gain = 227.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 485.254 ; gain = 228.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 484.723 ; gain = 227.496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 485.254 ; gain = 228.715
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -317,22 +317,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 859.680 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 860.105 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 859.816 ; gain = 602.590
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 860.105 ; gain = 603.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 859.816 ; gain = 602.590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 860.105 ; gain = 603.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 859.816 ; gain = 602.590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 860.105 ; gain = 603.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "clk_625m" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
@@ -377,6 +377,13 @@ INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fire" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
@@ -425,17 +432,18 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 WARNING: [Synth 8-327] inferring latch for variable 'boss_appear_state_reg' [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/source/boss_position_check.v:22]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 859.816 ; gain = 602.590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 860.105 ; gain = 603.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |play__GB0        |           1|     34244|
-|2     |play__GB1        |           1|      8936|
-|3     |state_crl__GC0   |           1|     29020|
-|4     |Top_student__GC0 |           1|      2216|
+|1     |play__GB0        |           1|     26122|
+|2     |play__GB1        |           1|     11378|
+|3     |play__GB2        |           1|      8936|
+|4     |state_crl__GC0   |           1|     29020|
+|5     |Top_student__GC0 |           1|      2216|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -453,12 +461,12 @@ Detailed RTL Component Info :
 	   3 Input     10 Bit       Adders := 11    
 	   3 Input      9 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 22    
-	   2 Input      8 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 8     
 	   3 Input      8 Bit       Adders := 12    
 	   2 Input      7 Bit       Adders := 140   
 	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 26    
-	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 5     
 	   3 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 23    
@@ -475,9 +483,9 @@ Detailed RTL Component Info :
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 7     
 	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 1     
 	                7 Bit    Registers := 31    
-	                6 Bit    Registers := 5     
-	                5 Bit    Registers := 3     
+	                6 Bit    Registers := 7     
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 8     
 	                2 Bit    Registers := 5     
@@ -489,10 +497,10 @@ Detailed RTL Component Info :
 	   2 Input    350 Bit        Muxes := 47    
 	   2 Input    154 Bit        Muxes := 28    
 	   2 Input     40 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 15    
+	   2 Input     32 Bit        Muxes := 11    
 	  32 Input     32 Bit        Muxes := 1     
 	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 3     
 	   2 Input     25 Bit        Muxes := 2     
 	   4 Input     23 Bit        Muxes := 1     
 	  32 Input     20 Bit        Muxes := 1     
@@ -504,23 +512,23 @@ Detailed RTL Component Info :
 	   9 Input     16 Bit        Muxes := 1     
 	   5 Input     16 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 103   
+	   2 Input     14 Bit        Muxes := 124   
 	  13 Input     12 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 11    
-	   2 Input      8 Bit        Muxes := 11    
+	   2 Input      8 Bit        Muxes := 12    
 	   9 Input      8 Bit        Muxes := 10    
 	   3 Input      7 Bit        Muxes := 7     
 	   2 Input      7 Bit        Muxes := 30    
 	   5 Input      7 Bit        Muxes := 4     
 	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 37    
+	   2 Input      6 Bit        Muxes := 38    
+	   4 Input      6 Bit        Muxes := 1     
 	  32 Input      6 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 3     
 	   8 Input      5 Bit        Muxes := 352   
 	  27 Input      5 Bit        Muxes := 4     
 	  31 Input      5 Bit        Muxes := 5     
 	  29 Input      5 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 10    
@@ -533,7 +541,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 167   
 	   8 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 20    
 	   4 Input      1 Bit        Muxes := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -546,16 +554,15 @@ Module hp_bar
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     26 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 24    
 Module starship_design 
@@ -582,27 +589,20 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module priority_module 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---Muxes : 
-	   8 Input     16 Bit        Muxes := 1     
-	   9 Input     16 Bit        Muxes := 1     
 Module bullet_module 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 78    
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
 	              350 Bit    Registers := 1     
-	                5 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input    350 Bit        Muxes := 47    
 	   2 Input     14 Bit        Muxes := 71    
-	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 27    
 	   3 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 5     
@@ -617,19 +617,26 @@ Detailed RTL Component Info :
 Module boss_bullet 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 22    
-	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
 	              154 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input    154 Bit        Muxes := 28    
-	   2 Input     14 Bit        Muxes := 32    
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 53    
+	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 13    
-	   3 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 9     
+Module priority_module 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
 Module score_display 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1241,8 +1248,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:47]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.srcs/sources_1/imports/sources_1/imports/Integration/space_invader_draft.srcs/sources_1/new/starship_design.v:47]
 DSP Report: Generating DSP C0/shield_flag3, operation Mode is: A*B.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
@@ -1268,6 +1275,7 @@ DSP Report: Generating DSP C0/shield_flag3, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
 DSP Report: operator C0/shield_flag3 is absorbed into DSP C0/shield_flag3.
 INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fire" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "boss_move_inst/y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "boss_move_inst/y_direction" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enemy_move2_inst/y_direction" won't be mapped to RAM because it is too sparse
@@ -1286,70 +1294,14 @@ INFO: [Synth 8-5546] ROM "oled/fsm_next_state0" won't be mapped to RAM because i
 INFO: [Synth 8-5546] ROM "oled/fsm_next_state0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design Top_student has unconnected port JB[2]
 WARNING: [Synth 8-3331] design Top_student has unconnected port SW0
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (pli_1/bu/\frame_count_comparator_reg[4] )
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/frame_count_comparator_reg[0]' (FD) to 'pli_1/bu/frame_count_comparator_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/bu/\frame_count_comparator_reg[1] )
 INFO: [Synth 8-3886] merging instance 'pli_1/hp/shield_counter_reg[26]' (FDCE) to 'pli_1/hp/shield_counter_reg[31]'
 INFO: [Synth 8-3886] merging instance 'pli_1/hp/shield_counter_reg[27]' (FDCE) to 'pli_1/hp/shield_counter_reg[31]'
 INFO: [Synth 8-3886] merging instance 'pli_1/hp/shield_counter_reg[28]' (FDCE) to 'pli_1/hp/shield_counter_reg[31]'
 INFO: [Synth 8-3886] merging instance 'pli_1/hp/shield_counter_reg[29]' (FDCE) to 'pli_1/hp/shield_counter_reg[31]'
 INFO: [Synth 8-3886] merging instance 'pli_1/hp/shield_counter_reg[31]' (FDCE) to 'pli_1/hp/shield_counter_reg[30]'
-INFO: [Synth 8-3886] merging instance 'pli_1/pri/pixel_data_reg[1]' (FDR) to 'pli_1/pri/pixel_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'pli_1/pri/pixel_data_reg[4]' (FDR) to 'pli_1/pri/pixel_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[0]' (FDPE) to 'pli_1/star/centre_x_reg[2]'
-INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[1]' (FDCE) to 'pli_1/star/centre_x_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (pli_1/\star/centre_x_reg[2] )
-INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[3]' (FDCE) to 'pli_1/star/centre_x_reg[4]'
-INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[4]' (FDCE) to 'pli_1/star/centre_x_reg[5]'
-INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[5]' (FDCE) to 'pli_1/star/centre_x_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/\star/centre_x_reg[6] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[140]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[141]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[141]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[142]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[142]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[143]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[143]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[144]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[144]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[145]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[145]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[146]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[146] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[126]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[127]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[127]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[128]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[128]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[129]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[129]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[130]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[130]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[131]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[131]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[132]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[132] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[112]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[113]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[113]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[114]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[114]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[115]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[115]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[116]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[116]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[117]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[117]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[118]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[118] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[98]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[99]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[99]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[100]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[100]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[101]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[101]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[102]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[102]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[103]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[103]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[104]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[104] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[84]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[85]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[85]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[86]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[86]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[87]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[87]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[88]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[88]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[89]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[89]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[90]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[90] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[70]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[71]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[71]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[72]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[72]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[73]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[73]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[74]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[74]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[75]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[75]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[76]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[76] )
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[56]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[57]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[57]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[58]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[58]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[59]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[59]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[60]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[60]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[61]'
-INFO: [Synth 8-3886] merging instance 'pli_1/boss_bu/bullet_xy_array_reg[61]' (FDRE) to 'pli_1/boss_bu/bullet_xy_array_reg[62]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/boss_bu/\bullet_xy_array_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/\hp/shield_counter_reg[30] )
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[336]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[337]'
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[337]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[338]'
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[338]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[339]'
@@ -1399,84 +1351,52 @@ INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[297]' (FDRE)
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[298]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[299]'
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[299]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[300]'
 INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[300]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[301]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[301]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[302]'
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[302]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[303]'
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[303]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[304]'
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[304]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[305]'
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[305]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[306]'
+INFO: [Synth 8-3886] merging instance 'pli_1/bu/bullet_xy_array_reg[306]' (FDRE) to 'pli_1/bu/bullet_xy_array_reg[307]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/bu/\bullet_xy_array_reg[307] )
+INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[0]' (FDPE) to 'pli_1/star/centre_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[1]' (FDCE) to 'pli_1/star/centre_x_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pli_1/\star/centre_x_reg[2] )
+INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[3]' (FDCE) to 'pli_1/star/centre_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[4]' (FDCE) to 'pli_1/star/centre_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pli_1/star/centre_x_reg[5]' (FDCE) to 'pli_1/star/centre_x_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_1/\star/centre_x_reg[6] )
 WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[349]) is unused and will be removed from module bullet_module.
 WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[335]) is unused and will be removed from module bullet_module.
 WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[321]) is unused and will be removed from module bullet_module.
 WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[307]) is unused and will be removed from module bullet_module.
-WARNING: [Synth 8-3332] Sequential element (frame_count_comparator_reg[4]) is unused and will be removed from module bullet_module.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[153]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[152]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[151]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[150]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[149]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[148]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[147]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[146]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[139]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[138]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[137]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[136]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[135]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[134]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[133]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[132]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[125]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[124]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[123]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[122]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[121]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[120]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[119]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[118]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[111]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[110]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[109]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[108]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[107]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[106]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[105]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[104]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[97]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[96]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[95]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[94]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[93]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[92]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[91]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[90]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[83]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[82]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[81]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[80]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[79]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[78]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[77]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[76]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[69]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[68]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[67]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[66]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[65]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[64]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[63]) is unused and will be removed from module boss_bullet.
-WARNING: [Synth 8-3332] Sequential element (bullet_xy_array_reg[62]) is unused and will be removed from module boss_bullet.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset/random_num_1_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_5_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_4_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_3_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_2_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_1_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset/random_num_5_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset/random_num_4_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset/random_num_3_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\u_reset/random_num_2_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\enemy1/enemy_move_inst/anchor_y_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\enemy5/enemy_move_inst/anchor_y_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\enemy4/enemy_move_inst/anchor_y_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\enemy3/enemy_move_inst/anchor_y_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_2/\enemy_package_inst/u_enemy_master /\enemy2/enemy_move_inst/anchor_y_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (frame_count_comparator_reg[1]) is unused and will be removed from module bullet_module.
+INFO: [Synth 8-3886] merging instance 'pli_2/pri/pixel_data_reg[1]' (FDR) to 'pli_2/pri/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pli_2/pri/pixel_data_reg[4]' (FDR) to 'pli_2/pri/pixel_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset/random_num_1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_5_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_4_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_3_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset2/random_num_1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset/random_num_5_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset/random_num_4_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset/random_num_3_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\u_reset/random_num_2_reg[6] )
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/boss_unit_inst/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/u_reset/start_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy1/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy5/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy25/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy24/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy24/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy23/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy23/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy22/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy22/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy21/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/u_reset2/start_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/u_reset/start_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy5/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy4/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy4/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy3/ka_q_reg'
+INFO: [Synth 8-3886] merging instance 'pli_3/enemy_package_inst/u_enemy_master/enemy3/ka_q_reg' (FD) to 'pli_3/enemy_package_inst/u_enemy_master/enemy2/ka_q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\enemy1/enemy_move_inst/anchor_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\enemy5/enemy_move_inst/anchor_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\enemy4/enemy_move_inst/anchor_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\enemy3/enemy_move_inst/anchor_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pli_3/\enemy_package_inst/u_enemy_master /\enemy2/enemy_move_inst/anchor_y_reg[6] )
 WARNING: [Synth 8-3332] Sequential element (u_reset/random_num_1_reg[6]) is unused and will be removed from module enemy_master.
 WARNING: [Synth 8-3332] Sequential element (u_reset/random_num_2_reg[6]) is unused and will be removed from module enemy_master.
 WARNING: [Synth 8-3332] Sequential element (u_reset/random_num_3_reg[6]) is unused and will be removed from module enemy_master.
@@ -1492,8 +1412,34 @@ WARNING: [Synth 8-3332] Sequential element (enemy2/enemy_move_inst/anchor_y_reg[
 WARNING: [Synth 8-3332] Sequential element (enemy3/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_master.
 WARNING: [Synth 8-3332] Sequential element (enemy4/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_master.
 WARNING: [Synth 8-3332] Sequential element (enemy5/enemy_move_inst/anchor_y_reg[6]) is unused and will be removed from module enemy_master.
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[0]' (FDS) to 'sti_4/sta/be/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[1]' (FDS) to 'sti_4/sta/be/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[2]' (FDS) to 'sti_4/sta/be/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[3]' (FDS) to 'sti_4/sta/be/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[4]' (FDS) to 'sti_4/sta/be/pixel_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[5]' (FDS) to 'sti_4/sta/be/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[6]' (FDS) to 'sti_4/sta/be/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[7]' (FDS) to 'sti_4/sta/be/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[8]' (FDS) to 'sti_4/sta/be/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[9]' (FDS) to 'sti_4/sta/be/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[11]' (FDS) to 'sti_4/sta/be/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[12]' (FDS) to 'sti_4/sta/be/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[13]' (FDS) to 'sti_4/sta/be/pixel_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/be/pixel_data_reg[14]' (FDS) to 'sti_4/sta/be/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/u134/pixel_data_reg[1]' (FDS) to 'sti_4/sta/u134/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/u12/pixel_data_reg[1]' (FDS) to 'sti_4/sta/u12/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/u134/pixel_data_reg[4]' (FDS) to 'sti_4/sta/u134/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/u12/pixel_data_reg[4]' (FDS) to 'sti_4/sta/u12/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/pixel_data_reg[1]' (FD) to 'sti_4/sta/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_4/sta/pixel_data_reg[4]' (FD) to 'sti_4/sta/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sti_4/oled_data_reg[1]' (FD) to 'sti_4/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sti_4/oled_data_reg[4]' (FD) to 'sti_4/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pli_3/sc/a_reg[0]__0' (FDRE) to 'pli_3/sc/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pli_3/sc/a_reg[1]__0' (FDRE) to 'pli_3/sc/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pli_3/sc/a_reg[2]__0' (FDRE) to 'pli_3/sc/a_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 895.562 ; gain = 638.336
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 906.473 ; gain = 649.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1530,38 +1476,40 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |play__GB0        |           1|      6538|
-|2     |play__GB1        |           1|      4783|
-|3     |state_crl__GC0   |           1|     11269|
-|4     |Top_student__GC0 |           1|       761|
+|1     |play__GB0        |           1|      6024|
+|2     |play__GB1        |           1|      2126|
+|3     |play__GB2        |           1|      4783|
+|4     |state_crl__GC0   |           1|     11269|
+|5     |Top_student__GC0 |           1|       761|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 895.562 ; gain = 638.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:40 . Memory (MB): peak = 906.473 ; gain = 649.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 905.617 ; gain = 648.391
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 906.473 ; gain = 649.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |play__GB0        |           1|      6538|
-|2     |play__GB1        |           1|      4783|
-|3     |state_crl__GC0   |           1|     11269|
-|4     |Top_student__GC0 |           1|       761|
+|1     |play__GB0        |           1|      6024|
+|2     |play__GB1        |           1|      2126|
+|3     |play__GB2        |           1|      4783|
+|4     |state_crl__GC0   |           1|     11269|
+|5     |Top_student__GC0 |           1|       761|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:49 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1585,7 +1533,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:50 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:50 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1598,7 +1546,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:50 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1610,25 +1558,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:52 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:52 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1645,19 +1593,19 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     2|
-|2     |CARRY4  |   987|
+|2     |CARRY4  |   985|
 |3     |DSP48E1 |     6|
-|4     |LUT1    |   169|
-|5     |LUT2    |  1279|
-|6     |LUT3    |   924|
-|7     |LUT4    |  1250|
-|8     |LUT5    |  1691|
-|9     |LUT6    |  3228|
+|4     |LUT1    |   143|
+|5     |LUT2    |  1312|
+|6     |LUT3    |   969|
+|7     |LUT4    |  1296|
+|8     |LUT5    |  1723|
+|9     |LUT6    |  3559|
 |10    |MUXF7   |    10|
-|11    |FDCE    |    60|
+|11    |FDCE    |    59|
 |12    |FDE_1   |    32|
 |13    |FDPE    |     2|
-|14    |FDRE    |  1071|
+|14    |FDRE    |  1173|
 |15    |FDSE    |   141|
 |16    |IBUF    |    12|
 |17    |OBUF    |    34|
@@ -1668,61 +1616,61 @@ Report Instance Areas:
 +------+-------------------------------------+--------------------+------+
 |      |Instance                             |Module              |Cells |
 +------+-------------------------------------+--------------------+------+
-|1     |top                                  |                    | 10899|
+|1     |top                                  |                    | 11459|
 |2     |  cl                                 |clk_625m            |     8|
-|3     |  oled                               |Oled_Display        |   828|
-|4     |  st                                 |state_crl           |  9793|
-|5     |    di                               |difficulty_choose   |   129|
+|3     |  oled                               |Oled_Display        |   681|
+|4     |  st                                 |state_crl           | 10500|
+|5     |    di                               |difficulty_choose   |   136|
 |6     |    en                               |End                 |    75|
-|7     |    pl                               |play                |  4455|
-|8     |      boss_bu                        |boss_bullet         |   348|
-|9     |      bu                             |bullet_module       |  1306|
-|10    |      bu_cd                          |bullet_CD_display   |   232|
-|11    |      enemy_package_inst             |enemy_package       |  1463|
-|12    |        u_enemy_master               |enemy_master        |  1382|
-|13    |          boss_unit_inst             |boss_unit           |   154|
+|7     |    pl                               |play                |  5155|
+|8     |      boss_bu                        |boss_bullet         |   803|
+|9     |      bu                             |bullet_module       |  1392|
+|10    |      bu_cd                          |bullet_CD_display   |   235|
+|11    |      enemy_package_inst             |enemy_package       |  1493|
+|12    |        u_enemy_master               |enemy_master        |  1412|
+|13    |          boss_unit_inst             |boss_unit           |   124|
 |14    |            boss_move_inst           |boss_move           |    89|
-|15    |            boss_position_check_inst |boss_position_check |    50|
-|16    |          enemy1                     |enemy_unit          |    74|
-|17    |            enemy_move_inst          |enemy_move_24       |    54|
-|18    |            position_check_inst      |position_check_25   |    13|
-|19    |          enemy2                     |enemy_unit_2        |    81|
-|20    |            enemy_move_inst          |enemy_move_22       |    55|
+|15    |            boss_position_check_inst |boss_position_check |    20|
+|16    |          enemy1                     |enemy_unit          |    75|
+|17    |            enemy_move_inst          |enemy_move_24       |    56|
+|18    |            position_check_inst      |position_check_25   |    12|
+|19    |          enemy2                     |enemy_unit_2        |    84|
+|20    |            enemy_move_inst          |enemy_move_22       |    58|
 |21    |            position_check_inst      |position_check_23   |    12|
-|22    |          enemy21                    |enemy_unit2         |    97|
-|23    |            enemy_move2_inst         |enemy_move2_20      |    73|
-|24    |            position_check2_inst     |position_check2_21  |    13|
-|25    |          enemy22                    |enemy_unit2_3       |    98|
-|26    |            enemy_move2_inst         |enemy_move2_18      |    73|
-|27    |            position_check2_inst     |position_check2_19  |    14|
-|28    |          enemy23                    |enemy_unit2_4       |    95|
-|29    |            enemy_move2_inst         |enemy_move2_16      |    73|
-|30    |            position_check2_inst     |position_check2_17  |    11|
-|31    |          enemy24                    |enemy_unit2_5       |    97|
-|32    |            enemy_move2_inst         |enemy_move2_14      |    73|
-|33    |            position_check2_inst     |position_check2_15  |    13|
-|34    |          enemy25                    |enemy_unit2_6       |    95|
-|35    |            enemy_move2_inst         |enemy_move2         |    73|
-|36    |            position_check2_inst     |position_check2     |    10|
+|22    |          enemy21                    |enemy_unit2         |   101|
+|23    |            enemy_move2_inst         |enemy_move2_20      |    76|
+|24    |            position_check2_inst     |position_check2_21  |    14|
+|25    |          enemy22                    |enemy_unit2_3       |   102|
+|26    |            enemy_move2_inst         |enemy_move2_18      |    76|
+|27    |            position_check2_inst     |position_check2_19  |    15|
+|28    |          enemy23                    |enemy_unit2_4       |    99|
+|29    |            enemy_move2_inst         |enemy_move2_16      |    76|
+|30    |            position_check2_inst     |position_check2_17  |    12|
+|31    |          enemy24                    |enemy_unit2_5       |   101|
+|32    |            enemy_move2_inst         |enemy_move2_14      |    76|
+|33    |            position_check2_inst     |position_check2_15  |    14|
+|34    |          enemy25                    |enemy_unit2_6       |    99|
+|35    |            enemy_move2_inst         |enemy_move2         |    76|
+|36    |            position_check2_inst     |position_check2     |    11|
 |37    |          enemy3                     |enemy_unit_7        |    76|
-|38    |            enemy_move_inst          |enemy_move_12       |    54|
-|39    |            position_check_inst      |position_check_13   |    14|
-|40    |          enemy4                     |enemy_unit_8        |    77|
-|41    |            enemy_move_inst          |enemy_move_10       |    54|
-|42    |            position_check_inst      |position_check_11   |    15|
-|43    |          enemy5                     |enemy_unit_9        |    70|
-|44    |            enemy_move_inst          |enemy_move          |    50|
+|38    |            enemy_move_inst          |enemy_move_12       |    56|
+|39    |            position_check_inst      |position_check_13   |    12|
+|40    |          enemy4                     |enemy_unit_8        |   110|
+|41    |            enemy_move_inst          |enemy_move_10       |    56|
+|42    |            position_check_inst      |position_check_11   |    47|
+|43    |          enemy5                     |enemy_unit_9        |    73|
+|44    |            enemy_move_inst          |enemy_move          |    53|
 |45    |            position_check_inst      |position_check      |    11|
 |46    |          u_reset                    |reset_enemy_new     |   186|
 |47    |          u_reset2                   |reset_enemy_new2    |   180|
 |48    |        u_move_pulse                 |move_pulse          |    72|
-|49    |      hp                             |hp_bar              |   123|
+|49    |      hp                             |hp_bar              |   114|
 |50    |      pri                            |priority_module     |    28|
-|51    |      pu                             |pulse               |     9|
-|52    |      sc                             |score_display       |   356|
-|53    |      star                           |starship            |   382|
-|54    |        C0                           |starship_design     |   178|
-|55    |      xy                             |xy_coordinate_1     |   207|
+|51    |      pu                             |pulse               |     4|
+|52    |      sc                             |score_display       |   352|
+|53    |      star                           |starship            |   391|
+|54    |        C0                           |starship_design     |   201|
+|55    |      xy                             |xy_coordinate_1     |   342|
 |56    |    sta                              |Start               |  4840|
 |57    |      be                             |begining            |     2|
 |58    |      in                             |intro               |     1|
@@ -1736,13 +1684,13 @@ Report Instance Areas:
 |66    |    u1                               |on_press_0          |    64|
 +------+-------------------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:52 . Memory (MB): peak = 1121.648 ; gain = 865.109
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:30 ; elapsed = 00:01:43 . Memory (MB): peak = 1109.691 ; gain = 477.371
-Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1109.691 ; gain = 852.465
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:01:43 . Memory (MB): peak = 1121.648 ; gain = 490.258
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:52 . Memory (MB): peak = 1121.648 ; gain = 865.109
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1047 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1045 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1751,11 +1699,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-299 Infos, 97 Warnings, 1 Critical Warnings and 0 Errors encountered.
+301 Infos, 41 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 1109.691 ; gain = 864.809
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:56 . Memory (MB): peak = 1121.648 ; gain = 878.406
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/XuZihao/Documents/GitHub/EE2026-Star-War/project new/project_new.runs/synth_1/Top_student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_student_utilization_synth.rpt -pb Top_student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1109.691 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  5 22:41:33 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1121.648 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  6 17:07:28 2025...
