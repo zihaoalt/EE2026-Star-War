@@ -60,7 +60,8 @@ always @(posedge clk or posedge reset) begin
     
         end else if (state == 2'b01 || state == 2'b10) begin
             //Gameplay logic 
-    
+            if (!shield_switch)
+                shield_active <= 0;
             // HP deduction logic (blocked if shield active)
             if (hit_pulse) begin
                 if (shield_active && shield_switch) begin
@@ -86,7 +87,7 @@ always @(posedge clk or posedge reset) begin
                         shield_active <= 1;
                     shield_counter <= 0;
                 end
-            end else if (shield_switch && !shield_active)
+            end else if (shield_switch && !shield_active )
                 shield_active <= 1;
     
         end else if (state == 2'b00) begin
@@ -123,3 +124,4 @@ always @(posedge clk or posedge reset) begin
         endcase
     end
 endmodule
+
