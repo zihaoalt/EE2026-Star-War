@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
+
 module End(
     input frame_begin,
     input sample_pixel,
@@ -11,9 +11,7 @@ module End(
     reg [5:0] y;
     parameter color = 16'hFFFF; // white
 
-    // -------------------
-    // GAME OVER letters y=10..16
-    // -------------------
+
     wire G_pixel = (y>=10 && y<=16) &&
                    ((y==10 && x>=10 && x<=16) || 
                     (y==11 && (x==10 || x==16)) ||
@@ -58,9 +56,7 @@ module End(
                      (y==15 && x==70) ||
                      (y==16 && x==71)));
 
-    // -------------------
-    // PRESS L letters y=30..36 (shifted right by +5 pixels)
-    // -------------------
+
     wire P_pixel = (y>=30 && y<=36) &&
                    (((y==30 || y==33) && x>=10 && x<=16) ||
                     (x==10 && y>=31 && y<=36) ||
@@ -92,9 +88,8 @@ module End(
     wire L_pixel = (y>=30 && y<=36) &&
                    (x==54 || (y==36 && x>=54 && x<=60));
 
-    // -------------------
     // Main pixel assignment
-    // -------------------
+
     always @(posedge clk_625m) begin
         if(frame_begin) begin
             x <= 0;

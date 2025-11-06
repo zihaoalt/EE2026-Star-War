@@ -1,8 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Module Name: hp_bar
-// Description: Starship HP system with shield skill (10s cooldown)
-//////////////////////////////////////////////////////////////////////////////////
 
 module hp_bar(
     input clk,
@@ -27,9 +23,8 @@ module hp_bar(
 
     parameter SHIELD_COOLDOWN = 32'd62500000;  // 10s @ 6.25MHz
 
-    // ================================
     // Compute damage based on difficulty
-    // ================================
+
     always @(*) begin
         case(level_state)
             2'b00: damage = 1;
@@ -39,16 +34,14 @@ module hp_bar(
         endcase
     end
 
-    // ================================
     // Store previous deduct_HP for pulse detection
-    // ================================
+
     always @(posedge clk) begin
         prev_deduct <= deduct_HP;
     end
 
-    // ================================
     // HP and Shield logic
-    // ================================
+
 always @(posedge clk or posedge reset) begin
         if (reset) begin
             HP <= 6'd16;
@@ -66,7 +59,7 @@ always @(posedge clk or posedge reset) begin
             shield_counter <= 0;
     
         end else if (state == 2'b01 || state == 2'b10) begin
-            // === Gameplay logic ===
+            //Gameplay logic 
     
             // HP deduction logic (blocked if shield active)
             if (hit_pulse) begin
@@ -97,7 +90,7 @@ always @(posedge clk or posedge reset) begin
                 shield_active <= 1;
     
         end else if (state == 2'b00) begin
-            // === Intro logic ===
+            // Intro logic 
             // Allow shield to show/disappear, but block HP loss
             if (!shield_switch)
                 shield_active <= 0;
@@ -106,9 +99,7 @@ always @(posedge clk or posedge reset) begin
         end
     end
 
-    // ================================
     // HP bar display mapping
-    // ================================
     always @(*) begin
         case(HP)
             6'd0:  starship_hp = 16'b0;

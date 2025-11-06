@@ -6,10 +6,10 @@ module starship(
     input up,
     input down,
     input [1:0] state,
-    input shield_active, // 🟦 NEW: from hp_bar
+    input shield_active, 
     output starship_flag,
     output starship_bullet_flag,
-    output shield_flag    // 🟦 NEW: to display blue ring
+    output shield_flag   
     );
     
 reg [6:0] centre_x;
