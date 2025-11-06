@@ -16,9 +16,7 @@ module hp_bar(
     output reg shield_active   // Shield status for display
 );
 
-    // ================================
     // Internal registers & parameters
-    // ================================
     reg [5:0] HP;
     reg prev_deduct;
     wire hit_pulse = deduct_HP & ~prev_deduct;
@@ -51,52 +49,60 @@ module hp_bar(
     // ================================
     // HP and Shield logic
     // ================================
-    always @(posedge clk or posedge reset) begin
-        if (reset || state == 2'b00) begin
+always @(posedge clk or posedge reset) begin
+        if (reset) begin
             HP <= 6'd16;
             dead_flag <= 0;
             shield_active <= 0;
             shield_used <= 0;
             shield_counter <= 0;
-        end 
-        else if (state != 2'b10) begin
-            // --- Handle shield switch OFF ---
-            if (!shield_switch) begin
-                shield_active <= 0;
-                shield_used <= 0;
-                shield_counter <= 0;
-            end
-
-            // --- Handle HP deduction on hit ---
+    
+        end else if (state == 2'b00 && dead_flag) begin
+            // Only reset HP when restarting after death
+            HP <= 6'd16;
+            dead_flag <= 0;
+            shield_active <= 0;
+            shield_used <= 0;
+            shield_counter <= 0;
+    
+        end else if (state == 2'b01 || state == 2'b10) begin
+            // === Gameplay logic ===
+    
+            // HP deduction logic (blocked if shield active)
             if (hit_pulse) begin
                 if (shield_active && shield_switch) begin
-                    // Shield absorbs the hit
                     shield_active <= 0;
                     shield_used <= 1;
                     shield_counter <= 0;
-                end else if (HP > 0) begin
-                    // Deduct HP if no shield
+                end else if (HP > damage)
                     HP <= HP - damage;
-                end
+                else
+                    HP <= 0;
             end
-
-            // --- Dead flag ---
+    
+            // Death check
             dead_flag <= (HP == 0);
-
-            // --- Shield cooldown ---
+    
+            // Shield cooldown timer
             if (shield_used) begin
                 if (shield_counter < SHIELD_COOLDOWN)
                     shield_counter <= shield_counter + 1;
                 else begin
                     shield_used <= 0;
                     if (shield_switch)
-                        shield_active <= 1; // re-enable shield only if switch is ON
+                        shield_active <= 1;
                     shield_counter <= 0;
                 end
-            end
-            else if (!shield_active && !shield_used && shield_switch) begin
-                shield_active <= 1; // ensure shield appears if switch is ON and not cooling down
-            end
+            end else if (shield_switch && !shield_active)
+                shield_active <= 1;
+    
+        end else if (state == 2'b00) begin
+            // === Intro logic ===
+            // Allow shield to show/disappear, but block HP loss
+            if (!shield_switch)
+                shield_active <= 0;
+            else if (!shield_used)
+                shield_active <= 1;
         end
     end
 
