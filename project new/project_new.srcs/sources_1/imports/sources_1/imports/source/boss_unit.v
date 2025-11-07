@@ -29,10 +29,12 @@ module boss_unit(
     always @(posedge clk) begin
         if (kill_all_pulse) begin
             alive      <= 1'b0;       
-            shot_state <= 1'b0;       
+            shot_state <= 1'b0; 
+            shot_count <= 4'b0;
         end else if (boss_appear_pulse) begin
             alive      <= 1'b1;       
             shot_state <= 1'b0;
+            shot_count <= 4'b0;
         end else if (shot_pulse) begin
             if (shot_count == 10) begin
                 shot_state <= 1'b1;
@@ -78,4 +80,5 @@ module boss_unit(
 
 endmodule
 `default_nettype wire
+
 
