@@ -1,17 +1,17 @@
 `default_nettype none
 module enemy_unit2(
-    input  wire        clk,           // 6.25 MHz
-    input  wire        clk_move,      // 1-clk CE in 'clk' domain
+    input  wire        clk,           
+    input  wire        clk_move,      
     input  wire        shot,
     input  wire [6:0]  random_num,
-    input  wire        reset_enemy,   // 1-clk pulse (from channel i)
-    input  wire        kill_all,      // 1-clk pulse (global)
+    input  wire        reset_enemy,   
+    input  wire        kill_all,      
     input  wire [6:0]  x,
     input  wire [6:0]  y,
-    output wire        enemy_flag,    // from position_check
+    output wire        enemy_flag,    
     output reg         HP_deduct = 1'b0
 );
-    // Sync/edge-detect local controls (robust even if levels)
+    
     reg shot_q=1'b0, re_q=1'b0, ka_q=1'b0;
     always @(posedge clk) begin
         shot_q <= shot;
@@ -22,16 +22,16 @@ module enemy_unit2(
     wire reset_enemy_pulse = reset_enemy & ~re_q;
     wire kill_all_pulse    = kill_all    & ~ka_q;
 
-    // Alive/shot state
-    reg alive = 1'b0;       // visible/active on screen
-    reg shot_state = 1'b0;  // has this enemy been shot
+   
+    reg alive = 1'b0;       
+    reg shot_state = 1'b0;  
 
     always @(posedge clk) begin
         if (kill_all_pulse) begin
-            alive      <= 1'b0;       // disappear immediately
-            shot_state <= 1'b0;       // clear shot state
+            alive      <= 1'b0;       
+            shot_state <= 1'b0;       
         end else if (reset_enemy_pulse) begin
-            alive      <= 1'b1;       // respawn
+            alive      <= 1'b1;       
             shot_state <= 1'b0;
         end else if (shot_pulse) begin
             shot_state <= 1'b1;
@@ -43,16 +43,16 @@ module enemy_unit2(
     wire        [6:0] anchor_y;
 
     enemy_move2 enemy_move2_inst(
-        .clk        (clk),               // real clock
-        .clk_move_ce(clk_move),          // CE
-        .reset_enemy(reset_enemy_pulse), // per-channel spawn
-        .kill_all   (kill_all_pulse),    // force off-screen immediately
+        .clk        (clk),              
+        .clk_move_ce(clk_move),        
+        .reset_enemy(reset_enemy_pulse), 
+        .kill_all   (kill_all_pulse), 
         .random_num (random_num),
         .anchor_x   (anchor_x),
         .anchor_y   (anchor_y)
     );
 
-    // Visibility mask into flag: only report if alive
+    
     wire enemy_flag_raw;
     position_check2 position_check2_inst(
         .clk        (clk),
@@ -75,3 +75,4 @@ module enemy_unit2(
     end
 endmodule
 `default_nettype wire
+
