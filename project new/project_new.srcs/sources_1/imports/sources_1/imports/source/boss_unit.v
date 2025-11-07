@@ -1,13 +1,13 @@
 `default_nettype none
 module boss_unit(
-    input  wire        clk,           // 6.25 MHz
-    input  wire        clk_move,      // 1-clk CE in 'clk' domain
+    input  wire        clk,           
+    input  wire        clk_move,      
     input  wire        shot,
-    input  wire        boss_appear,   // 1-clk pulse 
-    input  wire        kill_all,      // 1-clk pulse (global)
+    input  wire        boss_appear,   
+    input  wire        kill_all,      
     input  wire [6:0]  x,
     input  wire [6:0]  y,
-    output wire        boss_flag,    // from position_check
+    output wire        boss_flag,    
     output wire         boss_fire
 );
     // Sync/edge-detect local controls (robust even if levels)
@@ -21,17 +21,17 @@ module boss_unit(
     wire boss_appear_pulse = boss_appear & ~ba_q;
     wire kill_all_pulse    = kill_all    & ~ka_q;
 
-    // Alive/shot state
+    
     reg alive = 1'b0;       // visible/active on screen
     reg shot_state = 1'b0;  // has this enemy been shot
     reg [3:0] shot_count = 11'b0;
 
     always @(posedge clk) begin
         if (kill_all_pulse) begin
-            alive      <= 1'b0;       // disappear immediately
-            shot_state <= 1'b0;       // clear shot state
+            alive      <= 1'b0;       
+            shot_state <= 1'b0;       
         end else if (boss_appear_pulse) begin
-            alive      <= 1'b1;       // respawn
+            alive      <= 1'b1;       
             shot_state <= 1'b0;
         end else if (shot_pulse) begin
             if (shot_count == 10) begin
@@ -46,15 +46,15 @@ module boss_unit(
         end
     end
 
-    // Position driver
+  
     wire signed [8:0] anchor_x;
     wire        [6:0] anchor_y;
 
     boss_move boss_move_inst(
-        .clk        (clk),               // real clock
-        .clk_move_ce(clk_move),          // CE
-        .reset_enemy(boss_appear_pulse), // per-channel spawn
-        .kill_all   (kill_all_pulse),    // force off-screen immediately
+        .clk        (clk),               
+        .clk_move_ce(clk_move),          
+        .reset_enemy(boss_appear_pulse), 
+        .kill_all   (kill_all_pulse),    
         .anchor_x   (anchor_x),
         .anchor_y   (anchor_y)
     );
@@ -78,3 +78,4 @@ module boss_unit(
 
 endmodule
 `default_nettype wire
+

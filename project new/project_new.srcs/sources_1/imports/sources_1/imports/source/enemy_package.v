@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2025/10/17 16:52:57
-// Design Name: 
-// Module Name: enemy_package
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module enemy_package (
     input clk625,//6.25MHz
@@ -47,10 +27,9 @@ move_pulse  u_move_pulse (
 
 
 
-    // ========= ???? =========
 enemy_master u_enemy_master(
-    .clk           (clk625),        // 6.25 MHz ????
-    .clk_move      (move_pulse),    // ?"??"??????????????????
+    .clk           (clk625),        
+    .clk_move      (move_pulse),    
     .shot_flag     (shot_flag),
     .x             (x),
     .y             (y),
