@@ -26,7 +26,7 @@ module boss_bullet(
     wire fb_rise = fb_0 & ~fb_1;
     integer i,j,k,m;
     reg [7:0] frame_count = 8'd0;
-    reg [7:0] frame_count_comparator = 8'd90; // default shooting slowest, change based on difficulty levels
+    reg [7:0] frame_count_comparator = 8'd45; // default shooting slowest, change based on difficulty levels
     reg fire = 1'b0;
     reg break;
     

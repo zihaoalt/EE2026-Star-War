@@ -73,11 +73,11 @@ module bullet_module (
     
     always @(posedge clk) begin
         case(level_state)
-            2'b00: frame_count_comparator <= 6'd44;
-            2'b01: frame_count_comparator <= 6'd40;
-            2'b10: frame_count_comparator <= 6'd36;
-            2'b11: frame_count_comparator <= 6'd32;
-            default: frame_count_comparator <= 6'd32;
+            2'b00: frame_count_comparator <= 6'd40;
+            2'b01: frame_count_comparator <= 6'd32;
+            2'b10: frame_count_comparator <= 6'd24;
+            2'b11: frame_count_comparator <= 6'd16;
+            default: frame_count_comparator <= 6'd16;
         endcase
     end
 

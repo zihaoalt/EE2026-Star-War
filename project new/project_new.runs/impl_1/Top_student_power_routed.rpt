@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Nov  6 17:08:58 2025
-| Host             : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
+| Date             : Fri Nov  7 14:36:08 2025
+| Host             : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_student_power_routed.rpt -pb Top_student_power_summary_routed.pb -rpx Top_student_power_routed.rpx
 | Design           : Top_student
 | Device           : xc7a35tcpg236-1
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.056 |    11523 |       --- |             --- |
-|   LUT as Logic |     0.053 |     7642 |     20800 |           36.74 |
+| Slice Logic    |     0.056 |    11512 |       --- |             --- |
+|   LUT as Logic |     0.053 |     7629 |     20800 |           36.68 |
 |   CARRY4       |     0.003 |      985 |      8150 |           12.09 |
 |   Register     |    <0.001 |     1407 |     41600 |            3.38 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |       10 |     32600 |            0.03 |
 |   Others       |     0.000 |      120 |       --- |             --- |
-| Signals        |     0.052 |     8654 |       --- |             --- |
+| Signals        |     0.052 |     8639 |       --- |             --- |
 | DSPs           |     0.006 |        6 |        90 |            6.67 |
 | I/O            |     0.004 |       47 |       106 |           44.34 |
 | Static Power   |     0.072 |          |           |                 |
@@ -149,7 +149,7 @@ Table of Contents
 |   st                                 |     0.104 |
 |     di                               |    <0.001 |
 |     en                               |    <0.001 |
-|     pl                               |     0.028 |
+|     pl                               |     0.029 |
 |       boss_bu                        |     0.002 |
 |       bu                             |     0.003 |
 |       bu_cd                          |     0.004 |
@@ -198,7 +198,7 @@ Table of Contents
 |       star                           |     0.009 |
 |         C0                           |     0.008 |
 |       xy                             |     0.006 |
-|     sta                              |     0.074 |
+|     sta                              |     0.073 |
 |       be                             |    <0.001 |
 |       in                             |    <0.001 |
 |       int1                           |     0.011 |

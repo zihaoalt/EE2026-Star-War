@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Nov  6 17:07:28 2025
-| Host         : LAPTOP-6SDBUB5E running 64-bit major release  (build 9200)
+| Date         : Fri Nov  7 14:34:48 2025
+| Host         : Bruce-Wayn running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_student_utilization_synth.rpt -pb Top_student_utilization_synth.pb
 | Design       : Top_student
 | Device       : 7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 7664 |     0 |     20800 | 36.85 |
-|   LUT as Logic          | 7664 |     0 |     20800 | 36.85 |
+| Slice LUTs*             | 7647 |     0 |     20800 | 36.76 |
+|   LUT as Logic          | 7647 |     0 |     20800 | 36.76 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         | 1407 |     0 |     41600 |  3.38 |
 |   Register as Flip Flop | 1407 |     0 |     41600 |  3.38 |
@@ -150,14 +150,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 3559 |                 LUT |
-| LUT5     | 1723 |                 LUT |
-| LUT2     | 1312 |                 LUT |
-| LUT4     | 1296 |                 LUT |
+| LUT6     | 3547 |                 LUT |
+| LUT5     | 1718 |                 LUT |
+| LUT4     | 1318 |                 LUT |
+| LUT2     | 1303 |                 LUT |
 | FDRE     | 1205 |        Flop & Latch |
 | CARRY4   |  985 |          CarryLogic |
-| LUT3     |  969 |                 LUT |
-| LUT1     |  143 |                 LUT |
+| LUT3     |  961 |                 LUT |
+| LUT1     |  144 |                 LUT |
 | FDSE     |  141 |        Flop & Latch |
 | FDCE     |   59 |        Flop & Latch |
 | OBUF     |   34 |                  IO |
